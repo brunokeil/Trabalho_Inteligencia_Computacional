@@ -1,0 +1,4 @@
+instancia_A.txt K=1 VIAVEL atendimento maximo=4518/4518 nao_alocados_min=0 pre_check=1.24751s
+run=1 seed=1 inicial=29542.029900 final=27323.5365 km melhora=2218.4934 constr=0.0323s busca=1.0119s iter=2740
+distancia km: min=27323.5365 media=27323.5365 desvio_amostral=0.0000 max=27323.5365 melhor_seed=1
+Resultados: "resultados/performance_A.json" e "resultados/performance_A.csv"

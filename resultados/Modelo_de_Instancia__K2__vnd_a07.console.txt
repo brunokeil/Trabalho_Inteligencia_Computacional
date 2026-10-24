@@ -1,0 +1,34 @@
+COMMAND ["/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao", "--instancia", "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/entrega/Modelo_de_Instancia.txt", "--tipos-por-escola", "2", "--runs", "30", "--seed", "1", "--max-iter", "150", "--sem-melhora", "50", "--n3-periodo", "15", "--n3-amostras", "4", "--saida", "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/Modelo_de_Instancia__K2__vnd_a07.json", "--metodo", "vnd", "--alpha", "0.7"]
+Modelo_de_Instancia.txt K=2 VIAVEL atendimento maximo=109/109 nao_alocados_min=0 pre_check=0.590339s
+run=1 seed=1 inicial=406.613900 final=360.8510 km melhora=45.7629 constr=0.0004s busca=0.0002s iter=8
+run=2 seed=2 inicial=384.028100 final=376.0379 km melhora=7.9902 constr=0.0003s busca=0.0001s iter=11
+run=3 seed=3 inicial=416.197800 final=409.3806 km melhora=6.8172 constr=0.0004s busca=0.0001s iter=15
+run=4 seed=4 inicial=371.048500 final=367.1609 km melhora=3.8876 constr=0.0004s busca=0.0001s iter=11
+run=5 seed=5 inicial=394.203900 final=389.8367 km melhora=4.3672 constr=0.0003s busca=0.0001s iter=5
+run=6 seed=6 inicial=375.639400 final=365.9428 km melhora=9.6966 constr=0.0004s busca=0.0001s iter=12
+run=7 seed=7 inicial=382.134600 final=330.4760 km melhora=51.6586 constr=0.0010s busca=0.0002s iter=21
+run=8 seed=8 inicial=416.097500 final=377.0394 km melhora=39.0581 constr=0.0004s busca=0.0002s iter=20
+run=9 seed=9 inicial=392.232200 final=385.9523 km melhora=6.2799 constr=0.0004s busca=0.0001s iter=11
+run=10 seed=10 inicial=383.214300 final=319.3346 km melhora=63.8797 constr=0.0004s busca=0.0002s iter=19
+run=11 seed=11 inicial=373.875800 final=370.5778 km melhora=3.2980 constr=0.0007s busca=0.0001s iter=5
+run=12 seed=12 inicial=450.381400 final=340.1242 km melhora=110.2572 constr=0.0004s busca=0.0003s iter=41
+run=13 seed=13 inicial=430.490700 final=417.5834 km melhora=12.9073 constr=0.0004s busca=0.0001s iter=12
+run=14 seed=14 inicial=402.722200 final=359.2657 km melhora=43.4565 constr=0.0004s busca=0.0003s iter=21
+run=15 seed=15 inicial=353.571300 final=349.9150 km melhora=3.6563 constr=0.0004s busca=0.0001s iter=7
+run=16 seed=16 inicial=456.450500 final=452.6275 km melhora=3.8230 constr=0.0004s busca=0.0001s iter=9
+run=17 seed=17 inicial=359.235000 final=341.3004 km melhora=17.9346 constr=0.0003s busca=0.0002s iter=33
+run=18 seed=18 inicial=356.558200 final=356.5582 km melhora=0.0000 constr=0.0004s busca=0.0001s iter=3
+run=19 seed=19 inicial=354.908200 final=352.3349 km melhora=2.5733 constr=0.0004s busca=0.0001s iter=9
+run=20 seed=20 inicial=409.798000 final=366.0609 km melhora=43.7371 constr=0.0003s busca=0.0002s iter=13
+run=21 seed=21 inicial=413.632200 final=402.2940 km melhora=11.3382 constr=0.0004s busca=0.0001s iter=15
+run=22 seed=22 inicial=424.595500 final=383.9272 km melhora=40.6683 constr=0.0004s busca=0.0002s iter=21
+run=23 seed=23 inicial=415.517800 final=369.1167 km melhora=46.4011 constr=0.0004s busca=0.0003s iter=30
+run=24 seed=24 inicial=371.471800 final=357.8054 km melhora=13.6664 constr=0.0003s busca=0.0001s iter=8
+run=25 seed=25 inicial=351.896400 final=326.9556 km melhora=24.9408 constr=0.0004s busca=0.0002s iter=17
+run=26 seed=26 inicial=395.581100 final=361.8251 km melhora=33.7560 constr=0.0005s busca=0.0002s iter=8
+run=27 seed=27 inicial=417.896500 final=389.7009 km melhora=28.1956 constr=0.0004s busca=0.0003s iter=31
+run=28 seed=28 inicial=359.069900 final=338.5286 km melhora=20.5413 constr=0.0004s busca=0.0001s iter=16
+run=29 seed=29 inicial=397.538400 final=392.4806 km melhora=5.0578 constr=0.0004s busca=0.0001s iter=13
+run=30 seed=30 inicial=409.276000 final=387.0259 km melhora=22.2501 constr=0.0004s busca=0.0002s iter=26
+distancia km: min=319.3346 media=369.9340 desvio_amostral=28.6698 max=452.6275 melhor_seed=10
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/Modelo_de_Instancia__K2__vnd_a07.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/Modelo_de_Instancia__K2__vnd_a07.csv"

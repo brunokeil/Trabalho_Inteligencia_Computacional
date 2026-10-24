@@ -1,0 +1,18 @@
+exemplo8.txt K=2 VIAVEL atendimento maximo=8/8 nao_alocados_min=0 pre_check=0.56959s
+slot E1 + M2 score=1.44048 cobertura=3
+slot E3 + M1 score=1.35714 cobertura=5
+slot E2 + M1 score=0.642857 cobertura=7
+slot E3 + M2 score=0.285714 cobertura=8
+regret C3 tipo=M1 -> E3 d=1 vagas=1
+regret C7 tipo=M2 -> E1 d=1 vagas=2
+regret C8 tipo=M2 -> E1 d=3 vagas=1
+regret C1 tipo=M1 -> E3 d=6 vagas=0
+regret C2 tipo=M1 -> E2 d=3 vagas=2
+regret C4 tipo=M1 -> E2 d=9 vagas=1
+regret C5 tipo=M2 -> E1 d=10 vagas=0
+reparo C1 -> E2
+reparo C6 -> E3
+iter=2 N2 delta=-7 dist=42 excesso=0 nao_alocados=0
+run=1 seed=1 inicial=49.0000 final=42.0000 km melhora=7.0000 constr=0.0000s busca=0.0000s iter=5
+distancia km: min=42.0000 media=42.0000 desvio_amostral=0.0000 max=42.0000 melhor_seed=1
+Resultados: "resultados/exemplo8.json" e "resultados/exemplo8.csv"

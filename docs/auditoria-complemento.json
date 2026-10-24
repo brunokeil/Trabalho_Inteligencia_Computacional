@@ -1,0 +1,14 @@
+[
+  {
+    "instance": "Modelo_de_Instancia.txt",
+    "returncode": 1,
+    "seconds": 0.008036666000000001,
+    "stderr": "Erro: instancia inviavel: impossivel satisfazer capacidades por tipo\n"
+  },
+  {
+    "instance": "instancia2.txt",
+    "returncode": 1,
+    "seconds": 0.005736541999999997,
+    "stderr": "Erro: instancia inviavel: impossivel satisfazer capacidades por tipo\n"
+  }
+]

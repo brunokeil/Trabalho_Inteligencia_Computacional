@@ -1,0 +1,2948 @@
+{
+  "docs/auditoria-complemento.json": {
+    "mtime": 1791517436.6378746,
+    "seen": 1792698417.222087,
+    "ast_hash": "1522d8ebd81d15423f2bd5f7b5f45050",
+    "semantic_hash": "1522d8ebd81d15423f2bd5f7b5f45050"
+  },
+  "resultados/Modelo_de_Instancia__K1__n1.json": {
+    "mtime": 1792700111.4346218,
+    "seen": 1792700880.683567,
+    "ast_hash": "e9d37365b4252bee5011b3eb1f62cc9f",
+    "semantic_hash": "e9d37365b4252bee5011b3eb1f62cc9f"
+  },
+  "resultados/Modelo_de_Instancia__K1__n2.json": {
+    "mtime": 1792700111.8917801,
+    "seen": 1792700880.683569,
+    "ast_hash": "eda7133ce865d75e3b9e8fd0002d6921",
+    "semantic_hash": "eda7133ce865d75e3b9e8fd0002d6921"
+  },
+  "resultados/Modelo_de_Instancia__K1__n3.json": {
+    "mtime": 1792700112.3659956,
+    "seen": 1792700880.683569,
+    "ast_hash": "c0a7680264ed10cd574be2aa9e8fa151",
+    "semantic_hash": "c0a7680264ed10cd574be2aa9e8fa151"
+  },
+  "resultados/Modelo_de_Instancia__K1__tabu_a03.json": {
+    "mtime": 1792700112.8028686,
+    "seen": 1792700880.68357,
+    "ast_hash": "057f68d183645f6c8ffbb436bf0647c7",
+    "semantic_hash": "057f68d183645f6c8ffbb436bf0647c7"
+  },
+  "resultados/Modelo_de_Instancia__K1__tabu_t10.json": {
+    "mtime": 1792700113.7659767,
+    "seen": 1792700880.6835709,
+    "ast_hash": "b821460096bf8e0a544b736eb286a245",
+    "semantic_hash": "b821460096bf8e0a544b736eb286a245"
+  },
+  "resultados/Modelo_de_Instancia__K1__tabu_t10_20.json": {
+    "mtime": 1792700114.2455158,
+    "seen": 1792700880.683572,
+    "ast_hash": "547186c9118907b83cc364bc351acbaf",
+    "semantic_hash": "547186c9118907b83cc364bc351acbaf"
+  },
+  "resultados/Modelo_de_Instancia__K1__tabu_t3.json": {
+    "mtime": 1792700113.2849128,
+    "seen": 1792700880.683573,
+    "ast_hash": "a732f52f31b71f3ccfe51f1d43ad420a",
+    "semantic_hash": "a732f52f31b71f3ccfe51f1d43ad420a"
+  },
+  "resultados/Modelo_de_Instancia__K1__vnd_a0.json": {
+    "mtime": 1792700109.6123178,
+    "seen": 1792700880.683573,
+    "ast_hash": "cf0bd3786e21dd5696eb5e2525050bfd",
+    "semantic_hash": "cf0bd3786e21dd5696eb5e2525050bfd"
+  },
+  "resultados/Modelo_de_Instancia__K1__vnd_a03.json": {
+    "mtime": 1792700110.0516467,
+    "seen": 1792700880.683574,
+    "ast_hash": "71aff92526758de64e528e3a4396ba9f",
+    "semantic_hash": "71aff92526758de64e528e3a4396ba9f"
+  },
+  "resultados/Modelo_de_Instancia__K1__vnd_a07.json": {
+    "mtime": 1792700110.469336,
+    "seen": 1792700880.6835752,
+    "ast_hash": "57f6e680a9dba1503363a290afa0c7b3",
+    "semantic_hash": "57f6e680a9dba1503363a290afa0c7b3"
+  },
+  "resultados/Modelo_de_Instancia__K1__vnd_first.json": {
+    "mtime": 1792700110.9206333,
+    "seen": 1792700880.6835752,
+    "ast_hash": "09db41093a60a5aa4a4e0b7b8a7ebd26",
+    "semantic_hash": "09db41093a60a5aa4a4e0b7b8a7ebd26"
+  },
+  "resultados/Modelo_de_Instancia__K2__n1.json": {
+    "mtime": 1791517100.1996047,
+    "seen": 1792698417.2221,
+    "ast_hash": "aca92c45ddf555c68aaa9c0ff8209adc",
+    "semantic_hash": "aca92c45ddf555c68aaa9c0ff8209adc"
+  },
+  "resultados/Modelo_de_Instancia__K2__n2.json": {
+    "mtime": 1791517100.8359215,
+    "seen": 1792698417.2221,
+    "ast_hash": "6eb363dd923094e3bbf7a438faadaa98",
+    "semantic_hash": "6eb363dd923094e3bbf7a438faadaa98"
+  },
+  "resultados/Modelo_de_Instancia__K2__n3.json": {
+    "mtime": 1791517101.4641209,
+    "seen": 1792698417.222101,
+    "ast_hash": "911d6e3706fed06c4143001d51d6ef98",
+    "semantic_hash": "911d6e3706fed06c4143001d51d6ef98"
+  },
+  "resultados/Modelo_de_Instancia__K2__tabu_a03.json": {
+    "mtime": 1791517102.158873,
+    "seen": 1792698417.222102,
+    "ast_hash": "d169ae40d9ccf13d7f0ce8010b4ea36d",
+    "semantic_hash": "d169ae40d9ccf13d7f0ce8010b4ea36d"
+  },
+  "resultados/Modelo_de_Instancia__K2__tabu_t10.json": {
+    "mtime": 1791517103.5673368,
+    "seen": 1792698417.222102,
+    "ast_hash": "4efb8f6fac2028b026a45ef74a55a875",
+    "semantic_hash": "4efb8f6fac2028b026a45ef74a55a875"
+  },
+  "resultados/Modelo_de_Instancia__K2__tabu_t10_20.json": {
+    "mtime": 1791517104.2966464,
+    "seen": 1792698417.222103,
+    "ast_hash": "090532ba01c43e4de16c20c6a3ead869",
+    "semantic_hash": "090532ba01c43e4de16c20c6a3ead869"
+  },
+  "resultados/Modelo_de_Instancia__K2__tabu_t3.json": {
+    "mtime": 1791517102.8638294,
+    "seen": 1792698417.222104,
+    "ast_hash": "bc994825b42ab97c0ce542947a623462",
+    "semantic_hash": "bc994825b42ab97c0ce542947a623462"
+  },
+  "resultados/Modelo_de_Instancia__K2__vnd_a0.json": {
+    "mtime": 1791517097.6491683,
+    "seen": 1792698417.222104,
+    "ast_hash": "77582211c22db60e1b5a3f98ecef05f9",
+    "semantic_hash": "77582211c22db60e1b5a3f98ecef05f9"
+  },
+  "resultados/Modelo_de_Instancia__K2__vnd_a03.json": {
+    "mtime": 1791517098.299131,
+    "seen": 1792698417.222105,
+    "ast_hash": "ce8e1f517345b23439e4eded9d822f3a",
+    "semantic_hash": "ce8e1f517345b23439e4eded9d822f3a"
+  },
+  "resultados/Modelo_de_Instancia__K2__vnd_a07.json": {
+    "mtime": 1791517098.916914,
+    "seen": 1792698417.222105,
+    "ast_hash": "1220eff1c00c18b41b49e87879e3adc4",
+    "semantic_hash": "1220eff1c00c18b41b49e87879e3adc4"
+  },
+  "resultados/Modelo_de_Instancia__K2__vnd_first.json": {
+    "mtime": 1791517099.5414312,
+    "seen": 1792698417.2221062,
+    "ast_hash": "d42e6cb9414b6dd602cec05bfc6e8c88",
+    "semantic_hash": "d42e6cb9414b6dd602cec05bfc6e8c88"
+  },
+  "resultados/exemplo8.json": {
+    "mtime": 1791516903.944751,
+    "seen": 1792698417.222107,
+    "ast_hash": "17d7b5aa1b23b814a9ac3e9b65135896",
+    "semantic_hash": "17d7b5aa1b23b814a9ac3e9b65135896"
+  },
+  "resultados/instancia2__K1__n1.json": {
+    "mtime": 1792700121.6923552,
+    "seen": 1792700880.68386,
+    "ast_hash": "fa3bd9e7f3e515b438c1da352eec14e7",
+    "semantic_hash": "fa3bd9e7f3e515b438c1da352eec14e7"
+  },
+  "resultados/instancia2__K1__n2.json": {
+    "mtime": 1792700123.1285233,
+    "seen": 1792700880.68386,
+    "ast_hash": "240a7ddf523c7a3458026017b5866abc",
+    "semantic_hash": "240a7ddf523c7a3458026017b5866abc"
+  },
+  "resultados/instancia2__K1__n3.json": {
+    "mtime": 1792700124.4900212,
+    "seen": 1792700880.683861,
+    "ast_hash": "62afbbe0412a61fd491b61cc08f0652d",
+    "semantic_hash": "62afbbe0412a61fd491b61cc08f0652d"
+  },
+  "resultados/instancia2__K1__tabu_a03.json": {
+    "mtime": 1792700127.2815592,
+    "seen": 1792700880.683862,
+    "ast_hash": "21198001df7b0604cba2de16ef122184",
+    "semantic_hash": "21198001df7b0604cba2de16ef122184"
+  },
+  "resultados/instancia2__K1__tabu_t10.json": {
+    "mtime": 1792700132.887051,
+    "seen": 1792700880.683863,
+    "ast_hash": "01c4bbf9f3b0180ca3e4091eb8a18dee",
+    "semantic_hash": "01c4bbf9f3b0180ca3e4091eb8a18dee"
+  },
+  "resultados/instancia2__K1__tabu_t10_20.json": {
+    "mtime": 1792700135.6617157,
+    "seen": 1792700880.683863,
+    "ast_hash": "d1aa877512d19cc91222ba5cba52fb28",
+    "semantic_hash": "d1aa877512d19cc91222ba5cba52fb28"
+  },
+  "resultados/instancia2__K1__tabu_t3.json": {
+    "mtime": 1792700130.0766454,
+    "seen": 1792700880.683864,
+    "ast_hash": "a4a604d7912d19dcb7178ec2858a68c3",
+    "semantic_hash": "a4a604d7912d19dcb7178ec2858a68c3"
+  },
+  "resultados/instancia2__K1__vnd_a0.json": {
+    "mtime": 1792700115.6999178,
+    "seen": 1792700880.683865,
+    "ast_hash": "675b2a4218b8d65d5deb8d514f01226d",
+    "semantic_hash": "675b2a4218b8d65d5deb8d514f01226d"
+  },
+  "resultados/instancia2__K1__vnd_a03.json": {
+    "mtime": 1792700117.339923,
+    "seen": 1792700880.683866,
+    "ast_hash": "b31ac3024c8da869a4df938f281ae904",
+    "semantic_hash": "b31ac3024c8da869a4df938f281ae904"
+  },
+  "resultados/instancia2__K1__vnd_a07.json": {
+    "mtime": 1792700118.9515655,
+    "seen": 1792700880.683867,
+    "ast_hash": "3157417a16a1244b8ba653d9383ab668",
+    "semantic_hash": "3157417a16a1244b8ba653d9383ab668"
+  },
+  "resultados/instancia2__K1__vnd_first.json": {
+    "mtime": 1792700120.4903812,
+    "seen": 1792700880.683868,
+    "ast_hash": "5a8a0d03e29fa4b099571511f0052c7b",
+    "semantic_hash": "5a8a0d03e29fa4b099571511f0052c7b"
+  },
+  "resultados/instancia2__K2__n1.json": {
+    "mtime": 1791517136.6917782,
+    "seen": 1792698417.222114,
+    "ast_hash": "b523fd6c03a1cad006df8296451bca1e",
+    "semantic_hash": "b523fd6c03a1cad006df8296451bca1e"
+  },
+  "resultados/instancia2__K2__n2.json": {
+    "mtime": 1791517137.9530482,
+    "seen": 1792698417.222115,
+    "ast_hash": "bb077dfb197e70af06bef5447e1d2d96",
+    "semantic_hash": "bb077dfb197e70af06bef5447e1d2d96"
+  },
+  "resultados/instancia2__K2__n3.json": {
+    "mtime": 1791517139.0782518,
+    "seen": 1792698417.222116,
+    "ast_hash": "c9506a3a3a043c26a1b8a6ed8b55a077",
+    "semantic_hash": "c9506a3a3a043c26a1b8a6ed8b55a077"
+  },
+  "resultados/instancia2__K2__tabu_a03.json": {
+    "mtime": 1791517142.102802,
+    "seen": 1792698417.222116,
+    "ast_hash": "df090f603ed20bb9ce18b2a43c8e0156",
+    "semantic_hash": "df090f603ed20bb9ce18b2a43c8e0156"
+  },
+  "resultados/instancia2__K2__tabu_t10.json": {
+    "mtime": 1791517148.4218917,
+    "seen": 1792698417.2221172,
+    "ast_hash": "c026a52dcc40d4b48e0abbd726f595c4",
+    "semantic_hash": "c026a52dcc40d4b48e0abbd726f595c4"
+  },
+  "resultados/instancia2__K2__tabu_t10_20.json": {
+    "mtime": 1791517151.4881997,
+    "seen": 1792698417.222118,
+    "ast_hash": "6d4542bfe5192a8be705551c6d12e0ca",
+    "semantic_hash": "6d4542bfe5192a8be705551c6d12e0ca"
+  },
+  "resultados/instancia2__K2__tabu_t3.json": {
+    "mtime": 1791517145.2558422,
+    "seen": 1792698417.222118,
+    "ast_hash": "e2620f3bfe671fd3c223d0dd586205cc",
+    "semantic_hash": "e2620f3bfe671fd3c223d0dd586205cc"
+  },
+  "resultados/instancia2__K2__vnd_a0.json": {
+    "mtime": 1791517130.8409555,
+    "seen": 1792698417.2221189,
+    "ast_hash": "d2852ff924338ee17d23324ba3f4e77a",
+    "semantic_hash": "d2852ff924338ee17d23324ba3f4e77a"
+  },
+  "resultados/instancia2__K2__vnd_a03.json": {
+    "mtime": 1791517132.3101554,
+    "seen": 1792698417.22212,
+    "ast_hash": "e209c290b0401a5fa047c57fbaf1f2ec",
+    "semantic_hash": "e209c290b0401a5fa047c57fbaf1f2ec"
+  },
+  "resultados/instancia2__K2__vnd_a07.json": {
+    "mtime": 1791517134.0468519,
+    "seen": 1792698417.22212,
+    "ast_hash": "89218ca492ef5816634e01213ad05455",
+    "semantic_hash": "89218ca492ef5816634e01213ad05455"
+  },
+  "resultados/instancia2__K2__vnd_first.json": {
+    "mtime": 1791517135.6226802,
+    "seen": 1792698417.222121,
+    "ast_hash": "3789ecb2cfc29a531888d4d9a6980408",
+    "semantic_hash": "3789ecb2cfc29a531888d4d9a6980408"
+  },
+  "resultados/instancia_A__K1__n1.json": {
+    "mtime": 1792700151.578496,
+    "seen": 1792700880.684154,
+    "ast_hash": "4c6fff657bc4daab1c200670be4b21fb",
+    "semantic_hash": "4c6fff657bc4daab1c200670be4b21fb"
+  },
+  "resultados/instancia_A__K1__n2.json": {
+    "mtime": 1792700154.1681921,
+    "seen": 1792700880.684155,
+    "ast_hash": "c5d8c1e78472f17bbd5a5e6c8d09b555",
+    "semantic_hash": "c5d8c1e78472f17bbd5a5e6c8d09b555"
+  },
+  "resultados/instancia_A__K1__n3.json": {
+    "mtime": 1792700156.1659517,
+    "seen": 1792700880.684156,
+    "ast_hash": "8596787a26e4090901c9fbbcd90d44bd",
+    "semantic_hash": "8596787a26e4090901c9fbbcd90d44bd"
+  },
+  "resultados/instancia_A__K1__tabu_a03.json": {
+    "mtime": 1792700162.005746,
+    "seen": 1792700880.684157,
+    "ast_hash": "02a4948cc971b5827520b4e0c65ae8e0",
+    "semantic_hash": "02a4948cc971b5827520b4e0c65ae8e0"
+  },
+  "resultados/instancia_A__K1__tabu_t10.json": {
+    "mtime": 1792700173.711183,
+    "seen": 1792700880.6841578,
+    "ast_hash": "ecaf2f13747ea51e938e9dc83684fc5a",
+    "semantic_hash": "ecaf2f13747ea51e938e9dc83684fc5a"
+  },
+  "resultados/instancia_A__K1__tabu_t10_20.json": {
+    "mtime": 1792700179.6357272,
+    "seen": 1792700880.6841578,
+    "ast_hash": "56f45adf1f3dcb8ae54f9b7ca9fcfc4d",
+    "semantic_hash": "56f45adf1f3dcb8ae54f9b7ca9fcfc4d"
+  },
+  "resultados/instancia_A__K1__tabu_t3.json": {
+    "mtime": 1792700167.8660355,
+    "seen": 1792700880.684159,
+    "ast_hash": "9a2ee72b00e252b1f107a117583b249d",
+    "semantic_hash": "9a2ee72b00e252b1f107a117583b249d"
+  },
+  "resultados/instancia_A__K1__vnd_a0.json": {
+    "mtime": 1792700139.722588,
+    "seen": 1792700880.68416,
+    "ast_hash": "168bcce404ff993d600a3ae3a874a956",
+    "semantic_hash": "168bcce404ff993d600a3ae3a874a956"
+  },
+  "resultados/instancia_A__K1__vnd_a03.json": {
+    "mtime": 1792700142.9570582,
+    "seen": 1792700880.684161,
+    "ast_hash": "c7496427701ae3cd6028d312c40685d5",
+    "semantic_hash": "c7496427701ae3cd6028d312c40685d5"
+  },
+  "resultados/instancia_A__K1__vnd_a07.json": {
+    "mtime": 1792700146.3942084,
+    "seen": 1792700880.684161,
+    "ast_hash": "314f271e68ba62efef360c33a031aa36",
+    "semantic_hash": "314f271e68ba62efef360c33a031aa36"
+  },
+  "resultados/instancia_A__K1__vnd_first.json": {
+    "mtime": 1792700149.6463294,
+    "seen": 1792700880.6841621,
+    "ast_hash": "2278d5451ed69fb070e16fe15307dc1a",
+    "semantic_hash": "2278d5451ed69fb070e16fe15307dc1a"
+  },
+  "resultados/instancia_A__K2__n1.json": {
+    "mtime": 1791517220.6242707,
+    "seen": 1792698417.2221282,
+    "ast_hash": "8ace6a78ab089858e79c89d89e7d963b",
+    "semantic_hash": "8ace6a78ab089858e79c89d89e7d963b"
+  },
+  "resultados/instancia_A__K2__n2.json": {
+    "mtime": 1791517223.2232947,
+    "seen": 1792698417.2221289,
+    "ast_hash": "6d2b035aae8d316f1e8c8feb5ee93ce9",
+    "semantic_hash": "6d2b035aae8d316f1e8c8feb5ee93ce9"
+  },
+  "resultados/instancia_A__K2__n3.json": {
+    "mtime": 1791517225.3140647,
+    "seen": 1792698417.2221298,
+    "ast_hash": "3e9d55d526d1115686f9bc510d957dba",
+    "semantic_hash": "3e9d55d526d1115686f9bc510d957dba"
+  },
+  "resultados/instancia_A__K2__tabu_a03.json": {
+    "mtime": 1791517233.52447,
+    "seen": 1792698417.2221298,
+    "ast_hash": "9afebf3448c49b7e8e83736d60f27830",
+    "semantic_hash": "9afebf3448c49b7e8e83736d60f27830"
+  },
+  "resultados/instancia_A__K2__tabu_t10.json": {
+    "mtime": 1791517250.2207637,
+    "seen": 1792698417.222131,
+    "ast_hash": "f164f4c3e59e82caa3d8005f992a19a6",
+    "semantic_hash": "f164f4c3e59e82caa3d8005f992a19a6"
+  },
+  "resultados/instancia_A__K2__tabu_t10_20.json": {
+    "mtime": 1791517258.0370262,
+    "seen": 1792698417.222132,
+    "ast_hash": "0fc8cdb80ff1495481cb2239edc6a304",
+    "semantic_hash": "0fc8cdb80ff1495481cb2239edc6a304"
+  },
+  "resultados/instancia_A__K2__tabu_t3.json": {
+    "mtime": 1791517241.8445802,
+    "seen": 1792698417.222132,
+    "ast_hash": "57a9b4bc46fddcb02687394a9da7c269",
+    "semantic_hash": "57a9b4bc46fddcb02687394a9da7c269"
+  },
+  "resultados/instancia_A__K2__vnd_a0.json": {
+    "mtime": 1791517207.3601618,
+    "seen": 1792698417.222133,
+    "ast_hash": "ad08e55c8f92c0428525b1532a1a55fa",
+    "semantic_hash": "ad08e55c8f92c0428525b1532a1a55fa"
+  },
+  "resultados/instancia_A__K2__vnd_a03.json": {
+    "mtime": 1791517211.08074,
+    "seen": 1792698417.222133,
+    "ast_hash": "e88d185685bc935a88aa7aa6d5a62113",
+    "semantic_hash": "e88d185685bc935a88aa7aa6d5a62113"
+  },
+  "resultados/instancia_A__K2__vnd_a07.json": {
+    "mtime": 1791517215.1277022,
+    "seen": 1792698417.222134,
+    "ast_hash": "682fa7ad87fdf5a36c4c437c9a180b87",
+    "semantic_hash": "682fa7ad87fdf5a36c4c437c9a180b87"
+  },
+  "resultados/instancia_A__K2__vnd_first.json": {
+    "mtime": 1791517218.6714234,
+    "seen": 1792698417.222135,
+    "ast_hash": "c89963aaec0e8e86ad61a4212a168cc4",
+    "semantic_hash": "c89963aaec0e8e86ad61a4212a168cc4"
+  },
+  "resultados/instancia_B__K1__n1.json": {
+    "mtime": 1792700193.3806705,
+    "seen": 1792700880.684417,
+    "ast_hash": "fc398f34b638ad42a1b8ddedd7cb62d5",
+    "semantic_hash": "fc398f34b638ad42a1b8ddedd7cb62d5"
+  },
+  "resultados/instancia_B__K1__n2.json": {
+    "mtime": 1792700195.371765,
+    "seen": 1792700880.684418,
+    "ast_hash": "fa181bb3c1778439c7025f405ef3f31b",
+    "semantic_hash": "fa181bb3c1778439c7025f405ef3f31b"
+  },
+  "resultados/instancia_B__K1__n3.json": {
+    "mtime": 1792700196.8197854,
+    "seen": 1792700880.6844192,
+    "ast_hash": "484fc7463520398b38c1ac911bd16a2c",
+    "semantic_hash": "484fc7463520398b38c1ac911bd16a2c"
+  },
+  "resultados/instancia_B__K1__tabu_a03.json": {
+    "mtime": 1792700201.915724,
+    "seen": 1792700880.68442,
+    "ast_hash": "1e150d43a025a61a1563b36e79476fb2",
+    "semantic_hash": "1e150d43a025a61a1563b36e79476fb2"
+  },
+  "resultados/instancia_B__K1__tabu_t10.json": {
+    "mtime": 1792700212.078444,
+    "seen": 1792700880.68442,
+    "ast_hash": "2a34834636d1dc2e0502281053b59d91",
+    "semantic_hash": "2a34834636d1dc2e0502281053b59d91"
+  },
+  "resultados/instancia_B__K1__tabu_t10_20.json": {
+    "mtime": 1792700217.1711116,
+    "seen": 1792700880.684421,
+    "ast_hash": "0e25559fb6ae518896a45e2f44bc8993",
+    "semantic_hash": "0e25559fb6ae518896a45e2f44bc8993"
+  },
+  "resultados/instancia_B__K1__tabu_t3.json": {
+    "mtime": 1792700206.99034,
+    "seen": 1792700880.684421,
+    "ast_hash": "3dad94fbf568aa1071d61c5210cac2bc",
+    "semantic_hash": "3dad94fbf568aa1071d61c5210cac2bc"
+  },
+  "resultados/instancia_B__K1__vnd_a0.json": {
+    "mtime": 1792700183.9554405,
+    "seen": 1792700880.6844218,
+    "ast_hash": "23e0a8347b0b9e10aeeba771b1ede1e3",
+    "semantic_hash": "23e0a8347b0b9e10aeeba771b1ede1e3"
+  },
+  "resultados/instancia_B__K1__vnd_a03.json": {
+    "mtime": 1792700186.5847216,
+    "seen": 1792700880.684423,
+    "ast_hash": "8cc80b7f95944dc78c19a41a3d47f53b",
+    "semantic_hash": "8cc80b7f95944dc78c19a41a3d47f53b"
+  },
+  "resultados/instancia_B__K1__vnd_a07.json": {
+    "mtime": 1792700189.3956137,
+    "seen": 1792700880.684423,
+    "ast_hash": "ed1a0a8d8863eb8b1a6c0c8d988667ad",
+    "semantic_hash": "ed1a0a8d8863eb8b1a6c0c8d988667ad"
+  },
+  "resultados/instancia_B__K1__vnd_first.json": {
+    "mtime": 1792700192.0082822,
+    "seen": 1792700880.684424,
+    "ast_hash": "702c69a80de9cfd739051b240fad207f",
+    "semantic_hash": "702c69a80de9cfd739051b240fad207f"
+  },
+  "resultados/instancia_B__K2__n1.json": {
+    "mtime": 1791517315.286271,
+    "seen": 1792698417.222142,
+    "ast_hash": "3ad83db5190a51d5f12796ae0405ba81",
+    "semantic_hash": "3ad83db5190a51d5f12796ae0405ba81"
+  },
+  "resultados/instancia_B__K2__n2.json": {
+    "mtime": 1791517317.6702914,
+    "seen": 1792698417.222143,
+    "ast_hash": "b40c30df74db85e2fa4ceabe2f0bb397",
+    "semantic_hash": "b40c30df74db85e2fa4ceabe2f0bb397"
+  },
+  "resultados/instancia_B__K2__n3.json": {
+    "mtime": 1791517319.5034816,
+    "seen": 1792698417.222143,
+    "ast_hash": "80f433aed8411bdd9f61b4bacd573d7a",
+    "semantic_hash": "80f433aed8411bdd9f61b4bacd573d7a"
+  },
+  "resultados/instancia_B__K2__tabu_a03.json": {
+    "mtime": 1791517326.3971848,
+    "seen": 1792698417.222144,
+    "ast_hash": "b0fbd3404ebbdca9085264841e6e9a33",
+    "semantic_hash": "b0fbd3404ebbdca9085264841e6e9a33"
+  },
+  "resultados/instancia_B__K2__tabu_t10.json": {
+    "mtime": 1791517339.9152808,
+    "seen": 1792698417.222145,
+    "ast_hash": "0a23814753c0ae85694a55155e7a6241",
+    "semantic_hash": "0a23814753c0ae85694a55155e7a6241"
+  },
+  "resultados/instancia_B__K2__tabu_t10_20.json": {
+    "mtime": 1791517346.7037208,
+    "seen": 1792698417.222145,
+    "ast_hash": "29300ffc3acf2295864500e044761370",
+    "semantic_hash": "29300ffc3acf2295864500e044761370"
+  },
+  "resultados/instancia_B__K2__tabu_t3.json": {
+    "mtime": 1791517333.1697974,
+    "seen": 1792698417.222146,
+    "ast_hash": "a7bfa188a5f3781c02a1a98f7ea166a0",
+    "semantic_hash": "a7bfa188a5f3781c02a1a98f7ea166a0"
+  },
+  "resultados/instancia_B__K2__vnd_a0.json": {
+    "mtime": 1791517303.3674932,
+    "seen": 1792698417.222147,
+    "ast_hash": "fc057055dc8c092a102aeb7b35f13776",
+    "semantic_hash": "fc057055dc8c092a102aeb7b35f13776"
+  },
+  "resultados/instancia_B__K2__vnd_a03.json": {
+    "mtime": 1791517306.7156408,
+    "seen": 1792698417.2221482,
+    "ast_hash": "a84061e033dd58cc243e825c9e51c0fb",
+    "semantic_hash": "a84061e033dd58cc243e825c9e51c0fb"
+  },
+  "resultados/instancia_B__K2__vnd_a07.json": {
+    "mtime": 1791517310.2667599,
+    "seen": 1792698417.2221482,
+    "ast_hash": "a3ddbbd5a1641d48c369bf1763bfae5c",
+    "semantic_hash": "a3ddbbd5a1641d48c369bf1763bfae5c"
+  },
+  "resultados/instancia_B__K2__vnd_first.json": {
+    "mtime": 1791517313.512943,
+    "seen": 1792698417.2221491,
+    "ast_hash": "ca4b69b6655888d7d1238ba636f84fc8",
+    "semantic_hash": "ca4b69b6655888d7d1238ba636f84fc8"
+  },
+  "resultados/manifest.json": {
+    "mtime": 1792700109.2115793,
+    "seen": 1792700880.6846762,
+    "ast_hash": "84cc84fd0558c35a29533cf2d1531ac2",
+    "semantic_hash": "84cc84fd0558c35a29533cf2d1531ac2"
+  },
+  "resultados/melhores/Modelo_de_Instancia_K1.json": {
+    "mtime": 1792700220.1738625,
+    "seen": 1792700880.6846771,
+    "ast_hash": "c632822b2a1f0f6e742451ea780bcd42",
+    "semantic_hash": "c632822b2a1f0f6e742451ea780bcd42"
+  },
+  "resultados/melhores/Modelo_de_Instancia_K2.json": {
+    "mtime": 1792700220.1754339,
+    "seen": 1792700880.6846771,
+    "ast_hash": "42e13702d7d21744f60d1705a5a4ad32",
+    "semantic_hash": "42e13702d7d21744f60d1705a5a4ad32"
+  },
+  "resultados/melhores/instancia2_K1.json": {
+    "mtime": 1792700220.1786666,
+    "seen": 1792700880.6846778,
+    "ast_hash": "d997da26795b37c1cb065e8801c16884",
+    "semantic_hash": "d997da26795b37c1cb065e8801c16884"
+  },
+  "resultados/melhores/instancia2_K2.json": {
+    "mtime": 1792700220.1941738,
+    "seen": 1792700880.6846788,
+    "ast_hash": "e565e8583b7c523096ef4d946e224c8a",
+    "semantic_hash": "e565e8583b7c523096ef4d946e224c8a"
+  },
+  "resultados/melhores/instancia_A_K1.json": {
+    "mtime": 1792700220.2111287,
+    "seen": 1792700880.6846788,
+    "ast_hash": "a21bff15c8fb8f83461faa7cc6cb9a47",
+    "semantic_hash": "a21bff15c8fb8f83461faa7cc6cb9a47"
+  },
+  "resultados/melhores/instancia_A_K2.json": {
+    "mtime": 1792700220.265239,
+    "seen": 1792700880.68468,
+    "ast_hash": "ab694a3f2f825952211069808294b3b0",
+    "semantic_hash": "ab694a3f2f825952211069808294b3b0"
+  },
+  "resultados/melhores/instancia_B_K1.json": {
+    "mtime": 1792700220.2990687,
+    "seen": 1792700880.68468,
+    "ast_hash": "1bbb7cca3f0e1acb97adb5e71e6569a7",
+    "semantic_hash": "1bbb7cca3f0e1acb97adb5e71e6569a7"
+  },
+  "resultados/melhores/instancia_B_K2.json": {
+    "mtime": 1792700220.330987,
+    "seen": 1792700880.684681,
+    "ast_hash": "8d154bc78f815eb24ff4227a4ef9e88d",
+    "semantic_hash": "8d154bc78f815eb24ff4227a4ef9e88d"
+  },
+  "resultados/performance_A.json": {
+    "mtime": 1791517437.7884862,
+    "seen": 1792698417.222155,
+    "ast_hash": "03f9ab6879b1e560ba745ab565934784",
+    "semantic_hash": "03f9ab6879b1e560ba745ab565934784"
+  },
+  "resultados/todas_instancias/instancia_01_prof_A__K1__vnd.json": {
+    "mtime": 1792700264.7132387,
+    "seen": 1792700880.684705,
+    "ast_hash": "55c8c4e30c6c4d6520620c685bb14c5c",
+    "semantic_hash": "55c8c4e30c6c4d6520620c685bb14c5c"
+  },
+  "resultados/todas_instancias/instancia_01_prof_A__K2__vnd.json": {
+    "mtime": 1792016730.4097784,
+    "seen": 1792698417.222156,
+    "ast_hash": "c2cf6441e952e5c63729d555ebc08a7f",
+    "semantic_hash": "c2cf6441e952e5c63729d555ebc08a7f"
+  },
+  "resultados/todas_instancias/instancia_02_prof_B__K1__vnd.json": {
+    "mtime": 1792016730.4961655,
+    "seen": 1792698417.222157,
+    "ast_hash": "06be9ad7f71594f8809e3818aaed7ddb",
+    "semantic_hash": "06be9ad7f71594f8809e3818aaed7ddb"
+  },
+  "resultados/todas_instancias/instancia_02_prof_B__K2__vnd.json": {
+    "mtime": 1792016730.3817422,
+    "seen": 1792698417.222157,
+    "ast_hash": "32cffd78a0e7238bccc230229aaca221",
+    "semantic_hash": "32cffd78a0e7238bccc230229aaca221"
+  },
+  "resultados/todas_instancias/instancia_03_pequena_100__K1__vnd.json": {
+    "mtime": 1792016731.238213,
+    "seen": 1792698417.2221582,
+    "ast_hash": "32c491b1caaa3b91f3b70a27ace1cc40",
+    "semantic_hash": "32c491b1caaa3b91f3b70a27ace1cc40"
+  },
+  "resultados/todas_instancias/instancia_03_pequena_100__K2__vnd.json": {
+    "mtime": 1792016731.2990532,
+    "seen": 1792698417.2221591,
+    "ast_hash": "f695f2d33ed7b97e43acad5922df4939",
+    "semantic_hash": "f695f2d33ed7b97e43acad5922df4939"
+  },
+  "resultados/todas_instancias/instancia_04_pequena_109__K1__vnd.json": {
+    "mtime": 1792700261.69252,
+    "seen": 1792700880.684831,
+    "ast_hash": "0ee2c95eb2c4ed9967f426355ac57374",
+    "semantic_hash": "0ee2c95eb2c4ed9967f426355ac57374"
+  },
+  "resultados/todas_instancias/instancia_04_pequena_109__K2__vnd.json": {
+    "mtime": 1792016732.0687947,
+    "seen": 1792698417.2221599,
+    "ast_hash": "d70ad37c039ac0a31b069f36f52a3734",
+    "semantic_hash": "d70ad37c039ac0a31b069f36f52a3734"
+  },
+  "resultados/todas_instancias/instancia_05_turma_2550_1__K1__vnd.json": {
+    "mtime": 1792016732.2439508,
+    "seen": 1792698417.2221599,
+    "ast_hash": "a8fd281c72504af542e2ab3e9054267a",
+    "semantic_hash": "a8fd281c72504af542e2ab3e9054267a"
+  },
+  "resultados/todas_instancias/instancia_05_turma_2550_1__K2__vnd.json": {
+    "mtime": 1792016732.225636,
+    "seen": 1792698417.2221608,
+    "ast_hash": "d96f7bd63dbe022d95a0a6a5db3a0837",
+    "semantic_hash": "d96f7bd63dbe022d95a0a6a5db3a0837"
+  },
+  "resultados/todas_instancias/instancia_06_turma_2550_2__K1__vnd.json": {
+    "mtime": 1792700263.5433595,
+    "seen": 1792700880.684905,
+    "ast_hash": "e9b1fd4f15f4a463fde5c4b16dd61765",
+    "semantic_hash": "e9b1fd4f15f4a463fde5c4b16dd61765"
+  },
+  "resultados/todas_instancias/instancia_06_turma_2550_2__K2__vnd.json": {
+    "mtime": 1792016733.2884405,
+    "seen": 1792698417.222162,
+    "ast_hash": "857eeb7ec3966b118714556916508199",
+    "semantic_hash": "857eeb7ec3966b118714556916508199"
+  },
+  "resultados/todas_instancias/instancia_07_malvacini_1__K1__vnd.json": {
+    "mtime": 1792016733.6507242,
+    "seen": 1792698417.222163,
+    "ast_hash": "f724da84073720788ffdc80a1ae289a7",
+    "semantic_hash": "f724da84073720788ffdc80a1ae289a7"
+  },
+  "resultados/todas_instancias/instancia_07_malvacini_1__K2__vnd.json": {
+    "mtime": 1792016734.0382402,
+    "seen": 1792698417.222164,
+    "ast_hash": "eab34b3353474d4e332902f132e6e2d1",
+    "semantic_hash": "eab34b3353474d4e332902f132e6e2d1"
+  },
+  "resultados/todas_instancias/instancia_08_malvacini_2__K1__vnd.json": {
+    "mtime": 1792700268.0040624,
+    "seen": 1792700880.684979,
+    "ast_hash": "bf0fea17c786a5ed13fd644528c33050",
+    "semantic_hash": "bf0fea17c786a5ed13fd644528c33050"
+  },
+  "resultados/todas_instancias/instancia_08_malvacini_2__K2__vnd.json": {
+    "mtime": 1792016735.101417,
+    "seen": 1792698417.222165,
+    "ast_hash": "fc2c1b32704867dfc484fc94f595e1e5",
+    "semantic_hash": "fc2c1b32704867dfc484fc94f595e1e5"
+  },
+  "resultados/todas_instancias/instancia_09_gustavo_isabela_base__K1__vnd.json": {
+    "mtime": 1792016735.103008,
+    "seen": 1792698417.222165,
+    "ast_hash": "e7a7c36ef1a7ad67ecff1b26209faf3f",
+    "semantic_hash": "e7a7c36ef1a7ad67ecff1b26209faf3f"
+  },
+  "resultados/todas_instancias/instancia_09_gustavo_isabela_base__K2__vnd.json": {
+    "mtime": 1792016735.1956644,
+    "seen": 1792698417.222166,
+    "ast_hash": "78463d33c6d342f15460c012421b8837",
+    "semantic_hash": "78463d33c6d342f15460c012421b8837"
+  },
+  "resultados/todas_instancias/instancia_10_gustavo_isabela_dif__K1__vnd.json": {
+    "mtime": 1792016736.4854753,
+    "seen": 1792698417.222167,
+    "ast_hash": "25278304b2908666fd760386952758c6",
+    "semantic_hash": "25278304b2908666fd760386952758c6"
+  },
+  "resultados/todas_instancias/instancia_10_gustavo_isabela_dif__K2__vnd.json": {
+    "mtime": 1792016736.006779,
+    "seen": 1792698417.222167,
+    "ast_hash": "f1fcc9940df389aaaeceaf8a93f9e193",
+    "semantic_hash": "f1fcc9940df389aaaeceaf8a93f9e193"
+  },
+  "resultados/todas_instancias/instancia_11_felipe_mickaell_1__K1__vnd.json": {
+    "mtime": 1792700262.8308012,
+    "seen": 1792700880.6851048,
+    "ast_hash": "ad097207989ca8696f7ec4553e189eff",
+    "semantic_hash": "ad097207989ca8696f7ec4553e189eff"
+  },
+  "resultados/todas_instancias/instancia_11_felipe_mickaell_1__K2__vnd.json": {
+    "mtime": 1792016736.5727026,
+    "seen": 1792698417.222168,
+    "ast_hash": "72aaa9461d6a6686a6e0bbfcc502e490",
+    "semantic_hash": "72aaa9461d6a6686a6e0bbfcc502e490"
+  },
+  "resultados/todas_instancias/instancia_12_felipe_mickaell_2__K1__vnd.json": {
+    "mtime": 1792016737.396219,
+    "seen": 1792698417.2221692,
+    "ast_hash": "477150a631342334e4a853f41a5f35d6",
+    "semantic_hash": "477150a631342334e4a853f41a5f35d6"
+  },
+  "resultados/todas_instancias/instancia_12_felipe_mickaell_2__K2__vnd.json": {
+    "mtime": 1792016737.3935118,
+    "seen": 1792698417.22217,
+    "ast_hash": "49879e6b852f25d43237ccc32f52e9a7",
+    "semantic_hash": "49879e6b852f25d43237ccc32f52e9a7"
+  },
+  "resultados/todas_instancias/instancia_13_g01_360__K1__vnd.json": {
+    "mtime": 1792016737.4239016,
+    "seen": 1792698417.22217,
+    "ast_hash": "76f62d5b41510c273e3dfedd6b02ff03",
+    "semantic_hash": "76f62d5b41510c273e3dfedd6b02ff03"
+  },
+  "resultados/todas_instancias/instancia_13_g01_360__K2__vnd.json": {
+    "mtime": 1792016738.17131,
+    "seen": 1792698417.2221708,
+    "ast_hash": "d02d33df8340f851bdd5e22bfbc78953",
+    "semantic_hash": "d02d33df8340f851bdd5e22bfbc78953"
+  },
+  "resultados/todas_instancias/instancia_14_g01_382__K1__vnd.json": {
+    "mtime": 1792700261.8572485,
+    "seen": 1792700880.685229,
+    "ast_hash": "724a576e9884f425f4342662424c6d44",
+    "semantic_hash": "724a576e9884f425f4342662424c6d44"
+  },
+  "resultados/todas_instancias/instancia_14_g01_382__K2__vnd.json": {
+    "mtime": 1792016738.254469,
+    "seen": 1792698417.222172,
+    "ast_hash": "97f4faad0be6e2c2a85823cb4924e8c0",
+    "semantic_hash": "97f4faad0be6e2c2a85823cb4924e8c0"
+  },
+  "resultados/todas_instancias/instancia_15_g02_370__K1__vnd.json": {
+    "mtime": 1792016739.6598127,
+    "seen": 1792698417.222173,
+    "ast_hash": "ab7633b986b22a52cc12c4635567d5f5",
+    "semantic_hash": "ab7633b986b22a52cc12c4635567d5f5"
+  },
+  "resultados/todas_instancias/instancia_15_g02_370__K2__vnd.json": {
+    "mtime": 1792016739.0136867,
+    "seen": 1792698417.222173,
+    "ast_hash": "9847556ef0f33720223e2661caa69a90",
+    "semantic_hash": "9847556ef0f33720223e2661caa69a90"
+  },
+  "resultados/todas_instancias/instancia_16_g02_362__K1__vnd.json": {
+    "mtime": 1792016739.1102521,
+    "seen": 1792698417.222174,
+    "ast_hash": "24e0160a084b15f808488dac03dee878",
+    "semantic_hash": "24e0160a084b15f808488dac03dee878"
+  },
+  "resultados/todas_instancias/instancia_16_g02_362__K2__vnd.json": {
+    "mtime": 1792016740.1697617,
+    "seen": 1792698417.222175,
+    "ast_hash": "b4c823d4cad60944f5d0f3436784cf52",
+    "semantic_hash": "b4c823d4cad60944f5d0f3436784cf52"
+  },
+  "resultados/todas_instancias/instancia_17_g03_3452__K1__vnd.json": {
+    "mtime": 1792700262.7945647,
+    "seen": 1792700880.6853518,
+    "ast_hash": "c69274e3bdbffc31c1dc09e30363d7a1",
+    "semantic_hash": "c69274e3bdbffc31c1dc09e30363d7a1"
+  },
+  "resultados/todas_instancias/instancia_17_g03_3452__K2__vnd.json": {
+    "mtime": 1792016740.1834967,
+    "seen": 1792698417.222176,
+    "ast_hash": "d5f59e3b260f08b5356910e817c8ea06",
+    "semantic_hash": "d5f59e3b260f08b5356910e817c8ea06"
+  },
+  "resultados/todas_instancias/instancia_18_g03_4454__K1__vnd.json": {
+    "mtime": 1792016740.781158,
+    "seen": 1792698417.222177,
+    "ast_hash": "3592ee44bcc81b4ffe9d486bc05b3d32",
+    "semantic_hash": "3592ee44bcc81b4ffe9d486bc05b3d32"
+  },
+  "resultados/todas_instancias/instancia_18_g03_4454__K2__vnd.json": {
+    "mtime": 1792016741.0167487,
+    "seen": 1792698417.222177,
+    "ast_hash": "351fb442ef76683ecf204c08f8681cc2",
+    "semantic_hash": "351fb442ef76683ecf204c08f8681cc2"
+  },
+  "resultados/todas_instancias/instancia_19_g04_4213__K1__vnd.json": {
+    "mtime": 1792700262.2381384,
+    "seen": 1792700880.685426,
+    "ast_hash": "3184bd0b4cb47b80d4da64e60cf4fbec",
+    "semantic_hash": "3184bd0b4cb47b80d4da64e60cf4fbec"
+  },
+  "resultados/todas_instancias/instancia_19_g04_4213__K2__vnd.json": {
+    "mtime": 1792016741.8610196,
+    "seen": 1792698417.222178,
+    "ast_hash": "6d5e9379076336e5d1cc892b2169b573",
+    "semantic_hash": "6d5e9379076336e5d1cc892b2169b573"
+  },
+  "resultados/todas_instancias/instancia_20_g04_316__K1__vnd.json": {
+    "mtime": 1792016742.1603792,
+    "seen": 1792698417.2221792,
+    "ast_hash": "2b858e85bb2f0c084979e4b4f6cdc8c1",
+    "semantic_hash": "2b858e85bb2f0c084979e4b4f6cdc8c1"
+  },
+  "resultados/todas_instancias/instancia_20_g04_316__K2__vnd.json": {
+    "mtime": 1792016741.897271,
+    "seen": 1792698417.2221801,
+    "ast_hash": "312c59928c0644817cc90462b09cfab2",
+    "semantic_hash": "312c59928c0644817cc90462b09cfab2"
+  },
+  "resultados/todas_instancias/instancia_21_g05_316__K1__vnd.json": {
+    "mtime": 1792016742.7451408,
+    "seen": 1792698417.2221801,
+    "ast_hash": "2f7bf972863da786402c9fae20bcb4ff",
+    "semantic_hash": "2f7bf972863da786402c9fae20bcb4ff"
+  },
+  "resultados/todas_instancias/instancia_21_g05_316__K2__vnd.json": {
+    "mtime": 1792016742.7640812,
+    "seen": 1792698417.222181,
+    "ast_hash": "04c58922480899885b73c4e3da67337a",
+    "semantic_hash": "04c58922480899885b73c4e3da67337a"
+  },
+  "resultados/todas_instancias/instancia_22_g05_3900__K1__vnd.json": {
+    "mtime": 1792016742.9838305,
+    "seen": 1792698417.222181,
+    "ast_hash": "afe2cef734d271a351d8506bdf361618",
+    "semantic_hash": "afe2cef734d271a351d8506bdf361618"
+  },
+  "resultados/todas_instancias/instancia_22_g05_3900__K2__vnd.json": {
+    "mtime": 1792016743.4681432,
+    "seen": 1792698417.2221818,
+    "ast_hash": "46430ef18a26545553c73378a3aa298a",
+    "semantic_hash": "46430ef18a26545553c73378a3aa298a"
+  },
+  "resultados/todas_instancias/instancia_23_g06_4656__K1__vnd.json": {
+    "mtime": 1792016744.0558245,
+    "seen": 1792698417.222183,
+    "ast_hash": "db1d2c482613311d7ecce185c7b4fd3d",
+    "semantic_hash": "db1d2c482613311d7ecce185c7b4fd3d"
+  },
+  "resultados/todas_instancias/instancia_23_g06_4656__K2__vnd.json": {
+    "mtime": 1792016743.9758801,
+    "seen": 1792698417.222183,
+    "ast_hash": "d7d2659728a722f6c7ad3bbff559e474",
+    "semantic_hash": "d7d2659728a722f6c7ad3bbff559e474"
+  },
+  "resultados/todas_instancias/instancia_24_g06_7038__K1__vnd.json": {
+    "mtime": 1792700265.5570672,
+    "seen": 1792700880.685643,
+    "ast_hash": "68a3f3b0ce0f6989f1ebd0df23e4d476",
+    "semantic_hash": "68a3f3b0ce0f6989f1ebd0df23e4d476"
+  },
+  "resultados/todas_instancias/instancia_24_g06_7038__K2__vnd.json": {
+    "mtime": 1792016744.750283,
+    "seen": 1792698417.222185,
+    "ast_hash": "d632c2297d3826382b3a7c8e0ab8eb9e",
+    "semantic_hash": "d632c2297d3826382b3a7c8e0ab8eb9e"
+  },
+  "resultados/todas_instancias/instancia_25_g07_5917__K1__vnd.json": {
+    "mtime": 1792016745.0492504,
+    "seen": 1792698417.222185,
+    "ast_hash": "165a83bb206601b060d03721df479d8b",
+    "semantic_hash": "165a83bb206601b060d03721df479d8b"
+  },
+  "resultados/todas_instancias/instancia_25_g07_5917__K2__vnd.json": {
+    "mtime": 1792016744.954338,
+    "seen": 1792698417.222186,
+    "ast_hash": "ed70ff4ae645062e0569effee20be559",
+    "semantic_hash": "ed70ff4ae645062e0569effee20be559"
+  },
+  "resultados/todas_instancias/instancia_26_g07_3858__K2__vnd.json": {
+    "mtime": 1792016745.8020594,
+    "seen": 1792698417.222186,
+    "ast_hash": "4dc9afccc8b3c8a51075e38ffbe90e1b",
+    "semantic_hash": "4dc9afccc8b3c8a51075e38ffbe90e1b"
+  },
+  "resultados/todas_instancias/instancia_27_g08_4175__K2__vnd.json": {
+    "mtime": 1792016746.4651556,
+    "seen": 1792698417.222187,
+    "ast_hash": "b9fc44e7c246ac93454efe33ca66b331",
+    "semantic_hash": "b9fc44e7c246ac93454efe33ca66b331"
+  },
+  "resultados/todas_instancias/instancia_28_g08_4784__K1__vnd.json": {
+    "mtime": 1792700263.7777228,
+    "seen": 1792700880.685767,
+    "ast_hash": "62eaf8d95535576508087040795e1fee",
+    "semantic_hash": "62eaf8d95535576508087040795e1fee"
+  },
+  "resultados/todas_instancias/instancia_28_g08_4784__K2__vnd.json": {
+    "mtime": 1792016747.1822147,
+    "seen": 1792698417.222188,
+    "ast_hash": "8b3b08e258dd5fd5edfb88f64c894dc3",
+    "semantic_hash": "8b3b08e258dd5fd5edfb88f64c894dc3"
+  },
+  "resultados/todas_instancias/instancia_29_g09_3531__K1__vnd.json": {
+    "mtime": 1792700263.7557836,
+    "seen": 1792700880.685792,
+    "ast_hash": "341b2b59bbf101ea4d474e4a3341b952",
+    "semantic_hash": "341b2b59bbf101ea4d474e4a3341b952"
+  },
+  "resultados/todas_instancias/instancia_29_g09_3531__K2__vnd.json": {
+    "mtime": 1792016748.0003588,
+    "seen": 1792698417.2221901,
+    "ast_hash": "93951c6bed3153dc5a9bfbcf0c6f9379",
+    "semantic_hash": "93951c6bed3153dc5a9bfbcf0c6f9379"
+  },
+  "resultados/todas_instancias/instancia_30_g09_4131__K1__vnd.json": {
+    "mtime": 1792700266.4957702,
+    "seen": 1792700880.685817,
+    "ast_hash": "b5ffd31747ca60d104b14c6846e4cba6",
+    "semantic_hash": "b5ffd31747ca60d104b14c6846e4cba6"
+  },
+  "resultados/todas_instancias/instancia_30_g09_4131__K2__vnd.json": {
+    "mtime": 1792016748.7804976,
+    "seen": 1792698417.222191,
+    "ast_hash": "8360920cb2517906ad31a3d55160b3a1",
+    "semantic_hash": "8360920cb2517906ad31a3d55160b3a1"
+  },
+  "resultados/todas_instancias/instancia_31_g10_base__K1__vnd.json": {
+    "mtime": 1792700264.9099634,
+    "seen": 1792700880.685842,
+    "ast_hash": "e5235067d8bac5636ff0c23ad3e05cbf",
+    "semantic_hash": "e5235067d8bac5636ff0c23ad3e05cbf"
+  },
+  "resultados/todas_instancias/instancia_31_g10_base__K2__vnd.json": {
+    "mtime": 1792016750.3293195,
+    "seen": 1792698417.222192,
+    "ast_hash": "72b69982ee1e86d45241ed0318064171",
+    "semantic_hash": "72b69982ee1e86d45241ed0318064171"
+  },
+  "resultados/todas_instancias/instancia_32_g10_dif__K1__vnd.json": {
+    "mtime": 1792700265.7036269,
+    "seen": 1792700880.685867,
+    "ast_hash": "97866ee195de1d6a09302b202cf476d2",
+    "semantic_hash": "97866ee195de1d6a09302b202cf476d2"
+  },
+  "resultados/todas_instancias/instancia_32_g10_dif__K2__vnd.json": {
+    "mtime": 1792016750.8958154,
+    "seen": 1792698417.222193,
+    "ast_hash": "bed4696f2ee6bbc009eb5b4989244970",
+    "semantic_hash": "bed4696f2ee6bbc009eb5b4989244970"
+  },
+  "resultados/todas_instancias/instancia_33_g11_base__K1__vnd.json": {
+    "mtime": 1792700266.2322888,
+    "seen": 1792700880.685892,
+    "ast_hash": "0754c483e4f5558eb61b5d3aa7ac796b",
+    "semantic_hash": "0754c483e4f5558eb61b5d3aa7ac796b"
+  },
+  "resultados/todas_instancias/instancia_33_g11_base__K2__vnd.json": {
+    "mtime": 1792016751.7835884,
+    "seen": 1792698417.222195,
+    "ast_hash": "6fe1d282a66d145717399fe34740fb62",
+    "semantic_hash": "6fe1d282a66d145717399fe34740fb62"
+  },
+  "resultados/todas_instancias/instancia_34_g11_dif__K1__vnd.json": {
+    "mtime": 1792700266.841398,
+    "seen": 1792700880.685917,
+    "ast_hash": "6b53ceed97cb7aee830429f7de715499",
+    "semantic_hash": "6b53ceed97cb7aee830429f7de715499"
+  },
+  "resultados/todas_instancias/instancia_34_g11_dif__K2__vnd.json": {
+    "mtime": 1792016752.6546648,
+    "seen": 1792698417.2221959,
+    "ast_hash": "d541eaeebe24769fce1fe03d523126ae",
+    "semantic_hash": "d541eaeebe24769fce1fe03d523126ae"
+  },
+  "resultados/todas_instancias/instancia_35_g12_formatada_1__K1__vnd.json": {
+    "mtime": 1792700266.9702187,
+    "seen": 1792700880.685942,
+    "ast_hash": "1868ecc25e09f28d3065961d9a5eb667",
+    "semantic_hash": "1868ecc25e09f28d3065961d9a5eb667"
+  },
+  "resultados/todas_instancias/instancia_35_g12_formatada_1__K2__vnd.json": {
+    "mtime": 1792016753.6194222,
+    "seen": 1792698417.222197,
+    "ast_hash": "d0ef422dcfdd55b299260f130f843bfb",
+    "semantic_hash": "d0ef422dcfdd55b299260f130f843bfb"
+  },
+  "resultados/todas_instancias/instancia_36_g12_formatada_2__K1__vnd.json": {
+    "mtime": 1792700267.260401,
+    "seen": 1792700880.6859672,
+    "ast_hash": "d2099f4fbbb7973321ba40bf86ac2355",
+    "semantic_hash": "d2099f4fbbb7973321ba40bf86ac2355"
+  },
+  "resultados/todas_instancias/instancia_36_g12_formatada_2__K2__vnd.json": {
+    "mtime": 1792016754.5580966,
+    "seen": 1792698417.222198,
+    "ast_hash": "8b371db9e3be3adfdec7389b7e99cb78",
+    "semantic_hash": "8b371db9e3be3adfdec7389b7e99cb78"
+  },
+  "resultados/todas_instancias/instancia_37_g13_3696__K1__vnd.json": {
+    "mtime": 1792016755.3098104,
+    "seen": 1792698417.222199,
+    "ast_hash": "8ccf423fa0ecc643f0da208a0cd979ac",
+    "semantic_hash": "8ccf423fa0ecc643f0da208a0cd979ac"
+  },
+  "resultados/todas_instancias/instancia_37_g13_3696__K2__vnd.json": {
+    "mtime": 1792016755.3757415,
+    "seen": 1792698417.2222002,
+    "ast_hash": "032830d56842b0d61858ab65c09470e0",
+    "semantic_hash": "032830d56842b0d61858ab65c09470e0"
+  },
+  "resultados/todas_instancias/instancia_38_g13_4124__K1__vnd.json": {
+    "mtime": 1792700267.9873462,
+    "seen": 1792700880.6860402,
+    "ast_hash": "a473f8cdcac4bf3b7764dd632781ee00",
+    "semantic_hash": "a473f8cdcac4bf3b7764dd632781ee00"
+  },
+  "resultados/todas_instancias/instancia_38_g13_4124__K2__vnd.json": {
+    "mtime": 1792016756.1813219,
+    "seen": 1792698417.222202,
+    "ast_hash": "a26319a3484c2276ceec813a98180383",
+    "semantic_hash": "a26319a3484c2276ceec813a98180383"
+  },
+  "resultados/todas_instancias/instancia_39_g14_excel_1__K1__vnd.json": {
+    "mtime": 1792700267.7956848,
+    "seen": 1792700880.686065,
+    "ast_hash": "2a92e489c5644f8326ffe0a754d11c50",
+    "semantic_hash": "2a92e489c5644f8326ffe0a754d11c50"
+  },
+  "resultados/todas_instancias/instancia_39_g14_excel_1__K2__vnd.json": {
+    "mtime": 1792016757.0919185,
+    "seen": 1792698417.2222028,
+    "ast_hash": "96d36a91c380dcf4ad94b39f9d4caaa9",
+    "semantic_hash": "96d36a91c380dcf4ad94b39f9d4caaa9"
+  },
+  "resultados/todas_instancias/instancia_40_g14_excel_2__K1__vnd.json": {
+    "mtime": 1792700267.8451366,
+    "seen": 1792700880.68609,
+    "ast_hash": "5719b8676751be7e906c1581f7d3b3db",
+    "semantic_hash": "5719b8676751be7e906c1581f7d3b3db"
+  },
+  "resultados/todas_instancias/instancia_40_g14_excel_2__K2__vnd.json": {
+    "mtime": 1792016757.8864455,
+    "seen": 1792698417.222204,
+    "ast_hash": "121dae6b135baaf01a667f219cb1751c",
+    "semantic_hash": "121dae6b135baaf01a667f219cb1751c"
+  },
+  "resultados/todas_instancias/instancia_41_grande_5287__K1__vnd.json": {
+    "mtime": 1792700267.9796877,
+    "seen": 1792700880.686115,
+    "ast_hash": "b6339525ecb6c6bd7543e84a000912e0",
+    "semantic_hash": "b6339525ecb6c6bd7543e84a000912e0"
+  },
+  "resultados/todas_instancias/instancia_41_grande_5287__K2__vnd.json": {
+    "mtime": 1792016758.6517227,
+    "seen": 1792698417.222205,
+    "ast_hash": "7f36a35a415c29f3652ff58b87357907",
+    "semantic_hash": "7f36a35a415c29f3652ff58b87357907"
+  },
+  "scripts/empacotar.py": {
+    "mtime": 1791517645.218943,
+    "seen": 1792698417.2222059,
+    "ast_hash": "d6f305e8c38527298cab86895228b4a6",
+    "semantic_hash": "d6f305e8c38527298cab86895228b4a6"
+  },
+  "scripts/executar_todas.py": {
+    "mtime": 1792011682.2239308,
+    "seen": 1792698417.222207,
+    "ast_hash": "102441fadb84837c734d654cf98b18f7",
+    "semantic_hash": "102441fadb84837c734d654cf98b18f7"
+  },
+  "scripts/executar_todas.sh": {
+    "mtime": 1792011687.7339923,
+    "seen": 1792698417.222207,
+    "ast_hash": "edc32b472a452286584bbf059c4f20f1",
+    "semantic_hash": "edc32b472a452286584bbf059c4f20f1"
+  },
+  "scripts/experimentos.py": {
+    "mtime": 1791517641.8784654,
+    "seen": 1792698417.222208,
+    "ast_hash": "6eea48564edc73f5efec807cc8ce4bfa",
+    "semantic_hash": "6eea48564edc73f5efec807cc8ce4bfa"
+  },
+  "scripts/padronizar_instancias.py": {
+    "mtime": 1792011629.9510283,
+    "seen": 1792698417.222209,
+    "ast_hash": "16ac1626482796e387230a3ac1f3e5f3",
+    "semantic_hash": "16ac1626482796e387230a3ac1f3e5f3"
+  },
+  "scripts/tabelas_relatorio.py": {
+    "mtime": 1792700025.5702004,
+    "seen": 1792700880.686252,
+    "ast_hash": "abd31e7bf2aff524af4ed6eb133abbac",
+    "semantic_hash": "abd31e7bf2aff524af4ed6eb133abbac"
+  },
+  "scripts/validar.py": {
+    "mtime": 1791516729.023089,
+    "seen": 1792698417.22221,
+    "ast_hash": "f7440deecd27ab4fedcd735485e19c29",
+    "semantic_hash": "f7440deecd27ab4fedcd735485e19c29"
+  },
+  "scripts/viabilidade.py": {
+    "mtime": 1792700608.9858224,
+    "seen": 1792700880.686275,
+    "ast_hash": "9773106b9585342fdb9d0f7149b25a98",
+    "semantic_hash": "9773106b9585342fdb9d0f7149b25a98"
+  },
+  "src/busca_local.cpp": {
+    "mtime": 1791516940.5125647,
+    "seen": 1792698417.2222111,
+    "ast_hash": "dabe4de42db77334e2292a150dbd76d8",
+    "semantic_hash": "dabe4de42db77334e2292a150dbd76d8"
+  },
+  "src/busca_local.hpp": {
+    "mtime": 1791516940.5542707,
+    "seen": 1792698417.222212,
+    "ast_hash": "cd644ba443d1e25c217201465ec03d9f",
+    "semantic_hash": "cd644ba443d1e25c217201465ec03d9f"
+  },
+  "src/construtivo.cpp": {
+    "mtime": 1792699442.793257,
+    "seen": 1792700880.68632,
+    "ast_hash": "d2e8aa89e7189616426ed4bbcedccbd4",
+    "semantic_hash": "d2e8aa89e7189616426ed4bbcedccbd4"
+  },
+  "src/construtivo.hpp": {
+    "mtime": 1792699419.7404635,
+    "seen": 1792700880.6863208,
+    "ast_hash": "f393750db197e953aa66f92043117366",
+    "semantic_hash": "f393750db197e953aa66f92043117366"
+  },
+  "src/exato.cpp": {
+    "mtime": 1791516940.5286024,
+    "seen": 1792698417.222214,
+    "ast_hash": "6dcb604356b17387e6d8e9fd6e666556",
+    "semantic_hash": "6dcb604356b17387e6d8e9fd6e666556"
+  },
+  "src/exato.hpp": {
+    "mtime": 1791516940.5560234,
+    "seen": 1792698417.222214,
+    "ast_hash": "70f954a027142e37e26665363ab7e81a",
+    "semantic_hash": "70f954a027142e37e26665363ab7e81a"
+  },
+  "src/instancia.cpp": {
+    "mtime": 1791516940.5344727,
+    "seen": 1792698417.222215,
+    "ast_hash": "10255ded8e9425d6ba3232b4c0944638",
+    "semantic_hash": "10255ded8e9425d6ba3232b4c0944638"
+  },
+  "src/instancia.hpp": {
+    "mtime": 1791517192.1739268,
+    "seen": 1792698417.222216,
+    "ast_hash": "61768e39197d963ab1c37b7ea4c07c03",
+    "semantic_hash": "61768e39197d963ab1c37b7ea4c07c03"
+  },
+  "src/main.cpp": {
+    "mtime": 1792699653.0764055,
+    "seen": 1792700880.68641,
+    "ast_hash": "fdee06378a380ddfb8e3474500f35101",
+    "semantic_hash": "fdee06378a380ddfb8e3474500f35101"
+  },
+  "src/solucao.cpp": {
+    "mtime": 1791516940.5528805,
+    "seen": 1792698417.2222168,
+    "ast_hash": "38f4bdae6228f4cca802a565e875c3ce",
+    "semantic_hash": "38f4bdae6228f4cca802a565e875c3ce"
+  },
+  "src/solucao.hpp": {
+    "mtime": 1791516940.5588653,
+    "seen": 1792698417.2222168,
+    "ast_hash": "656aaf15a77425b3628e60f12af8bc99",
+    "semantic_hash": "656aaf15a77425b3628e60f12af8bc99"
+  },
+  "tests/core.cpp": {
+    "mtime": 1792699988.0711818,
+    "seen": 1792700880.686454,
+    "ast_hash": "ed0c73904253a9e4045a8f3cf3163618",
+    "semantic_hash": "ed0c73904253a9e4045a8f3cf3163618"
+  },
+  "tests/parser.cpp": {
+    "mtime": 1791516940.5624447,
+    "seen": 1792698417.222219,
+    "ast_hash": "e49ff444f80ae94aa14fcdf90b4efbcd",
+    "semantic_hash": "e49ff444f80ae94aa14fcdf90b4efbcd"
+  },
+  "tests/test_integration.py": {
+    "mtime": 1792699655.580473,
+    "seen": 1792700880.6864781,
+    "ast_hash": "7985a58a00f6e00f999ca7c0b006ea09",
+    "semantic_hash": "7985a58a00f6e00f999ca7c0b006ea09"
+  },
+  "README.md": {
+    "mtime": 1792700019.9871867,
+    "seen": 1792700880.686479,
+    "ast_hash": "4b60b82543e972794acc55ef6cb9d38b",
+    "semantic_hash": "4b60b82543e972794acc55ef6cb9d38b"
+  },
+  "docs/algoritmos.md": {
+    "mtime": 1792700021.2017403,
+    "seen": 1792700880.6864798,
+    "ast_hash": "98bdfc8991b5ca5ff5ec926d2b40af2c",
+    "semantic_hash": "98bdfc8991b5ca5ff5ec926d2b40af2c"
+  },
+  "docs/exemplo8-trace.txt": {
+    "mtime": 1791516903.9447737,
+    "seen": 1792698417.2222211,
+    "ast_hash": "3171540125b4f493a22d4f3e909704a4",
+    "semantic_hash": "3171540125b4f493a22d4f3e909704a4"
+  },
+  "docs/exemplo8.md": {
+    "mtime": 1791517192.1840088,
+    "seen": 1792698417.222222,
+    "ast_hash": "6bc8d74b93dc83380d52ba785a18a1e1",
+    "semantic_hash": "6bc8d74b93dc83380d52ba785a18a1e1"
+  },
+  "docs/falhas.md": {
+    "mtime": 1791517192.1862617,
+    "seen": 1792698417.222222,
+    "ast_hash": "ce1c1816d0563d08bbbf722acee08795",
+    "semantic_hash": "ce1c1816d0563d08bbbf722acee08795"
+  },
+  "docs/performance_A.txt": {
+    "mtime": 1791517437.788559,
+    "seen": 1792698417.222223,
+    "ast_hash": "02f3c34230bced36d826eeafb0d07281",
+    "semantic_hash": "02f3c34230bced36d826eeafb0d07281"
+  },
+  "docs/sanitizadores.log.txt": {
+    "mtime": 1792700109.0020802,
+    "seen": 1792700880.68657,
+    "ast_hash": "ee4be12973ffb4f5f9d613a8cda793c5",
+    "semantic_hash": "ee4be12973ffb4f5f9d613a8cda793c5"
+  },
+  "docs/slides.md": {
+    "mtime": 1791517192.1882613,
+    "seen": 1792698417.2222238,
+    "ast_hash": "20523f7546a94ea3434cfe13bb163898",
+    "semantic_hash": "20523f7546a94ea3434cfe13bb163898"
+  },
+  "docs/testes.log.txt": {
+    "mtime": 1792700090.9006336,
+    "seen": 1792700880.686592,
+    "ast_hash": "2c223b8810dac1a66e4532121097ecb6",
+    "semantic_hash": "2c223b8810dac1a66e4532121097ecb6"
+  },
+  "entrega/Instancia1_G1.txt": {
+    "mtime": 1791246784.9025862,
+    "seen": 1792698417.222226,
+    "ast_hash": "28ec97e79b4acae9e4d84dbd7b608552",
+    "semantic_hash": "28ec97e79b4acae9e4d84dbd7b608552"
+  },
+  "entrega/Instancia2_G1.txt": {
+    "mtime": 1791246784.9747427,
+    "seen": 1792698417.222226,
+    "ast_hash": "d1b1cd11fb158607733c8f4a565fad3b",
+    "semantic_hash": "d1b1cd11fb158607733c8f4a565fad3b"
+  },
+  "entrega/LEIA-ME.txt": {
+    "mtime": 1791517645.2211485,
+    "seen": 1792698417.2222269,
+    "ast_hash": "33c9f801b7a36bcaf7265ea84171b973",
+    "semantic_hash": "33c9f801b7a36bcaf7265ea84171b973"
+  },
+  "graphify-out/converted/instancia_1_eae2a1c5.md": {
+    "mtime": 1792697999.2112176,
+    "seen": 1792698417.222228,
+    "ast_hash": "6f49b9a567ec6d068d9f098876b40947",
+    "semantic_hash": "6f49b9a567ec6d068d9f098876b40947"
+  },
+  "graphify-out/converted/instancia_2_7b1511e4.md": {
+    "mtime": 1792697999.4703102,
+    "seen": 1792698417.222228,
+    "ast_hash": "2014f98898af2a1f9058d695a401d4cd",
+    "semantic_hash": "2014f98898af2a1f9058d695a401d4cd"
+  },
+  "instances/README.md": {
+    "mtime": 1792011637.2090127,
+    "seen": 1792698417.222229,
+    "ast_hash": "721b00e00231514de517fcecf45fb2b9",
+    "semantic_hash": "721b00e00231514de517fcecf45fb2b9"
+  },
+  "instances/instancia_01_prof_A.txt": {
+    "mtime": 1792011635.7455068,
+    "seen": 1792698417.222229,
+    "ast_hash": "69f731f15bf319a2ad0cdaf7d1bbae2c",
+    "semantic_hash": "69f731f15bf319a2ad0cdaf7d1bbae2c"
+  },
+  "instances/instancia_02_prof_B.txt": {
+    "mtime": 1792011635.750412,
+    "seen": 1792698417.22223,
+    "ast_hash": "6963ad4f20b899b8a64ce6f2d2387362",
+    "semantic_hash": "6963ad4f20b899b8a64ce6f2d2387362"
+  },
+  "instances/instancia_03_pequena_100.txt": {
+    "mtime": 1792011635.7534852,
+    "seen": 1792698417.2222311,
+    "ast_hash": "cf415a43d53a80d192f03c4e1a70ea07",
+    "semantic_hash": "cf415a43d53a80d192f03c4e1a70ea07"
+  },
+  "instances/instancia_04_pequena_109.txt": {
+    "mtime": 1792011635.7538152,
+    "seen": 1792698417.2222311,
+    "ast_hash": "593f203f84be5f48ba5e2be3f41a3421",
+    "semantic_hash": "593f203f84be5f48ba5e2be3f41a3421"
+  },
+  "instances/instancia_05_turma_2550_1.txt": {
+    "mtime": 1792011635.7548091,
+    "seen": 1792698417.222232,
+    "ast_hash": "acc5754a52f3ab4041ab5767e054fb9c",
+    "semantic_hash": "acc5754a52f3ab4041ab5767e054fb9c"
+  },
+  "instances/instancia_06_turma_2550_2.txt": {
+    "mtime": 1792011635.7572894,
+    "seen": 1792698417.222233,
+    "ast_hash": "e1fa7961e1d06744f40227269beed353",
+    "semantic_hash": "e1fa7961e1d06744f40227269beed353"
+  },
+  "instances/instancia_07_malvacini_1.txt": {
+    "mtime": 1792011635.76265,
+    "seen": 1792698417.222233,
+    "ast_hash": "7bfd220cfe893fd61541ea7f95db92dd",
+    "semantic_hash": "7bfd220cfe893fd61541ea7f95db92dd"
+  },
+  "instances/instancia_08_malvacini_2.txt": {
+    "mtime": 1792011635.769301,
+    "seen": 1792698417.222234,
+    "ast_hash": "024f51000c60cc6bd35e9a978200f92e",
+    "semantic_hash": "024f51000c60cc6bd35e9a978200f92e"
+  },
+  "instances/instancia_09_gustavo_isabela_base.txt": {
+    "mtime": 1792011635.7764952,
+    "seen": 1792698417.222234,
+    "ast_hash": "11c0a6cd952d3e032d785f832c199662",
+    "semantic_hash": "11c0a6cd952d3e032d785f832c199662"
+  },
+  "instances/instancia_10_gustavo_isabela_dif.txt": {
+    "mtime": 1792011635.7814415,
+    "seen": 1792698417.222235,
+    "ast_hash": "50cf358923e4a3b4703721aba57c0aa9",
+    "semantic_hash": "50cf358923e4a3b4703721aba57c0aa9"
+  },
+  "instances/instancia_11_felipe_mickaell_1.txt": {
+    "mtime": 1792011635.7857087,
+    "seen": 1792698417.222236,
+    "ast_hash": "71f4a1ea8d1c9fbd0bceaa71e024b3a3",
+    "semantic_hash": "71f4a1ea8d1c9fbd0bceaa71e024b3a3"
+  },
+  "instances/instancia_12_felipe_mickaell_2.txt": {
+    "mtime": 1792011635.7893622,
+    "seen": 1792698417.222236,
+    "ast_hash": "a2c9106533b313066129a6aad51168be",
+    "semantic_hash": "a2c9106533b313066129a6aad51168be"
+  },
+  "instances/instancia_13_g01_360.txt": {
+    "mtime": 1792011635.7912934,
+    "seen": 1792698417.2222369,
+    "ast_hash": "69aea1f00a0e81bcd6aac4444dfd7caa",
+    "semantic_hash": "69aea1f00a0e81bcd6aac4444dfd7caa"
+  },
+  "instances/instancia_14_g01_382.txt": {
+    "mtime": 1792011635.7920907,
+    "seen": 1792698417.2222369,
+    "ast_hash": "b0f796c9f379d9506e2975defbf2e458",
+    "semantic_hash": "b0f796c9f379d9506e2975defbf2e458"
+  },
+  "instances/instancia_15_g02_370.txt": {
+    "mtime": 1792011635.7927384,
+    "seen": 1792698417.222238,
+    "ast_hash": "1e52b2a86dbc61b2a9f81b3fd73aa4ca",
+    "semantic_hash": "1e52b2a86dbc61b2a9f81b3fd73aa4ca"
+  },
+  "instances/instancia_16_g02_362.txt": {
+    "mtime": 1792011635.793575,
+    "seen": 1792698417.222239,
+    "ast_hash": "4d0628e81d17ab4ee2d9f6a5e3bde4e2",
+    "semantic_hash": "4d0628e81d17ab4ee2d9f6a5e3bde4e2"
+  },
+  "instances/instancia_17_g03_3452.txt": {
+    "mtime": 1792011635.795533,
+    "seen": 1792698417.222239,
+    "ast_hash": "53a3199727bb02f18fe39b8cf8da1a1b",
+    "semantic_hash": "53a3199727bb02f18fe39b8cf8da1a1b"
+  },
+  "instances/instancia_18_g03_4454.txt": {
+    "mtime": 1792011635.8008935,
+    "seen": 1792698417.22224,
+    "ast_hash": "8feae76538b11cd3afa7a223a34a4381",
+    "semantic_hash": "8feae76538b11cd3afa7a223a34a4381"
+  },
+  "instances/instancia_19_g04_4213.txt": {
+    "mtime": 1792011635.806388,
+    "seen": 1792698417.22224,
+    "ast_hash": "89ac318819ae093ddd990ce8693f3eca",
+    "semantic_hash": "89ac318819ae093ddd990ce8693f3eca"
+  },
+  "instances/instancia_20_g04_316.txt": {
+    "mtime": 1792011635.8095,
+    "seen": 1792698417.222241,
+    "ast_hash": "68adeb3623813cc26fffd632b5a5abc2",
+    "semantic_hash": "68adeb3623813cc26fffd632b5a5abc2"
+  },
+  "instances/instancia_21_g05_316.txt": {
+    "mtime": 1792011635.8101137,
+    "seen": 1792698417.222242,
+    "ast_hash": "320c4ceabfdc05fc2d6aced4726cc82b",
+    "semantic_hash": "320c4ceabfdc05fc2d6aced4726cc82b"
+  },
+  "instances/instancia_22_g05_3900.txt": {
+    "mtime": 1792011635.8126307,
+    "seen": 1792698417.222242,
+    "ast_hash": "a8e2635289a6be636cf10f10e4c97fe7",
+    "semantic_hash": "a8e2635289a6be636cf10f10e4c97fe7"
+  },
+  "instances/instancia_23_g06_4656.txt": {
+    "mtime": 1792011635.8422735,
+    "seen": 1792698417.222243,
+    "ast_hash": "3e5df342eb97fdb3144c845493467e4f",
+    "semantic_hash": "3e5df342eb97fdb3144c845493467e4f"
+  },
+  "instances/instancia_24_g06_7038.txt": {
+    "mtime": 1792011635.8929834,
+    "seen": 1792698417.222244,
+    "ast_hash": "bc0cb9f0c8520ed15ef9004190acb2d2",
+    "semantic_hash": "bc0cb9f0c8520ed15ef9004190acb2d2"
+  },
+  "instances/instancia_25_g07_5917.txt": {
+    "mtime": 1792011635.9006033,
+    "seen": 1792698417.222244,
+    "ast_hash": "8c879286577a3c7a910c4251451b20c7",
+    "semantic_hash": "8c879286577a3c7a910c4251451b20c7"
+  },
+  "instances/instancia_26_g07_3858.txt": {
+    "mtime": 1792011635.9060264,
+    "seen": 1792698417.2222452,
+    "ast_hash": "b0a53c61d21fe8fa5e2c4fddde642ea7",
+    "semantic_hash": "b0a53c61d21fe8fa5e2c4fddde642ea7"
+  },
+  "instances/instancia_27_g08_4175.txt": {
+    "mtime": 1792011635.923862,
+    "seen": 1792698417.222246,
+    "ast_hash": "176e9f173db306c2626bd7e456f2b815",
+    "semantic_hash": "176e9f173db306c2626bd7e456f2b815"
+  },
+  "instances/instancia_28_g08_4784.txt": {
+    "mtime": 1792011635.9491334,
+    "seen": 1792698417.222246,
+    "ast_hash": "5d4cdaa182f73feeb9f8d6ee860bb71f",
+    "semantic_hash": "5d4cdaa182f73feeb9f8d6ee860bb71f"
+  },
+  "instances/instancia_29_g09_3531.txt": {
+    "mtime": 1792011635.969217,
+    "seen": 1792698417.222247,
+    "ast_hash": "73d14b659e73f3efac2c475f1bd38b11",
+    "semantic_hash": "73d14b659e73f3efac2c475f1bd38b11"
+  },
+  "instances/instancia_30_g09_4131.txt": {
+    "mtime": 1792011635.9905407,
+    "seen": 1792698417.222247,
+    "ast_hash": "5b5d18d873e8eef6f316901482e8af53",
+    "semantic_hash": "5b5d18d873e8eef6f316901482e8af53"
+  },
+  "instances/instancia_31_g10_base.txt": {
+    "mtime": 1792011635.9987712,
+    "seen": 1792698417.2222478,
+    "ast_hash": "c08484be9f9898fdb63de79f3e002204",
+    "semantic_hash": "c08484be9f9898fdb63de79f3e002204"
+  },
+  "instances/instancia_32_g10_dif.txt": {
+    "mtime": 1792011636.0071406,
+    "seen": 1792698417.222249,
+    "ast_hash": "2d36f74476e43533073da075cbf2d2d1",
+    "semantic_hash": "2d36f74476e43533073da075cbf2d2d1"
+  },
+  "instances/instancia_33_g11_base.txt": {
+    "mtime": 1792011636.0157397,
+    "seen": 1792698417.222249,
+    "ast_hash": "08f61827188fce69abc0b0b05dbf91ee",
+    "semantic_hash": "08f61827188fce69abc0b0b05dbf91ee"
+  },
+  "instances/instancia_34_g11_dif.txt": {
+    "mtime": 1792011636.0236933,
+    "seen": 1792698417.22225,
+    "ast_hash": "993da79f71fbaf9bf2d144dc1f6e3488",
+    "semantic_hash": "993da79f71fbaf9bf2d144dc1f6e3488"
+  },
+  "instances/instancia_35_g12_formatada_1.txt": {
+    "mtime": 1792011636.0513828,
+    "seen": 1792698417.22225,
+    "ast_hash": "b489333d46df31b9e97dc942f0e8fb98",
+    "semantic_hash": "b489333d46df31b9e97dc942f0e8fb98"
+  },
+  "instances/instancia_36_g12_formatada_2.txt": {
+    "mtime": 1792011636.078046,
+    "seen": 1792698417.222251,
+    "ast_hash": "3b1df9fc1e65f0fd72651c31416a5a8c",
+    "semantic_hash": "3b1df9fc1e65f0fd72651c31416a5a8c"
+  },
+  "instances/instancia_37_g13_3696.txt": {
+    "mtime": 1792011636.0821633,
+    "seen": 1792698417.2222521,
+    "ast_hash": "7dac42eaafd6c497e5771b412b8002d1",
+    "semantic_hash": "7dac42eaafd6c497e5771b412b8002d1"
+  },
+  "instances/instancia_38_g13_4124.txt": {
+    "mtime": 1792011636.085765,
+    "seen": 1792698417.2222521,
+    "ast_hash": "4f0fd64c46dc1485de848c7fc097d563",
+    "semantic_hash": "4f0fd64c46dc1485de848c7fc097d563"
+  },
+  "instances/instancia_39_g14_excel_1.txt": {
+    "mtime": 1792011636.6642509,
+    "seen": 1792698417.222253,
+    "ast_hash": "c96e8c2fecaef6edf183e759e7c6dba9",
+    "semantic_hash": "c96e8c2fecaef6edf183e759e7c6dba9"
+  },
+  "instances/instancia_40_g14_excel_2.txt": {
+    "mtime": 1792011637.1880589,
+    "seen": 1792698417.222254,
+    "ast_hash": "99494e8b1871141ae19588e2f18e4404",
+    "semantic_hash": "99494e8b1871141ae19588e2f18e4404"
+  },
+  "instances/instancia_41_grande_5287.txt": {
+    "mtime": 1792011637.1932428,
+    "seen": 1792698417.222254,
+    "ast_hash": "a48c8284de8d3d0ca633feed40c6ae5d",
+    "semantic_hash": "a48c8284de8d3d0ca633feed40c6ae5d"
+  },
+  "instances/originais/instancia1 2.txt": {
+    "mtime": 1791237756.0,
+    "seen": 1792698417.222255,
+    "ast_hash": "18c91bd69ff43f82b28c4ea997271102",
+    "semantic_hash": "18c91bd69ff43f82b28c4ea997271102"
+  },
+  "instances/originais/instancia1.txt": {
+    "mtime": 1791215112.0,
+    "seen": 1792698417.2222562,
+    "ast_hash": "3509f9cf990a7913aca3ca46236e38b3",
+    "semantic_hash": "3509f9cf990a7913aca3ca46236e38b3"
+  },
+  "instances/originais/instancia2 2.txt": {
+    "mtime": 1791238363.0,
+    "seen": 1792698417.2222562,
+    "ast_hash": "612a0b56b2b78cbfc48e8e6e754ed7d5",
+    "semantic_hash": "612a0b56b2b78cbfc48e8e6e754ed7d5"
+  },
+  "instances/originais/instancia2.txt": {
+    "mtime": 1791215116.0,
+    "seen": 1792698417.222257,
+    "ast_hash": "1c9508dc3c25d6d66c428df5f7817e8c",
+    "semantic_hash": "1c9508dc3c25d6d66c428df5f7817e8c"
+  },
+  "instances/originais/instancia_1 (1)(1).txt": {
+    "mtime": 1791351430.0,
+    "seen": 1792698417.2222579,
+    "ast_hash": "844a141dc8580b98be8df1d9a9e9f01c",
+    "semantic_hash": "844a141dc8580b98be8df1d9a9e9f01c"
+  },
+  "instances/originais/instancia_1 (1).txt": {
+    "mtime": 1791482460.0,
+    "seen": 1792698417.2222579,
+    "ast_hash": "ab9b08e9f7c04192755f8bc6fe431165",
+    "semantic_hash": "ab9b08e9f7c04192755f8bc6fe431165"
+  },
+  "instances/originais/instancia_1 Arthur Malvacini.txt": {
+    "mtime": 1791477468.0,
+    "seen": 1792698417.222259,
+    "ast_hash": "ab9b08e9f7c04192755f8bc6fe431165",
+    "semantic_hash": "ab9b08e9f7c04192755f8bc6fe431165"
+  },
+  "instances/originais/instancia_1(2).txt": {
+    "mtime": 1791304066.0,
+    "seen": 1792698417.222259,
+    "ast_hash": "a56c63aa44de36743035baa2d2770ed0",
+    "semantic_hash": "a56c63aa44de36743035baa2d2770ed0"
+  },
+  "instances/originais/instancia_1(3).txt": {
+    "mtime": 1791302316.0,
+    "seen": 1792698417.22226,
+    "ast_hash": "06635e95a8e37200d271e5606aa7c609",
+    "semantic_hash": "06635e95a8e37200d271e5606aa7c609"
+  },
+  "instances/originais/instancia_1(4).txt": {
+    "mtime": 1791224422.0,
+    "seen": 1792698417.222261,
+    "ast_hash": "b280419bb4c236b8e8c06c3b5651e45c",
+    "semantic_hash": "b280419bb4c236b8e8c06c3b5651e45c"
+  },
+  "instances/originais/instancia_1(5).txt": {
+    "mtime": 1791221050.0,
+    "seen": 1792698417.222261,
+    "ast_hash": "16880d583c33b44eadf02d948c1e11ef",
+    "semantic_hash": "16880d583c33b44eadf02d948c1e11ef"
+  },
+  "instances/originais/instancia_1(6).txt": {
+    "mtime": 1791217516.0,
+    "seen": 1792698417.222262,
+    "ast_hash": "b280419bb4c236b8e8c06c3b5651e45c",
+    "semantic_hash": "b280419bb4c236b8e8c06c3b5651e45c"
+  },
+  "instances/originais/instancia_1(7).txt": {
+    "mtime": 1791141284.0,
+    "seen": 1792698417.222263,
+    "ast_hash": "c292dbc83dda982c0a5253659ad69d22",
+    "semantic_hash": "c292dbc83dda982c0a5253659ad69d22"
+  },
+  "instances/originais/instancia_1(8).txt": {
+    "mtime": 1791099736.0,
+    "seen": 1792698417.222263,
+    "ast_hash": "3f840e92efa0c1fc25908d528d4e1814",
+    "semantic_hash": "3f840e92efa0c1fc25908d528d4e1814"
+  },
+  "instances/originais/instancia_1.txt": {
+    "mtime": 1791614802.0,
+    "seen": 1792698417.222264,
+    "ast_hash": "ad3ea31e4bf3ac5b80f283ee94990e3e",
+    "semantic_hash": "ad3ea31e4bf3ac5b80f283ee94990e3e"
+  },
+  "instances/originais/instancia_1_f.txt": {
+    "mtime": 1791213228.0,
+    "seen": 1792698417.222265,
+    "ast_hash": "5685215df1c11c23693cd9199e6e1f8d",
+    "semantic_hash": "5685215df1c11c23693cd9199e6e1f8d"
+  },
+  "instances/originais/instancia_2 (1)(1).txt": {
+    "mtime": 1791351430.0,
+    "seen": 1792698417.222265,
+    "ast_hash": "f655e85e059df3d591dcc827b8a88771",
+    "semantic_hash": "f655e85e059df3d591dcc827b8a88771"
+  },
+  "instances/originais/instancia_2 (1).txt": {
+    "mtime": 1791482456.0,
+    "seen": 1792698417.2222662,
+    "ast_hash": "c3050f34edea59b887d81802d91945d9",
+    "semantic_hash": "c3050f34edea59b887d81802d91945d9"
+  },
+  "instances/originais/instancia_2 Arthur Malvacini.txt": {
+    "mtime": 1791477468.0,
+    "seen": 1792698417.2222662,
+    "ast_hash": "c3050f34edea59b887d81802d91945d9",
+    "semantic_hash": "c3050f34edea59b887d81802d91945d9"
+  },
+  "instances/originais/instancia_2(2).txt": {
+    "mtime": 1791302316.0,
+    "seen": 1792698417.222267,
+    "ast_hash": "5dfc1de7f731b365878904aec5640f86",
+    "semantic_hash": "5dfc1de7f731b365878904aec5640f86"
+  },
+  "instances/originais/instancia_2(3).txt": {
+    "mtime": 1791303994.0,
+    "seen": 1792698417.2222679,
+    "ast_hash": "911b65565da34bbcdcb4136db535400b",
+    "semantic_hash": "911b65565da34bbcdcb4136db535400b"
+  },
+  "instances/originais/instancia_2(4).txt": {
+    "mtime": 1791224424.0,
+    "seen": 1792698417.2222679,
+    "ast_hash": "6402178852bca4ee1443922e26555a68",
+    "semantic_hash": "6402178852bca4ee1443922e26555a68"
+  },
+  "instances/originais/instancia_2(5).txt": {
+    "mtime": 1791221128.0,
+    "seen": 1792698417.2222688,
+    "ast_hash": "a2151c1f6b6154ff521dae7e0fc38b33",
+    "semantic_hash": "a2151c1f6b6154ff521dae7e0fc38b33"
+  },
+  "instances/originais/instancia_2(6).txt": {
+    "mtime": 1791217516.0,
+    "seen": 1792698417.2222688,
+    "ast_hash": "6402178852bca4ee1443922e26555a68",
+    "semantic_hash": "6402178852bca4ee1443922e26555a68"
+  },
+  "instances/originais/instancia_2(7).txt": {
+    "mtime": 1791141420.0,
+    "seen": 1792698417.22227,
+    "ast_hash": "7347b00c8d9902f75d62b2b7120bb1e7",
+    "semantic_hash": "7347b00c8d9902f75d62b2b7120bb1e7"
+  },
+  "instances/originais/instancia_2(8).txt": {
+    "mtime": 1791099738.0,
+    "seen": 1792698417.222271,
+    "ast_hash": "e627a19843df02c734900011e127a173",
+    "semantic_hash": "e627a19843df02c734900011e127a173"
+  },
+  "instances/originais/instancia_2.txt": {
+    "mtime": 1791614802.0,
+    "seen": 1792698417.222271,
+    "ast_hash": "377a48b9f0b4539192e477146b3d59ba",
+    "semantic_hash": "377a48b9f0b4539192e477146b3d59ba"
+  },
+  "instances/originais/instancia_2_f.txt": {
+    "mtime": 1791213228.0,
+    "seen": 1792698417.222272,
+    "ast_hash": "4ca7663d36c1b3dafa131bed408817e7",
+    "semantic_hash": "4ca7663d36c1b3dafa131bed408817e7"
+  },
+  "instances/originais/instancia_2_grande.txt": {
+    "mtime": 1791485546.0,
+    "seen": 1792698417.222273,
+    "ast_hash": "51032e5fc2cd6c515b7ff11b025a8412",
+    "semantic_hash": "51032e5fc2cd6c515b7ff11b025a8412"
+  },
+  "instances/originais/instancia_3_extra.txt": {
+    "mtime": 1791485546.0,
+    "seen": 1792698417.222273,
+    "ast_hash": "51032e5fc2cd6c515b7ff11b025a8412",
+    "semantic_hash": "51032e5fc2cd6c515b7ff11b025a8412"
+  },
+  "instances/originais/instancia_A 2.txt": {
+    "mtime": 1791246784.0,
+    "seen": 1792698417.222274,
+    "ast_hash": "28ec97e79b4acae9e4d84dbd7b608552",
+    "semantic_hash": "28ec97e79b4acae9e4d84dbd7b608552"
+  },
+  "instances/originais/instancia_A.txt": {
+    "mtime": 1791217984.0,
+    "seen": 1792698417.222275,
+    "ast_hash": "28ec97e79b4acae9e4d84dbd7b608552",
+    "semantic_hash": "28ec97e79b4acae9e4d84dbd7b608552"
+  },
+  "instances/originais/instancia_B 2.txt": {
+    "mtime": 1791246784.0,
+    "seen": 1792698417.222275,
+    "ast_hash": "d1b1cd11fb158607733c8f4a565fad3b",
+    "semantic_hash": "d1b1cd11fb158607733c8f4a565fad3b"
+  },
+  "instances/originais/instancia_B.txt": {
+    "mtime": 1791217984.0,
+    "seen": 1792698417.2222762,
+    "ast_hash": "d1b1cd11fb158607733c8f4a565fad3b",
+    "semantic_hash": "d1b1cd11fb158607733c8f4a565fad3b"
+  },
+  "instances/originais/instancia_base(1).txt": {
+    "mtime": 1791214796.0,
+    "seen": 1792698417.2222762,
+    "ast_hash": "8881b7fa2ce3794dbe2a67c3ad63e14b",
+    "semantic_hash": "8881b7fa2ce3794dbe2a67c3ad63e14b"
+  },
+  "instances/originais/instancia_base(2).txt": {
+    "mtime": 1791188928.0,
+    "seen": 1792698417.2222772,
+    "ast_hash": "6d24943462375224c47d4803924b1a9d",
+    "semantic_hash": "6d24943462375224c47d4803924b1a9d"
+  },
+  "instances/originais/instancia_base(3).txt": {
+    "mtime": 1791115020.0,
+    "seen": 1792698417.2222779,
+    "ast_hash": "8349aec648d3900da7a02ccb32c2cae8",
+    "semantic_hash": "8349aec648d3900da7a02ccb32c2cae8"
+  },
+  "instances/originais/instancia_base.txt": {
+    "mtime": 1791214896.0,
+    "seen": 1792698417.2222779,
+    "ast_hash": "8881b7fa2ce3794dbe2a67c3ad63e14b",
+    "semantic_hash": "8881b7fa2ce3794dbe2a67c3ad63e14b"
+  },
+  "instances/originais/instancia_base_Gustavo_Isabela.txt": {
+    "mtime": 1791199012.0,
+    "seen": 1792698417.2222788,
+    "ast_hash": "8881b7fa2ce3794dbe2a67c3ad63e14b",
+    "semantic_hash": "8881b7fa2ce3794dbe2a67c3ad63e14b"
+  },
+  "instances/originais/instancia_diferenciada(1).txt": {
+    "mtime": 1791214798.0,
+    "seen": 1792698417.2222788,
+    "ast_hash": "2001789a6e265d41c4969ace5cdcd43c",
+    "semantic_hash": "2001789a6e265d41c4969ace5cdcd43c"
+  },
+  "instances/originais/instancia_diferenciada(2).txt": {
+    "mtime": 1791188930.0,
+    "seen": 1792698417.22228,
+    "ast_hash": "1f95397123907fba3edb78ba3afd6da7",
+    "semantic_hash": "1f95397123907fba3edb78ba3afd6da7"
+  },
+  "instances/originais/instancia_diferenciada(3).txt": {
+    "mtime": 1791115020.0,
+    "seen": 1792698417.222281,
+    "ast_hash": "99d7b45fc221fdfe1f25611f92dae648",
+    "semantic_hash": "99d7b45fc221fdfe1f25611f92dae648"
+  },
+  "instances/originais/instancia_diferenciada.txt": {
+    "mtime": 1791214814.0,
+    "seen": 1792698417.222281,
+    "ast_hash": "2001789a6e265d41c4969ace5cdcd43c",
+    "semantic_hash": "2001789a6e265d41c4969ace5cdcd43c"
+  },
+  "instances/originais/instancia_diferenciada_Gustavo_Isabela.txt": {
+    "mtime": 1791199012.0,
+    "seen": 1792698417.222282,
+    "ast_hash": "2001789a6e265d41c4969ace5cdcd43c",
+    "semantic_hash": "2001789a6e265d41c4969ace5cdcd43c"
+  },
+  "instances/originais/instancia_felipe_mickaell.txt": {
+    "mtime": 1791480700.0,
+    "seen": 1792698417.2222831,
+    "ast_hash": "323d7623dda6497927b228161c2d8ddf",
+    "semantic_hash": "323d7623dda6497927b228161c2d8ddf"
+  },
+  "instances/originais/instancia_mickaell_felipe.txt": {
+    "mtime": 1791480698.0,
+    "seen": 1792698417.2222831,
+    "ast_hash": "482b5c53a1f1ece88fe6cbf1f5ad7b44",
+    "semantic_hash": "482b5c53a1f1ece88fe6cbf1f5ad7b44"
+  },
+  "instances/originais/instancias1.txt": {
+    "mtime": 1791456124.0,
+    "seen": 1792698417.222284,
+    "ast_hash": "128d7617393512854016fc110eae7e0f",
+    "semantic_hash": "128d7617393512854016fc110eae7e0f"
+  },
+  "instances/originais/instancias2.txt": {
+    "mtime": 1791456124.0,
+    "seen": 1792698417.222285,
+    "ast_hash": "21b114bea64d91feaba239e0263a5330",
+    "semantic_hash": "21b114bea64d91feaba239e0263a5330"
+  },
+  "requirements-tested.txt": {
+    "mtime": 1791517557.7555513,
+    "seen": 1792698417.222285,
+    "ast_hash": "df6897a71988eb0ac55ed2e18334bb58",
+    "semantic_hash": "df6897a71988eb0ac55ed2e18334bb58"
+  },
+  "requirements.txt": {
+    "mtime": 1791516263.4513867,
+    "seen": 1792698417.222286,
+    "ast_hash": "ae290fbf51ef948a381aa1dfddc36747",
+    "semantic_hash": "ae290fbf51ef948a381aa1dfddc36747"
+  },
+  "resultados/Modelo_de_Instancia__K1__n1.console.txt": {
+    "mtime": 1792700111.4351518,
+    "seen": 1792700880.68886,
+    "ast_hash": "7fe7a587847ad71ca87292506d475efc",
+    "semantic_hash": "7fe7a587847ad71ca87292506d475efc"
+  },
+  "resultados/Modelo_de_Instancia__K1__n2.console.txt": {
+    "mtime": 1792700111.8918347,
+    "seen": 1792700880.688861,
+    "ast_hash": "591a2052a8710a4446478dd1d9e16c7a",
+    "semantic_hash": "591a2052a8710a4446478dd1d9e16c7a"
+  },
+  "resultados/Modelo_de_Instancia__K1__n3.console.txt": {
+    "mtime": 1792700112.3660471,
+    "seen": 1792700880.6888618,
+    "ast_hash": "a9b9f14df1097e31f0d41c4d5939cb4e",
+    "semantic_hash": "a9b9f14df1097e31f0d41c4d5939cb4e"
+  },
+  "resultados/Modelo_de_Instancia__K1__tabu_a03.console.txt": {
+    "mtime": 1792700112.8030627,
+    "seen": 1792700880.688863,
+    "ast_hash": "7010a12d864a51cecbc5c7ecaae54138",
+    "semantic_hash": "7010a12d864a51cecbc5c7ecaae54138"
+  },
+  "resultados/Modelo_de_Instancia__K1__tabu_t10.console.txt": {
+    "mtime": 1792700113.7660325,
+    "seen": 1792700880.688863,
+    "ast_hash": "74228d24621f535434892e41a942b5db",
+    "semantic_hash": "74228d24621f535434892e41a942b5db"
+  },
+  "resultados/Modelo_de_Instancia__K1__tabu_t10_20.console.txt": {
+    "mtime": 1792700114.2455757,
+    "seen": 1792700880.688864,
+    "ast_hash": "9899191ead80c1795dbcec7878eead14",
+    "semantic_hash": "9899191ead80c1795dbcec7878eead14"
+  },
+  "resultados/Modelo_de_Instancia__K1__tabu_t3.console.txt": {
+    "mtime": 1792700113.2854958,
+    "seen": 1792700880.688865,
+    "ast_hash": "4b09d6cf41a2ea3ca7856a5ef3488091",
+    "semantic_hash": "4b09d6cf41a2ea3ca7856a5ef3488091"
+  },
+  "resultados/Modelo_de_Instancia__K1__vnd_a0.console.txt": {
+    "mtime": 1792700109.6126392,
+    "seen": 1792700880.6888661,
+    "ast_hash": "968b6347f9cb240bf6be70d7bc769863",
+    "semantic_hash": "968b6347f9cb240bf6be70d7bc769863"
+  },
+  "resultados/Modelo_de_Instancia__K1__vnd_a03.console.txt": {
+    "mtime": 1792700110.0517273,
+    "seen": 1792700880.6888661,
+    "ast_hash": "60b56b26f42b09af1e8deaa5b55f72fa",
+    "semantic_hash": "60b56b26f42b09af1e8deaa5b55f72fa"
+  },
+  "resultados/Modelo_de_Instancia__K1__vnd_a07.console.txt": {
+    "mtime": 1792700110.4693918,
+    "seen": 1792700880.688867,
+    "ast_hash": "45170608bf27a552d76a1148a8853e2d",
+    "semantic_hash": "45170608bf27a552d76a1148a8853e2d"
+  },
+  "resultados/Modelo_de_Instancia__K1__vnd_first.console.txt": {
+    "mtime": 1792700110.920678,
+    "seen": 1792700880.688868,
+    "ast_hash": "3c7668db7fe7339cc60df539575eae03",
+    "semantic_hash": "3c7668db7fe7339cc60df539575eae03"
+  },
+  "resultados/Modelo_de_Instancia__K2__n1.console.txt": {
+    "mtime": 1791517100.199669,
+    "seen": 1792698417.222293,
+    "ast_hash": "992c95c87ceb3e117208c935ec5d1ecd",
+    "semantic_hash": "992c95c87ceb3e117208c935ec5d1ecd"
+  },
+  "resultados/Modelo_de_Instancia__K2__n2.console.txt": {
+    "mtime": 1791517100.8363886,
+    "seen": 1792698417.222294,
+    "ast_hash": "8bcdca2e72a36e2d8fbb057e2977a29f",
+    "semantic_hash": "8bcdca2e72a36e2d8fbb057e2977a29f"
+  },
+  "resultados/Modelo_de_Instancia__K2__n3.console.txt": {
+    "mtime": 1791517101.4645252,
+    "seen": 1792698417.222295,
+    "ast_hash": "66a359a31fc03823e2ebe32606b42898",
+    "semantic_hash": "66a359a31fc03823e2ebe32606b42898"
+  },
+  "resultados/Modelo_de_Instancia__K2__tabu_a03.console.txt": {
+    "mtime": 1791517102.1589513,
+    "seen": 1792698417.222295,
+    "ast_hash": "20c55ee470561ae8a8aaab382eb24687",
+    "semantic_hash": "20c55ee470561ae8a8aaab382eb24687"
+  },
+  "resultados/Modelo_de_Instancia__K2__tabu_t10.console.txt": {
+    "mtime": 1791517103.5673928,
+    "seen": 1792698417.222296,
+    "ast_hash": "cde3a4593e3544574da70e91c4b7ce39",
+    "semantic_hash": "cde3a4593e3544574da70e91c4b7ce39"
+  },
+  "resultados/Modelo_de_Instancia__K2__tabu_t10_20.console.txt": {
+    "mtime": 1791517104.2966964,
+    "seen": 1792698417.222296,
+    "ast_hash": "f3264d39302196fd915b55d6a982509d",
+    "semantic_hash": "f3264d39302196fd915b55d6a982509d"
+  },
+  "resultados/Modelo_de_Instancia__K2__tabu_t3.console.txt": {
+    "mtime": 1791517102.8640532,
+    "seen": 1792698417.2222972,
+    "ast_hash": "8983f8ff78f446ee7b66cec0edd6ac6b",
+    "semantic_hash": "8983f8ff78f446ee7b66cec0edd6ac6b"
+  },
+  "resultados/Modelo_de_Instancia__K2__vnd_a0.console.txt": {
+    "mtime": 1791517097.6495502,
+    "seen": 1792698417.2222981,
+    "ast_hash": "0e3474ef888c81e0cbe7e1dd3f27b34b",
+    "semantic_hash": "0e3474ef888c81e0cbe7e1dd3f27b34b"
+  },
+  "resultados/Modelo_de_Instancia__K2__vnd_a03.console.txt": {
+    "mtime": 1791517098.299204,
+    "seen": 1792698417.2222981,
+    "ast_hash": "151eced0a3685b42da580cd2f5aa8978",
+    "semantic_hash": "151eced0a3685b42da580cd2f5aa8978"
+  },
+  "resultados/Modelo_de_Instancia__K2__vnd_a07.console.txt": {
+    "mtime": 1791517098.9172463,
+    "seen": 1792698417.2222989,
+    "ast_hash": "67ec4996f6b9f5541e70de224a1f219f",
+    "semantic_hash": "67ec4996f6b9f5541e70de224a1f219f"
+  },
+  "resultados/Modelo_de_Instancia__K2__vnd_first.console.txt": {
+    "mtime": 1791517099.5414932,
+    "seen": 1792698417.2222998,
+    "ast_hash": "a7e1d82547074e60e334727c8e4e5dea",
+    "semantic_hash": "a7e1d82547074e60e334727c8e4e5dea"
+  },
+  "resultados/instancia2__K1__n1.console.txt": {
+    "mtime": 1792700121.692428,
+    "seen": 1792700880.689125,
+    "ast_hash": "1031ea4a4b386441a29dc012b631a46a",
+    "semantic_hash": "1031ea4a4b386441a29dc012b631a46a"
+  },
+  "resultados/instancia2__K1__n2.console.txt": {
+    "mtime": 1792700123.128616,
+    "seen": 1792700880.6891258,
+    "ast_hash": "fdf9bb353fe090c7529f7ac5d9114026",
+    "semantic_hash": "fdf9bb353fe090c7529f7ac5d9114026"
+  },
+  "resultados/instancia2__K1__n3.console.txt": {
+    "mtime": 1792700124.4900982,
+    "seen": 1792700880.689127,
+    "ast_hash": "ec980686558ff739e7bf71193643f6ef",
+    "semantic_hash": "ec980686558ff739e7bf71193643f6ef"
+  },
+  "resultados/instancia2__K1__tabu_a03.console.txt": {
+    "mtime": 1792700127.281635,
+    "seen": 1792700880.689127,
+    "ast_hash": "35041803664d26eab83ad06d85a0523b",
+    "semantic_hash": "35041803664d26eab83ad06d85a0523b"
+  },
+  "resultados/instancia2__K1__tabu_t10.console.txt": {
+    "mtime": 1792700132.8871286,
+    "seen": 1792700880.689128,
+    "ast_hash": "b6d6e79a4600c0d43094c8e7901b2a1e",
+    "semantic_hash": "b6d6e79a4600c0d43094c8e7901b2a1e"
+  },
+  "resultados/instancia2__K1__tabu_t10_20.console.txt": {
+    "mtime": 1792700135.6618052,
+    "seen": 1792700880.6891289,
+    "ast_hash": "9837ada957156a7bedf3736075059265",
+    "semantic_hash": "9837ada957156a7bedf3736075059265"
+  },
+  "resultados/instancia2__K1__tabu_t3.console.txt": {
+    "mtime": 1792700130.076725,
+    "seen": 1792700880.68913,
+    "ast_hash": "331d150ecd96832467b4e229818e8fb0",
+    "semantic_hash": "331d150ecd96832467b4e229818e8fb0"
+  },
+  "resultados/instancia2__K1__vnd_a0.console.txt": {
+    "mtime": 1792700115.6999905,
+    "seen": 1792700880.68913,
+    "ast_hash": "1aa550f4d2461fd48fd8e79c27650dc3",
+    "semantic_hash": "1aa550f4d2461fd48fd8e79c27650dc3"
+  },
+  "resultados/instancia2__K1__vnd_a03.console.txt": {
+    "mtime": 1792700117.340144,
+    "seen": 1792700880.689131,
+    "ast_hash": "d592c219d9be73725f8162301f7f34ff",
+    "semantic_hash": "d592c219d9be73725f8162301f7f34ff"
+  },
+  "resultados/instancia2__K1__vnd_a07.console.txt": {
+    "mtime": 1792700118.9516506,
+    "seen": 1792700880.689132,
+    "ast_hash": "df161e20422878c60807fe267a4dbdb1",
+    "semantic_hash": "df161e20422878c60807fe267a4dbdb1"
+  },
+  "resultados/instancia2__K1__vnd_first.console.txt": {
+    "mtime": 1792700120.4904566,
+    "seen": 1792700880.6891332,
+    "ast_hash": "c62dba0ed26d7f4557a428f759337c5f",
+    "semantic_hash": "c62dba0ed26d7f4557a428f759337c5f"
+  },
+  "resultados/instancia2__K2__n1.console.txt": {
+    "mtime": 1791517136.692557,
+    "seen": 1792698417.222307,
+    "ast_hash": "d5f403057e9b93d5208d6d85ab3eb0b9",
+    "semantic_hash": "d5f403057e9b93d5208d6d85ab3eb0b9"
+  },
+  "resultados/instancia2__K2__n2.console.txt": {
+    "mtime": 1791517137.9540079,
+    "seen": 1792698417.222316,
+    "ast_hash": "7de4199b2ba209036385c4420ad6268f",
+    "semantic_hash": "7de4199b2ba209036385c4420ad6268f"
+  },
+  "resultados/instancia2__K2__n3.console.txt": {
+    "mtime": 1791517139.0783288,
+    "seen": 1792698417.222316,
+    "ast_hash": "b868d55a5894c7da77ac0ed0e189e3c4",
+    "semantic_hash": "b868d55a5894c7da77ac0ed0e189e3c4"
+  },
+  "resultados/instancia2__K2__tabu_a03.console.txt": {
+    "mtime": 1791517142.10378,
+    "seen": 1792698417.222317,
+    "ast_hash": "412226a6d12bf496d43973132aff9274",
+    "semantic_hash": "412226a6d12bf496d43973132aff9274"
+  },
+  "resultados/instancia2__K2__tabu_t10.console.txt": {
+    "mtime": 1791517148.4227874,
+    "seen": 1792698417.222317,
+    "ast_hash": "e60bce32c743e5613996d4c5f6785953",
+    "semantic_hash": "e60bce32c743e5613996d4c5f6785953"
+  },
+  "resultados/instancia2__K2__tabu_t10_20.console.txt": {
+    "mtime": 1791517151.488971,
+    "seen": 1792698417.2223182,
+    "ast_hash": "dff864b1f93eab462c65cdc2115ea213",
+    "semantic_hash": "dff864b1f93eab462c65cdc2115ea213"
+  },
+  "resultados/instancia2__K2__tabu_t3.console.txt": {
+    "mtime": 1791517145.2568085,
+    "seen": 1792698417.2223191,
+    "ast_hash": "01d93c2b1fdc2b68e8ae68fedec494e0",
+    "semantic_hash": "01d93c2b1fdc2b68e8ae68fedec494e0"
+  },
+  "resultados/instancia2__K2__vnd_a0.console.txt": {
+    "mtime": 1791517130.8410451,
+    "seen": 1792698417.2223191,
+    "ast_hash": "1a6f3959f2063aebe80dc8e98d8abffd",
+    "semantic_hash": "1a6f3959f2063aebe80dc8e98d8abffd"
+  },
+  "resultados/instancia2__K2__vnd_a03.console.txt": {
+    "mtime": 1791517132.3108408,
+    "seen": 1792698417.22232,
+    "ast_hash": "272ccab9439c99fd548032fd0692f39d",
+    "semantic_hash": "272ccab9439c99fd548032fd0692f39d"
+  },
+  "resultados/instancia2__K2__vnd_a07.console.txt": {
+    "mtime": 1791517134.0476704,
+    "seen": 1792698417.22232,
+    "ast_hash": "c0f48e51d0e69691b8f2ab43ed1a29b5",
+    "semantic_hash": "c0f48e51d0e69691b8f2ab43ed1a29b5"
+  },
+  "resultados/instancia2__K2__vnd_first.console.txt": {
+    "mtime": 1791517135.6237442,
+    "seen": 1792698417.2223208,
+    "ast_hash": "700c7bb6435698e01f76352a4f423a5e",
+    "semantic_hash": "700c7bb6435698e01f76352a4f423a5e"
+  },
+  "resultados/instancia_A__K1__n1.console.txt": {
+    "mtime": 1792700151.5793488,
+    "seen": 1792700880.6893811,
+    "ast_hash": "9c5aec50d17c4170d50e9c09d49a6d8b",
+    "semantic_hash": "9c5aec50d17c4170d50e9c09d49a6d8b"
+  },
+  "resultados/instancia_A__K1__n2.console.txt": {
+    "mtime": 1792700154.1691792,
+    "seen": 1792700880.6893818,
+    "ast_hash": "578f0d3257d3089c41c8593c7a9bef04",
+    "semantic_hash": "578f0d3257d3089c41c8593c7a9bef04"
+  },
+  "resultados/instancia_A__K1__n3.console.txt": {
+    "mtime": 1792700156.1662028,
+    "seen": 1792700880.689383,
+    "ast_hash": "f76ca4333596e49f82941866536478e4",
+    "semantic_hash": "f76ca4333596e49f82941866536478e4"
+  },
+  "resultados/instancia_A__K1__tabu_a03.console.txt": {
+    "mtime": 1792700162.0065691,
+    "seen": 1792700880.689383,
+    "ast_hash": "e887482c0a87407e03c248f86a1af444",
+    "semantic_hash": "e887482c0a87407e03c248f86a1af444"
+  },
+  "resultados/instancia_A__K1__tabu_t10.console.txt": {
+    "mtime": 1792700173.711261,
+    "seen": 1792700880.689384,
+    "ast_hash": "16d0c3f2b3f9af90ffec3b78f3cd0391",
+    "semantic_hash": "16d0c3f2b3f9af90ffec3b78f3cd0391"
+  },
+  "resultados/instancia_A__K1__tabu_t10_20.console.txt": {
+    "mtime": 1792700179.6361833,
+    "seen": 1792700880.689385,
+    "ast_hash": "305c5f5174ba3d6a7a536f86852a649c",
+    "semantic_hash": "305c5f5174ba3d6a7a536f86852a649c"
+  },
+  "resultados/instancia_A__K1__tabu_t3.console.txt": {
+    "mtime": 1792700167.8669708,
+    "seen": 1792700880.689385,
+    "ast_hash": "30334a8da47bf5c06afe19558b77e338",
+    "semantic_hash": "30334a8da47bf5c06afe19558b77e338"
+  },
+  "resultados/instancia_A__K1__vnd_a0.console.txt": {
+    "mtime": 1792700139.7226791,
+    "seen": 1792700880.689386,
+    "ast_hash": "3b722b9f97d3462a97d72dbaff8d641a",
+    "semantic_hash": "3b722b9f97d3462a97d72dbaff8d641a"
+  },
+  "resultados/instancia_A__K1__vnd_a03.console.txt": {
+    "mtime": 1792700142.9571521,
+    "seen": 1792700880.689387,
+    "ast_hash": "e91bb30c022dd739f38bac8f42498a89",
+    "semantic_hash": "e91bb30c022dd739f38bac8f42498a89"
+  },
+  "resultados/instancia_A__K1__vnd_a07.console.txt": {
+    "mtime": 1792700146.3945165,
+    "seen": 1792700880.689388,
+    "ast_hash": "eb4b93e06b7c50daada87be10f6bf8e0",
+    "semantic_hash": "eb4b93e06b7c50daada87be10f6bf8e0"
+  },
+  "resultados/instancia_A__K1__vnd_first.console.txt": {
+    "mtime": 1792700149.647296,
+    "seen": 1792700880.689388,
+    "ast_hash": "27a66f74b5bcbb098c0ba2d3ada6654b",
+    "semantic_hash": "27a66f74b5bcbb098c0ba2d3ada6654b"
+  },
+  "resultados/instancia_A__K2__n1.console.txt": {
+    "mtime": 1791517220.6249952,
+    "seen": 1792698417.222328,
+    "ast_hash": "1cd84aaea38c467496303129cd4d5247",
+    "semantic_hash": "1cd84aaea38c467496303129cd4d5247"
+  },
+  "resultados/instancia_A__K2__n2.console.txt": {
+    "mtime": 1791517223.2238777,
+    "seen": 1792698417.2223291,
+    "ast_hash": "6e96e13a34ac1f2642e903b1f81475c0",
+    "semantic_hash": "6e96e13a34ac1f2642e903b1f81475c0"
+  },
+  "resultados/instancia_A__K2__n3.console.txt": {
+    "mtime": 1791517225.3141632,
+    "seen": 1792698417.22233,
+    "ast_hash": "61794eec7709fa23633e90fc729fdfc1",
+    "semantic_hash": "61794eec7709fa23633e90fc729fdfc1"
+  },
+  "resultados/instancia_A__K2__tabu_a03.console.txt": {
+    "mtime": 1791517233.5246074,
+    "seen": 1792698417.22233,
+    "ast_hash": "1081d67b53aae5bdba338ee678271e84",
+    "semantic_hash": "1081d67b53aae5bdba338ee678271e84"
+  },
+  "resultados/instancia_A__K2__tabu_t10.console.txt": {
+    "mtime": 1791517250.221608,
+    "seen": 1792698417.2223308,
+    "ast_hash": "18bacf70662edfe7aab993a646ecf723",
+    "semantic_hash": "18bacf70662edfe7aab993a646ecf723"
+  },
+  "resultados/instancia_A__K2__tabu_t10_20.console.txt": {
+    "mtime": 1791517258.0372465,
+    "seen": 1792698417.2223308,
+    "ast_hash": "0f6de515cdccd7fa4daeeeed16fb8a75",
+    "semantic_hash": "0f6de515cdccd7fa4daeeeed16fb8a75"
+  },
+  "resultados/instancia_A__K2__tabu_t3.console.txt": {
+    "mtime": 1791517241.8447526,
+    "seen": 1792698417.222332,
+    "ast_hash": "d5555fdac838776a6e3cb51a65d2e3ef",
+    "semantic_hash": "d5555fdac838776a6e3cb51a65d2e3ef"
+  },
+  "resultados/instancia_A__K2__vnd_a0.console.txt": {
+    "mtime": 1791517207.3602822,
+    "seen": 1792698417.222333,
+    "ast_hash": "24ad09bf55a77f3265f217d438a279a3",
+    "semantic_hash": "24ad09bf55a77f3265f217d438a279a3"
+  },
+  "resultados/instancia_A__K2__vnd_a03.console.txt": {
+    "mtime": 1791517211.0818665,
+    "seen": 1792698417.222333,
+    "ast_hash": "a3d0ada0267ee624d8276226c2a5891c",
+    "semantic_hash": "a3d0ada0267ee624d8276226c2a5891c"
+  },
+  "resultados/instancia_A__K2__vnd_a07.console.txt": {
+    "mtime": 1791517215.1285372,
+    "seen": 1792698417.222334,
+    "ast_hash": "a291c1c8f002fc25b9d148ecdc4caddd",
+    "semantic_hash": "a291c1c8f002fc25b9d148ecdc4caddd"
+  },
+  "resultados/instancia_A__K2__vnd_first.console.txt": {
+    "mtime": 1791517218.6724694,
+    "seen": 1792698417.222334,
+    "ast_hash": "9b575ff6085614ac390659ae50a2ff17",
+    "semantic_hash": "9b575ff6085614ac390659ae50a2ff17"
+  },
+  "resultados/instancia_B__K1__n1.console.txt": {
+    "mtime": 1792700193.3816464,
+    "seen": 1792700880.68964,
+    "ast_hash": "02df78abba9bf0107bc31efa7bd56b2e",
+    "semantic_hash": "02df78abba9bf0107bc31efa7bd56b2e"
+  },
+  "resultados/instancia_B__K1__n2.console.txt": {
+    "mtime": 1792700195.3726976,
+    "seen": 1792700880.68964,
+    "ast_hash": "240fee151e620e7961ab2c531285d1fc",
+    "semantic_hash": "240fee151e620e7961ab2c531285d1fc"
+  },
+  "resultados/instancia_B__K1__n3.console.txt": {
+    "mtime": 1792700196.820638,
+    "seen": 1792700880.689641,
+    "ast_hash": "500c2eb76ac62fb5e61c938f1a0f6d59",
+    "semantic_hash": "500c2eb76ac62fb5e61c938f1a0f6d59"
+  },
+  "resultados/instancia_B__K1__tabu_a03.console.txt": {
+    "mtime": 1792700201.9171026,
+    "seen": 1792700880.689642,
+    "ast_hash": "a43b3b56aa04c3e070dbca07359cb3bb",
+    "semantic_hash": "a43b3b56aa04c3e070dbca07359cb3bb"
+  },
+  "resultados/instancia_B__K1__tabu_t10.console.txt": {
+    "mtime": 1792700212.079349,
+    "seen": 1792700880.689643,
+    "ast_hash": "810cc837ab1365b721b43c2ec6637e0c",
+    "semantic_hash": "810cc837ab1365b721b43c2ec6637e0c"
+  },
+  "resultados/instancia_B__K1__tabu_t10_20.console.txt": {
+    "mtime": 1792700217.1712081,
+    "seen": 1792700880.689643,
+    "ast_hash": "1fc1d43ebb213d555f976b47d43e7eb0",
+    "semantic_hash": "1fc1d43ebb213d555f976b47d43e7eb0"
+  },
+  "resultados/instancia_B__K1__tabu_t3.console.txt": {
+    "mtime": 1792700206.9913967,
+    "seen": 1792700880.689644,
+    "ast_hash": "9ef8f57122f04e7bfa246b9bae6e1411",
+    "semantic_hash": "9ef8f57122f04e7bfa246b9bae6e1411"
+  },
+  "resultados/instancia_B__K1__vnd_a0.console.txt": {
+    "mtime": 1792700183.9559941,
+    "seen": 1792700880.689645,
+    "ast_hash": "82eddbde21271a2497d846592ef28770",
+    "semantic_hash": "82eddbde21271a2497d846592ef28770"
+  },
+  "resultados/instancia_B__K1__vnd_a03.console.txt": {
+    "mtime": 1792700186.5851395,
+    "seen": 1792700880.689645,
+    "ast_hash": "bd940d83d2fc92045688f772864ba126",
+    "semantic_hash": "bd940d83d2fc92045688f772864ba126"
+  },
+  "resultados/instancia_B__K1__vnd_a07.console.txt": {
+    "mtime": 1792700189.3963113,
+    "seen": 1792700880.689646,
+    "ast_hash": "ba0cd20e7f2dd4556ce3f2bd891f95dc",
+    "semantic_hash": "ba0cd20e7f2dd4556ce3f2bd891f95dc"
+  },
+  "resultados/instancia_B__K1__vnd_first.console.txt": {
+    "mtime": 1792700192.0087247,
+    "seen": 1792700880.6896472,
+    "ast_hash": "c41ca6828c3395b3959b21f076d01a2a",
+    "semantic_hash": "c41ca6828c3395b3959b21f076d01a2a"
+  },
+  "resultados/instancia_B__K2__n1.console.txt": {
+    "mtime": 1791517315.2863662,
+    "seen": 1792698417.2223418,
+    "ast_hash": "2500b3c660c4560849275e1cd10ab7fc",
+    "semantic_hash": "2500b3c660c4560849275e1cd10ab7fc"
+  },
+  "resultados/instancia_B__K2__n2.console.txt": {
+    "mtime": 1791517317.6706078,
+    "seen": 1792698417.2223418,
+    "ast_hash": "f09e0bee9624eb86e39e30794242cb0e",
+    "semantic_hash": "f09e0bee9624eb86e39e30794242cb0e"
+  },
+  "resultados/instancia_B__K2__n3.console.txt": {
+    "mtime": 1791517319.5038774,
+    "seen": 1792698417.222343,
+    "ast_hash": "821d3626ef71ce6c485b4b33ae8b68cb",
+    "semantic_hash": "821d3626ef71ce6c485b4b33ae8b68cb"
+  },
+  "resultados/instancia_B__K2__tabu_a03.console.txt": {
+    "mtime": 1791517326.3972833,
+    "seen": 1792698417.222344,
+    "ast_hash": "60a5953a5f594b7158fd0ce20fa17e8c",
+    "semantic_hash": "60a5953a5f594b7158fd0ce20fa17e8c"
+  },
+  "resultados/instancia_B__K2__tabu_t10.console.txt": {
+    "mtime": 1791517339.9166489,
+    "seen": 1792698417.222344,
+    "ast_hash": "0d387f4c30a2d790ea35997f760ac163",
+    "semantic_hash": "0d387f4c30a2d790ea35997f760ac163"
+  },
+  "resultados/instancia_B__K2__tabu_t10_20.console.txt": {
+    "mtime": 1791517346.704346,
+    "seen": 1792698417.2223449,
+    "ast_hash": "f8c83a1550adea98f48940036f54b5fc",
+    "semantic_hash": "f8c83a1550adea98f48940036f54b5fc"
+  },
+  "resultados/instancia_B__K2__tabu_t3.console.txt": {
+    "mtime": 1791517333.1708083,
+    "seen": 1792698417.222346,
+    "ast_hash": "1bc8d16d1e43b1c3676d0ab44a82f206",
+    "semantic_hash": "1bc8d16d1e43b1c3676d0ab44a82f206"
+  },
+  "resultados/instancia_B__K2__vnd_a0.console.txt": {
+    "mtime": 1791517303.3682172,
+    "seen": 1792698417.222346,
+    "ast_hash": "4e665b538fec6f2707e7c905a14454dd",
+    "semantic_hash": "4e665b538fec6f2707e7c905a14454dd"
+  },
+  "resultados/instancia_B__K2__vnd_a03.console.txt": {
+    "mtime": 1791517306.7157426,
+    "seen": 1792698417.222347,
+    "ast_hash": "442382ca17e94b8e9b3baa2ae8387e43",
+    "semantic_hash": "442382ca17e94b8e9b3baa2ae8387e43"
+  },
+  "resultados/instancia_B__K2__vnd_a07.console.txt": {
+    "mtime": 1791517310.2669048,
+    "seen": 1792698417.222347,
+    "ast_hash": "1c5fce77a425a554cb5265043a02090d",
+    "semantic_hash": "1c5fce77a425a554cb5265043a02090d"
+  },
+  "resultados/instancia_B__K2__vnd_first.console.txt": {
+    "mtime": 1791517313.5139878,
+    "seen": 1792698417.222348,
+    "ast_hash": "de73b51b664101c6c74d06062bb57a92",
+    "semantic_hash": "de73b51b664101c6c74d06062bb57a92"
+  },
+  "resultados/resumo.md": {
+    "mtime": 1792700220.3600948,
+    "seen": 1792700880.689916,
+    "ast_hash": "2ee46f16d3cd79696d39f9aad95edabb",
+    "semantic_hash": "2ee46f16d3cd79696d39f9aad95edabb"
+  },
+  "resultados/todas_instancias/instancia_01_prof_A__K1__vnd.console.txt": {
+    "mtime": 1792700264.7133138,
+    "seen": 1792700880.6899168,
+    "ast_hash": "67e57fd0f2d1f8d26ad19f35a435e93b",
+    "semantic_hash": "67e57fd0f2d1f8d26ad19f35a435e93b"
+  },
+  "resultados/todas_instancias/instancia_01_prof_A__K2__vnd.console.txt": {
+    "mtime": 1792016730.409851,
+    "seen": 1792698417.2223501,
+    "ast_hash": "de17e41739fe628a76ee807b1a1ead09",
+    "semantic_hash": "de17e41739fe628a76ee807b1a1ead09"
+  },
+  "resultados/todas_instancias/instancia_02_prof_B__K1__vnd.console.txt": {
+    "mtime": 1792016730.4962797,
+    "seen": 1792698417.222351,
+    "ast_hash": "73fe83e14f2cf4ee9631b92add2aa23c",
+    "semantic_hash": "73fe83e14f2cf4ee9631b92add2aa23c"
+  },
+  "resultados/todas_instancias/instancia_02_prof_B__K2__vnd.console.txt": {
+    "mtime": 1792016730.3818386,
+    "seen": 1792698417.222351,
+    "ast_hash": "8642a66df10ca935bc820c7166c90ecf",
+    "semantic_hash": "8642a66df10ca935bc820c7166c90ecf"
+  },
+  "resultados/todas_instancias/instancia_03_pequena_100__K1__vnd.console.txt": {
+    "mtime": 1792016731.238251,
+    "seen": 1792698417.2223518,
+    "ast_hash": "9cb6d311566158d61242d1988c92c734",
+    "semantic_hash": "9cb6d311566158d61242d1988c92c734"
+  },
+  "resultados/todas_instancias/instancia_03_pequena_100__K2__vnd.console.txt": {
+    "mtime": 1792016731.2990797,
+    "seen": 1792698417.2223518,
+    "ast_hash": "53c4d7f6125d75544c9351cdd0156151",
+    "semantic_hash": "53c4d7f6125d75544c9351cdd0156151"
+  },
+  "resultados/todas_instancias/instancia_04_pequena_109__K1__vnd.console.txt": {
+    "mtime": 1792700261.692543,
+    "seen": 1792700880.6900392,
+    "ast_hash": "a44caf970f824ff8cc2a564c2ec6f6f5",
+    "semantic_hash": "a44caf970f824ff8cc2a564c2ec6f6f5"
+  },
+  "resultados/todas_instancias/instancia_04_pequena_109__K2__vnd.console.txt": {
+    "mtime": 1792016732.0688248,
+    "seen": 1792698417.222354,
+    "ast_hash": "5544c7f52d5523091504bd10a17dcbea",
+    "semantic_hash": "5544c7f52d5523091504bd10a17dcbea"
+  },
+  "resultados/todas_instancias/instancia_05_turma_2550_1__K1__vnd.console.txt": {
+    "mtime": 1792016732.2440143,
+    "seen": 1792698417.222354,
+    "ast_hash": "3458a637cc21fa52153f48a9e85258ac",
+    "semantic_hash": "3458a637cc21fa52153f48a9e85258ac"
+  },
+  "resultados/todas_instancias/instancia_05_turma_2550_1__K2__vnd.console.txt": {
+    "mtime": 1792016732.2258992,
+    "seen": 1792698417.222355,
+    "ast_hash": "512236caff538ac29c1ea4fc310cad13",
+    "semantic_hash": "512236caff538ac29c1ea4fc310cad13"
+  },
+  "resultados/todas_instancias/instancia_06_turma_2550_2__K1__vnd.console.txt": {
+    "mtime": 1792700263.5434353,
+    "seen": 1792700880.690112,
+    "ast_hash": "d0a3d6e2ea9d352582cffc841d259fc2",
+    "semantic_hash": "d0a3d6e2ea9d352582cffc841d259fc2"
+  },
+  "resultados/todas_instancias/instancia_06_turma_2550_2__K2__vnd.console.txt": {
+    "mtime": 1792016733.2884927,
+    "seen": 1792698417.222356,
+    "ast_hash": "ce47b27d763c8963db6182e63facd51d",
+    "semantic_hash": "ce47b27d763c8963db6182e63facd51d"
+  },
+  "resultados/todas_instancias/instancia_07_malvacini_1__K1__vnd.console.txt": {
+    "mtime": 1792016733.6507974,
+    "seen": 1792698417.222357,
+    "ast_hash": "af9758edef4e63c65911b85f9281f647",
+    "semantic_hash": "af9758edef4e63c65911b85f9281f647"
+  },
+  "resultados/todas_instancias/instancia_07_malvacini_1__K2__vnd.console.txt": {
+    "mtime": 1792016734.0390096,
+    "seen": 1792698417.222357,
+    "ast_hash": "4f47d6d931320ceef0e78ec1a5652d27",
+    "semantic_hash": "4f47d6d931320ceef0e78ec1a5652d27"
+  },
+  "resultados/todas_instancias/instancia_08_malvacini_2__K1__vnd.console.txt": {
+    "mtime": 1792700268.0041647,
+    "seen": 1792700880.6901839,
+    "ast_hash": "b92dd66cba724d994b7efa4e7b74242d",
+    "semantic_hash": "b92dd66cba724d994b7efa4e7b74242d"
+  },
+  "resultados/todas_instancias/instancia_08_malvacini_2__K2__vnd.console.txt": {
+    "mtime": 1792016735.1015034,
+    "seen": 1792698417.222359,
+    "ast_hash": "0e8d841963a33945cad49a78e8b2f636",
+    "semantic_hash": "0e8d841963a33945cad49a78e8b2f636"
+  },
+  "resultados/todas_instancias/instancia_09_gustavo_isabela_base__K1__vnd.console.txt": {
+    "mtime": 1792016735.103062,
+    "seen": 1792698417.222359,
+    "ast_hash": "9a6717fc54bb62fe47e5b0b6414ba5ee",
+    "semantic_hash": "9a6717fc54bb62fe47e5b0b6414ba5ee"
+  },
+  "resultados/todas_instancias/instancia_09_gustavo_isabela_base__K2__vnd.console.txt": {
+    "mtime": 1792016735.195965,
+    "seen": 1792698417.2223601,
+    "ast_hash": "35623ccd6040f5ad9ce936718e0365c4",
+    "semantic_hash": "35623ccd6040f5ad9ce936718e0365c4"
+  },
+  "resultados/todas_instancias/instancia_10_gustavo_isabela_dif__K1__vnd.console.txt": {
+    "mtime": 1792016736.485545,
+    "seen": 1792698417.222361,
+    "ast_hash": "b40daff59da223841d346c9cc3b757be",
+    "semantic_hash": "b40daff59da223841d346c9cc3b757be"
+  },
+  "resultados/todas_instancias/instancia_10_gustavo_isabela_dif__K2__vnd.console.txt": {
+    "mtime": 1792016736.0068426,
+    "seen": 1792698417.222361,
+    "ast_hash": "44bde4be99f2599595cced2b46223d0a",
+    "semantic_hash": "44bde4be99f2599595cced2b46223d0a"
+  },
+  "resultados/todas_instancias/instancia_11_felipe_mickaell_1__K1__vnd.console.txt": {
+    "mtime": 1792700262.8308985,
+    "seen": 1792700880.690319,
+    "ast_hash": "9da895ef0e6c59e4223c94be51e6c5d2",
+    "semantic_hash": "9da895ef0e6c59e4223c94be51e6c5d2"
+  },
+  "resultados/todas_instancias/instancia_11_felipe_mickaell_1__K2__vnd.console.txt": {
+    "mtime": 1792016736.572775,
+    "seen": 1792698417.222362,
+    "ast_hash": "5eb35e42d4acda5a297bfe092d3efa8b",
+    "semantic_hash": "5eb35e42d4acda5a297bfe092d3efa8b"
+  },
+  "resultados/todas_instancias/instancia_12_felipe_mickaell_2__K1__vnd.console.txt": {
+    "mtime": 1792016737.3962708,
+    "seen": 1792698417.222363,
+    "ast_hash": "c49922ee04ca8c7dbb99b40363547a0e",
+    "semantic_hash": "c49922ee04ca8c7dbb99b40363547a0e"
+  },
+  "resultados/todas_instancias/instancia_12_felipe_mickaell_2__K2__vnd.console.txt": {
+    "mtime": 1792016737.3935733,
+    "seen": 1792698417.222364,
+    "ast_hash": "ff680432e0b82515ff0f404dd488142d",
+    "semantic_hash": "ff680432e0b82515ff0f404dd488142d"
+  },
+  "resultados/todas_instancias/instancia_13_g01_360__K1__vnd.console.txt": {
+    "mtime": 1792016737.4240937,
+    "seen": 1792698417.222364,
+    "ast_hash": "2fa73c6ba7fcec831299a39cd18b6825",
+    "semantic_hash": "2fa73c6ba7fcec831299a39cd18b6825"
+  },
+  "resultados/todas_instancias/instancia_13_g01_360__K2__vnd.console.txt": {
+    "mtime": 1792016738.171484,
+    "seen": 1792698417.222365,
+    "ast_hash": "854b726fee38aca9e3496686ffa8925c",
+    "semantic_hash": "854b726fee38aca9e3496686ffa8925c"
+  },
+  "resultados/todas_instancias/instancia_14_g01_382__K1__vnd.console.txt": {
+    "mtime": 1792700261.8573873,
+    "seen": 1792700880.69044,
+    "ast_hash": "7ba6791ec1e18b48fcb0fcf0b871f206",
+    "semantic_hash": "7ba6791ec1e18b48fcb0fcf0b871f206"
+  },
+  "resultados/todas_instancias/instancia_14_g01_382__K2__vnd.console.txt": {
+    "mtime": 1792016738.2545981,
+    "seen": 1792698417.2223659,
+    "ast_hash": "8aad7910313a68ce8be91dc53dd7711b",
+    "semantic_hash": "8aad7910313a68ce8be91dc53dd7711b"
+  },
+  "resultados/todas_instancias/instancia_15_g02_370__K1__vnd.console.txt": {
+    "mtime": 1792016739.6598625,
+    "seen": 1792698417.222367,
+    "ast_hash": "c208d1fb74f6c2e60583e771bbf25d1f",
+    "semantic_hash": "c208d1fb74f6c2e60583e771bbf25d1f"
+  },
+  "resultados/todas_instancias/instancia_15_g02_370__K2__vnd.console.txt": {
+    "mtime": 1792016739.0137777,
+    "seen": 1792698417.222367,
+    "ast_hash": "d2569367c2c7173689db0d7d68053c71",
+    "semantic_hash": "d2569367c2c7173689db0d7d68053c71"
+  },
+  "resultados/todas_instancias/instancia_16_g02_362__K1__vnd.console.txt": {
+    "mtime": 1792016739.110363,
+    "seen": 1792698417.222368,
+    "ast_hash": "c264c0dafbd9bfb8bcbe0413a23adaec",
+    "semantic_hash": "c264c0dafbd9bfb8bcbe0413a23adaec"
+  },
+  "resultados/todas_instancias/instancia_16_g02_362__K2__vnd.console.txt": {
+    "mtime": 1792016740.1699207,
+    "seen": 1792698417.222369,
+    "ast_hash": "b3d8ea29d71e02c5673a9ce060eb8151",
+    "semantic_hash": "b3d8ea29d71e02c5673a9ce060eb8151"
+  },
+  "resultados/todas_instancias/instancia_17_g03_3452__K1__vnd.console.txt": {
+    "mtime": 1792700262.7946537,
+    "seen": 1792700880.690559,
+    "ast_hash": "3158e9a7afe9943f44e95dcfb95d74a7",
+    "semantic_hash": "3158e9a7afe9943f44e95dcfb95d74a7"
+  },
+  "resultados/todas_instancias/instancia_17_g03_3452__K2__vnd.console.txt": {
+    "mtime": 1792016740.1835732,
+    "seen": 1792698417.2223701,
+    "ast_hash": "f409eec717469b83f678a7dbe5bc2252",
+    "semantic_hash": "f409eec717469b83f678a7dbe5bc2252"
+  },
+  "resultados/todas_instancias/instancia_18_g03_4454__K1__vnd.console.txt": {
+    "mtime": 1792016740.781522,
+    "seen": 1792698417.2223701,
+    "ast_hash": "a4e7471c30c72462b7a18a8539c8aa38",
+    "semantic_hash": "a4e7471c30c72462b7a18a8539c8aa38"
+  },
+  "resultados/todas_instancias/instancia_18_g03_4454__K2__vnd.console.txt": {
+    "mtime": 1792016741.0167992,
+    "seen": 1792698417.222371,
+    "ast_hash": "a4749daf77507d1515de906c98cfd746",
+    "semantic_hash": "a4749daf77507d1515de906c98cfd746"
+  },
+  "resultados/todas_instancias/instancia_19_g04_4213__K1__vnd.console.txt": {
+    "mtime": 1792700262.2384007,
+    "seen": 1792700880.690631,
+    "ast_hash": "17b8c6ac798dc5c8e25bdb1da2a00dcc",
+    "semantic_hash": "17b8c6ac798dc5c8e25bdb1da2a00dcc"
+  },
+  "resultados/todas_instancias/instancia_19_g04_4213__K2__vnd.console.txt": {
+    "mtime": 1792016741.8610735,
+    "seen": 1792698417.222372,
+    "ast_hash": "82d313a47281217bc9b6a346a5ba5d5d",
+    "semantic_hash": "82d313a47281217bc9b6a346a5ba5d5d"
+  },
+  "resultados/todas_instancias/instancia_20_g04_316__K1__vnd.console.txt": {
+    "mtime": 1792016742.1604285,
+    "seen": 1792698417.222373,
+    "ast_hash": "d0a7a5792052379acfab30d8c48e015b",
+    "semantic_hash": "d0a7a5792052379acfab30d8c48e015b"
+  },
+  "resultados/todas_instancias/instancia_20_g04_316__K2__vnd.console.txt": {
+    "mtime": 1792016741.8974564,
+    "seen": 1792698417.222374,
+    "ast_hash": "cbb93dc5853faa7e396ea421e0452ea2",
+    "semantic_hash": "cbb93dc5853faa7e396ea421e0452ea2"
+  },
+  "resultados/todas_instancias/instancia_21_g05_316__K1__vnd.console.txt": {
+    "mtime": 1792016742.7452643,
+    "seen": 1792698417.222374,
+    "ast_hash": "ea3204ea0297bea868675ac76171bbcc",
+    "semantic_hash": "ea3204ea0297bea868675ac76171bbcc"
+  },
+  "resultados/todas_instancias/instancia_21_g05_316__K2__vnd.console.txt": {
+    "mtime": 1792016742.764148,
+    "seen": 1792698417.222375,
+    "ast_hash": "ea09e7d68597e21bf065e3aa86217ca3",
+    "semantic_hash": "ea09e7d68597e21bf065e3aa86217ca3"
+  },
+  "resultados/todas_instancias/instancia_22_g05_3900__K1__vnd.console.txt": {
+    "mtime": 1792016742.984632,
+    "seen": 1792698417.222375,
+    "ast_hash": "ed2e382463072b503cc16c0aa16586d1",
+    "semantic_hash": "ed2e382463072b503cc16c0aa16586d1"
+  },
+  "resultados/todas_instancias/instancia_22_g05_3900__K2__vnd.console.txt": {
+    "mtime": 1792016743.4682066,
+    "seen": 1792698417.2223759,
+    "ast_hash": "86d12d507de11f226795398025ab9bb3",
+    "semantic_hash": "86d12d507de11f226795398025ab9bb3"
+  },
+  "resultados/todas_instancias/instancia_23_g06_4656__K1__vnd.console.txt": {
+    "mtime": 1792016744.055883,
+    "seen": 1792698417.222377,
+    "ast_hash": "632b98775b26fe5f45494b8589f845a4",
+    "semantic_hash": "632b98775b26fe5f45494b8589f845a4"
+  },
+  "resultados/todas_instancias/instancia_23_g06_4656__K2__vnd.console.txt": {
+    "mtime": 1792016743.976063,
+    "seen": 1792698417.222377,
+    "ast_hash": "2892ded36c5c5c4b8c854766f599d336",
+    "semantic_hash": "2892ded36c5c5c4b8c854766f599d336"
+  },
+  "resultados/todas_instancias/instancia_24_g06_7038__K1__vnd.console.txt": {
+    "mtime": 1792700265.5572593,
+    "seen": 1792700880.690856,
+    "ast_hash": "8233a4413f756899434221c798a80cce",
+    "semantic_hash": "8233a4413f756899434221c798a80cce"
+  },
+  "resultados/todas_instancias/instancia_24_g06_7038__K2__vnd.console.txt": {
+    "mtime": 1792016744.750346,
+    "seen": 1792698417.222378,
+    "ast_hash": "f298c36e7de7b8f15386aca69721113d",
+    "semantic_hash": "f298c36e7de7b8f15386aca69721113d"
+  },
+  "resultados/todas_instancias/instancia_25_g07_5917__K1__vnd.console.txt": {
+    "mtime": 1792016745.0494206,
+    "seen": 1792698417.222379,
+    "ast_hash": "11c69c4deb2ac0ad3609ec44bee81252",
+    "semantic_hash": "11c69c4deb2ac0ad3609ec44bee81252"
+  },
+  "resultados/todas_instancias/instancia_25_g07_5917__K2__vnd.console.txt": {
+    "mtime": 1792016744.9544106,
+    "seen": 1792698417.22238,
+    "ast_hash": "656dfb8652bad540ce4eae0225c63cb9",
+    "semantic_hash": "656dfb8652bad540ce4eae0225c63cb9"
+  },
+  "resultados/todas_instancias/instancia_26_g07_3858__K1__vnd.console.txt": {
+    "mtime": 1792700619.673397,
+    "seen": 1792700880.69093,
+    "ast_hash": "94ebf808766ae687079561c292726c4f",
+    "semantic_hash": "94ebf808766ae687079561c292726c4f"
+  },
+  "resultados/todas_instancias/instancia_26_g07_3858__K2__vnd.console.txt": {
+    "mtime": 1792016745.8021138,
+    "seen": 1792698417.2223842,
+    "ast_hash": "66184d4ed913e16c2689b96f388e12b9",
+    "semantic_hash": "66184d4ed913e16c2689b96f388e12b9"
+  },
+  "resultados/todas_instancias/instancia_27_g08_4175__K1__vnd.console.txt": {
+    "mtime": 1792700620.648015,
+    "seen": 1792700880.690954,
+    "ast_hash": "fb5df2fff12c2e6611d539c17f9f232f",
+    "semantic_hash": "fb5df2fff12c2e6611d539c17f9f232f"
+  },
+  "resultados/todas_instancias/instancia_27_g08_4175__K2__vnd.console.txt": {
+    "mtime": 1792016746.4652593,
+    "seen": 1792698417.222385,
+    "ast_hash": "db6767be3c425d45b039039be79c77fd",
+    "semantic_hash": "db6767be3c425d45b039039be79c77fd"
+  },
+  "resultados/todas_instancias/instancia_28_g08_4784__K1__vnd.console.txt": {
+    "mtime": 1792700263.7782366,
+    "seen": 1792700880.690979,
+    "ast_hash": "35a59b4ebb0509553b06f9d6f6d61dbe",
+    "semantic_hash": "35a59b4ebb0509553b06f9d6f6d61dbe"
+  },
+  "resultados/todas_instancias/instancia_28_g08_4784__K2__vnd.console.txt": {
+    "mtime": 1792016747.182267,
+    "seen": 1792698417.222386,
+    "ast_hash": "e6e6163b9ebe3b5e4549673930377fe0",
+    "semantic_hash": "e6e6163b9ebe3b5e4549673930377fe0"
+  },
+  "resultados/todas_instancias/instancia_29_g09_3531__K1__vnd.console.txt": {
+    "mtime": 1792700263.7558763,
+    "seen": 1792700880.691015,
+    "ast_hash": "ddc5ae34237910e4245577e3afbe4c6e",
+    "semantic_hash": "ddc5ae34237910e4245577e3afbe4c6e"
+  },
+  "resultados/todas_instancias/instancia_29_g09_3531__K2__vnd.console.txt": {
+    "mtime": 1792016748.0004091,
+    "seen": 1792698417.2223868,
+    "ast_hash": "14e0600cd5445ef94962a26150471da2",
+    "semantic_hash": "14e0600cd5445ef94962a26150471da2"
+  },
+  "resultados/todas_instancias/instancia_30_g09_4131__K1__vnd.console.txt": {
+    "mtime": 1792700266.4959214,
+    "seen": 1792700880.6910431,
+    "ast_hash": "d3048270faf6bbc14df5f78868ee54aa",
+    "semantic_hash": "d3048270faf6bbc14df5f78868ee54aa"
+  },
+  "resultados/todas_instancias/instancia_30_g09_4131__K2__vnd.console.txt": {
+    "mtime": 1792016748.7805555,
+    "seen": 1792698417.222389,
+    "ast_hash": "1813c72dd7551bd3d6c0ad9f84ba9857",
+    "semantic_hash": "1813c72dd7551bd3d6c0ad9f84ba9857"
+  },
+  "resultados/todas_instancias/instancia_31_g10_base__K1__vnd.console.txt": {
+    "mtime": 1792700264.9100215,
+    "seen": 1792700880.691067,
+    "ast_hash": "6ee8f67d40c9cac4a10de649efc8e86d",
+    "semantic_hash": "6ee8f67d40c9cac4a10de649efc8e86d"
+  },
+  "resultados/todas_instancias/instancia_31_g10_base__K2__vnd.console.txt": {
+    "mtime": 1792016750.3299668,
+    "seen": 1792698417.22239,
+    "ast_hash": "9001396fa6c85d8b09138d2594fcd069",
+    "semantic_hash": "9001396fa6c85d8b09138d2594fcd069"
+  },
+  "resultados/todas_instancias/instancia_32_g10_dif__K1__vnd.console.txt": {
+    "mtime": 1792700265.703708,
+    "seen": 1792700880.691092,
+    "ast_hash": "99491357240cd4ab945da8b46d7fb10f",
+    "semantic_hash": "99491357240cd4ab945da8b46d7fb10f"
+  },
+  "resultados/todas_instancias/instancia_32_g10_dif__K2__vnd.console.txt": {
+    "mtime": 1792016750.8958735,
+    "seen": 1792698417.2223911,
+    "ast_hash": "32f6ccdda950db8f9f372774d2b318a6",
+    "semantic_hash": "32f6ccdda950db8f9f372774d2b318a6"
+  },
+  "resultados/todas_instancias/instancia_33_g11_base__K1__vnd.console.txt": {
+    "mtime": 1792700266.2324123,
+    "seen": 1792700880.691117,
+    "ast_hash": "ea3cb68620958a8aca9e666e201db895",
+    "semantic_hash": "ea3cb68620958a8aca9e666e201db895"
+  },
+  "resultados/todas_instancias/instancia_33_g11_base__K2__vnd.console.txt": {
+    "mtime": 1792016751.7836452,
+    "seen": 1792698417.222392,
+    "ast_hash": "be952493224b2d2b74957df95d390312",
+    "semantic_hash": "be952493224b2d2b74957df95d390312"
+  },
+  "resultados/todas_instancias/instancia_34_g11_dif__K1__vnd.console.txt": {
+    "mtime": 1792700266.84147,
+    "seen": 1792700880.6911411,
+    "ast_hash": "c578dd552cd3d3a19eadbabc39f2c313",
+    "semantic_hash": "c578dd552cd3d3a19eadbabc39f2c313"
+  },
+  "resultados/todas_instancias/instancia_34_g11_dif__K2__vnd.console.txt": {
+    "mtime": 1792016752.654716,
+    "seen": 1792698417.2223942,
+    "ast_hash": "47d487dd16114a977ab3cffcace9cc0d",
+    "semantic_hash": "47d487dd16114a977ab3cffcace9cc0d"
+  },
+  "resultados/todas_instancias/instancia_35_g12_formatada_1__K1__vnd.console.txt": {
+    "mtime": 1792700266.970304,
+    "seen": 1792700880.691166,
+    "ast_hash": "331c8ac7b4dbe32ef5fece0997d10f42",
+    "semantic_hash": "331c8ac7b4dbe32ef5fece0997d10f42"
+  },
+  "resultados/todas_instancias/instancia_35_g12_formatada_1__K2__vnd.console.txt": {
+    "mtime": 1792016753.6195366,
+    "seen": 1792698417.222395,
+    "ast_hash": "e0815fe356ca334432b1ba1c5172d877",
+    "semantic_hash": "e0815fe356ca334432b1ba1c5172d877"
+  },
+  "resultados/todas_instancias/instancia_36_g12_formatada_2__K1__vnd.console.txt": {
+    "mtime": 1792700267.2604737,
+    "seen": 1792700880.691191,
+    "ast_hash": "04e49be9ddc15db661e226b85c659517",
+    "semantic_hash": "04e49be9ddc15db661e226b85c659517"
+  },
+  "resultados/todas_instancias/instancia_36_g12_formatada_2__K2__vnd.console.txt": {
+    "mtime": 1792016754.558273,
+    "seen": 1792698417.222396,
+    "ast_hash": "e6b4929ed26938c61a865e088f37259e",
+    "semantic_hash": "e6b4929ed26938c61a865e088f37259e"
+  },
+  "resultados/todas_instancias/instancia_37_g13_3696__K1__vnd.console.txt": {
+    "mtime": 1792016755.3098812,
+    "seen": 1792698417.2223969,
+    "ast_hash": "c7cff480c9707f77b9357885aa483bfa",
+    "semantic_hash": "c7cff480c9707f77b9357885aa483bfa"
+  },
+  "resultados/todas_instancias/instancia_37_g13_3696__K2__vnd.console.txt": {
+    "mtime": 1792016755.3758461,
+    "seen": 1792698417.2223969,
+    "ast_hash": "7c367ee74bc93547d98faca15b2a1e96",
+    "semantic_hash": "7c367ee74bc93547d98faca15b2a1e96"
+  },
+  "resultados/todas_instancias/instancia_38_g13_4124__K1__vnd.console.txt": {
+    "mtime": 1792700267.9874165,
+    "seen": 1792700880.691262,
+    "ast_hash": "ef31036c161af728b91a6732914bc737",
+    "semantic_hash": "ef31036c161af728b91a6732914bc737"
+  },
+  "resultados/todas_instancias/instancia_38_g13_4124__K2__vnd.console.txt": {
+    "mtime": 1792016756.18139,
+    "seen": 1792698417.222399,
+    "ast_hash": "cb4208d51e4ba4a29647ec1c5d01478b",
+    "semantic_hash": "cb4208d51e4ba4a29647ec1c5d01478b"
+  },
+  "resultados/todas_instancias/instancia_39_g14_excel_1__K1__vnd.console.txt": {
+    "mtime": 1792700267.796062,
+    "seen": 1792700880.691287,
+    "ast_hash": "4ad243b14f327b4f812e76549568a387",
+    "semantic_hash": "4ad243b14f327b4f812e76549568a387"
+  },
+  "resultados/todas_instancias/instancia_39_g14_excel_1__K2__vnd.console.txt": {
+    "mtime": 1792016757.0919912,
+    "seen": 1792698417.2224,
+    "ast_hash": "b8d6094685f97beed0054b255a1998f8",
+    "semantic_hash": "b8d6094685f97beed0054b255a1998f8"
+  },
+  "resultados/todas_instancias/instancia_40_g14_excel_2__K1__vnd.console.txt": {
+    "mtime": 1792700267.84547,
+    "seen": 1792700880.6913111,
+    "ast_hash": "fcc92268e8dcb7064205cc4e97a39213",
+    "semantic_hash": "fcc92268e8dcb7064205cc4e97a39213"
+  },
+  "resultados/todas_instancias/instancia_40_g14_excel_2__K2__vnd.console.txt": {
+    "mtime": 1792016757.8864927,
+    "seen": 1792698417.2224011,
+    "ast_hash": "dfaaa85b4597a44389f4608e3439191d",
+    "semantic_hash": "dfaaa85b4597a44389f4608e3439191d"
+  },
+  "resultados/todas_instancias/instancia_41_grande_5287__K1__vnd.console.txt": {
+    "mtime": 1792700267.9797697,
+    "seen": 1792700880.691335,
+    "ast_hash": "631f37b468cae23fd448c7694af0f3f8",
+    "semantic_hash": "631f37b468cae23fd448c7694af0f3f8"
+  },
+  "resultados/todas_instancias/instancia_41_grande_5287__K2__vnd.console.txt": {
+    "mtime": 1792016758.651782,
+    "seen": 1792698417.222402,
+    "ast_hash": "5e3da0ebb8b7baba7745413a9cd2917c",
+    "semantic_hash": "5e3da0ebb8b7baba7745413a9cd2917c"
+  },
+  "resultados/todas_instancias/resumo.md": {
+    "mtime": 1792700620.875926,
+    "seen": 1792700880.69136,
+    "ast_hash": "505f15ffdd0f5c4359ec7ac5d6f827ab",
+    "semantic_hash": "505f15ffdd0f5c4359ec7ac5d6f827ab"
+  },
+  "Trabalho 1 - 2026-3 - Implementacao (1).pdf": {
+    "mtime": 1791143720.9778674,
+    "seen": 1792698417.222404,
+    "ast_hash": "4c022eca7bf30b4870b6fd7d2793c12f",
+    "semantic_hash": "4c022eca7bf30b4870b6fd7d2793c12f"
+  },
+  "docs/relatorio.pdf": {
+    "mtime": 1792700385.8995657,
+    "seen": 1792700880.691381,
+    "ast_hash": "991a940f8082e3cd5a65e993bd18e1a8",
+    "semantic_hash": "991a940f8082e3cd5a65e993bd18e1a8"
+  },
+  "resultados/convergencia.pdf": {
+    "mtime": 1792700221.7356236,
+    "seen": 1792700880.691381,
+    "ast_hash": "8e9c54f5d9c1fe0969712cc46a30ed45",
+    "semantic_hash": "8e9c54f5d9c1fe0969712cc46a30ed45"
+  },
+  "resultados/convergencia.png": {
+    "mtime": 1792700222.0147212,
+    "seen": 1792700880.691382,
+    "ast_hash": "f4ed5fb0ac8b9af3a007b052940f82ac",
+    "semantic_hash": "f4ed5fb0ac8b9af3a007b052940f82ac"
+  },
+  "resultados/todas_instancias/instancia_26_g07_3858__K1__vnd.json": {
+    "mtime": 1792700619.6733177,
+    "seen": 1792700880.685717,
+    "ast_hash": "1271206fe5576f7f44c16b5e62ef7a48",
+    "semantic_hash": "1271206fe5576f7f44c16b5e62ef7a48"
+  },
+  "resultados/todas_instancias/instancia_27_g08_4175__K1__vnd.json": {
+    "mtime": 1792700620.6471658,
+    "seen": 1792700880.6857421,
+    "ast_hash": "52c41538f0284ca21427bc6bd734670a",
+    "semantic_hash": "52c41538f0284ca21427bc6bd734670a"
+  },
+  "entrega/Modelo_de_Instancia.txt": {
+    "mtime": 1792699894.7097895,
+    "seen": 1792700880.68666,
+    "ast_hash": "e1bcd891844dda480f24a84499da72c2",
+    "semantic_hash": "e1bcd891844dda480f24a84499da72c2"
+  },
+  "entrega/exemplo8.txt": {
+    "mtime": 1792699722.9245193,
+    "seen": 1792700880.686661,
+    "ast_hash": "8ef40649f7561872addf6f821f12c919",
+    "semantic_hash": "8ef40649f7561872addf6f821f12c919"
+  },
+  "entrega/instancia2.txt": {
+    "mtime": 1791215116.0,
+    "seen": 1792700880.686662,
+    "ast_hash": "1c9508dc3c25d6d66c428df5f7817e8c",
+    "semantic_hash": "1c9508dc3c25d6d66c428df5f7817e8c"
+  },
+  "entrega/instancia_A.txt": {
+    "mtime": 1791217984.0,
+    "seen": 1792700880.686663,
+    "ast_hash": "28ec97e79b4acae9e4d84dbd7b608552",
+    "semantic_hash": "28ec97e79b4acae9e4d84dbd7b608552"
+  },
+  "entrega/instancia_B.txt": {
+    "mtime": 1791217984.0,
+    "seen": 1792700880.686663,
+    "ast_hash": "d1b1cd11fb158607733c8f4a565fad3b",
+    "semantic_hash": "d1b1cd11fb158607733c8f4a565fad3b"
+  }
+}

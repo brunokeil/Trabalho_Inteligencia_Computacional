@@ -1,0 +1,7 @@
+No orçamento utilizado, a tabu com $\alpha=0{,}3$ apresentou menor distância média que o VND correspondente em 8 dos oito pares instância/K, incluindo casos de atendimento parcial. Em A, K=1, a média passou de 30204,54 km no VND para 29473,64 km na tabu, com tempos médios de busca de 0.044 s e 0.131 s. Essa comparação não estabelece significância estatística e usa o mesmo limite de iterações, não o mesmo tempo.
+
+Em A, K=1, o reparo local de tipos na construção atingiu o atendimento máximo sem recorrer aos tipos do certificado (0 fallbacks nas 30 sementes com $\alpha=0{,}3$). Para A, K=2, a configuração de menor média entre as testadas foi \texttt{tabu\_a03}, com 28732,02 km. Não há uma tenure universalmente recomendada a partir desses dados.
+
+Muitas execuções atingiram 150 iterações; portanto, parte das diferenças reflete também a velocidade de melhoria antes do limite. A flexibilização para K=2 amplia o conjunto viável, mas uma heurística com orçamento finito pode encontrar resultado pior que em K=1, como observado em algumas médias de B. Essa é uma limitação de exploração, não uma inversão da relação entre ótimos dos modelos.
+
+Em uma execução adicional de A, K=1, com semente 1, $\alpha=0{,}3$ e limite de 5000 iterações, o VND encerrou após 2740 iterações, em 1.012 s de busca, passando de 29542,03 para 27323,54 km. Essa medição individual ilustra o alvo de desempenho, não substitui as 30 repetições da campanha e continua sujeita à amostragem de N3.

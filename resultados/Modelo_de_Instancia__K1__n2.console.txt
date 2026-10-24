@@ -1,0 +1,34 @@
+COMMAND ["/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao", "--instancia", "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/entrega/Modelo_de_Instancia.txt", "--tipos-por-escola", "1", "--runs", "30", "--seed", "1", "--max-iter", "150", "--sem-melhora", "50", "--n3-periodo", "15", "--n3-amostras", "4", "--saida", "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/Modelo_de_Instancia__K1__n2.json", "--metodo", "vnd", "--alpha", "0.3", "--viz", "2"]
+Modelo_de_Instancia.txt K=1 INVIAVEL COMPROVADA atendimento maximo=91/109 nao_alocados_min=18 pre_check=0.439359s
+run=1 seed=1 inicial=341.279200 final=333.5246 km melhora=7.7546 constr=0.0002s busca=0.0000s iter=2
+run=2 seed=2 inicial=353.251500 final=349.4605 km melhora=3.7910 constr=0.0002s busca=0.0000s iter=2
+run=3 seed=3 inicial=369.045700 final=354.5457 km melhora=14.5000 constr=0.0002s busca=0.0000s iter=2
+run=4 seed=4 inicial=330.601700 final=326.8107 km melhora=3.7910 constr=0.0002s busca=0.0000s iter=2
+run=5 seed=5 inicial=359.987000 final=359.9870 km melhora=0.0000 constr=0.0002s busca=0.0000s iter=1
+run=6 seed=6 inicial=367.117900 final=352.6179 km melhora=14.5000 constr=0.0002s busca=0.0000s iter=2
+run=7 seed=7 inicial=363.960500 final=349.4605 km melhora=14.5000 constr=0.0002s busca=0.0000s iter=2
+run=8 seed=8 inicial=350.927100 final=347.1361 km melhora=3.7910 constr=0.0002s busca=0.0000s iter=2
+run=9 seed=9 inicial=408.208800 final=402.1275 km melhora=6.0813 constr=0.0002s busca=0.0000s iter=2
+run=10 seed=10 inicial=336.055900 final=321.5559 km melhora=14.5000 constr=0.0002s busca=0.0000s iter=2
+run=11 seed=11 inicial=390.895000 final=383.8362 km melhora=7.0588 constr=0.0002s busca=0.0000s iter=2
+run=12 seed=12 inicial=349.202900 final=334.7029 km melhora=14.5000 constr=0.0002s busca=0.0000s iter=2
+run=13 seed=13 inicial=345.881200 final=339.5983 km melhora=6.2829 constr=0.0002s busca=0.0000s iter=2
+run=14 seed=14 inicial=384.469300 final=381.7388 km melhora=2.7305 constr=0.0002s busca=0.0000s iter=2
+run=15 seed=15 inicial=353.249400 final=346.9665 km melhora=6.2829 constr=0.0002s busca=0.0000s iter=2
+run=16 seed=16 inicial=349.450300 final=341.6957 km melhora=7.7546 constr=0.0002s busca=0.0000s iter=2
+run=17 seed=17 inicial=350.846400 final=339.5983 km melhora=11.2481 constr=0.0002s busca=0.0000s iter=2
+run=18 seed=18 inicial=392.643700 final=389.2766 km melhora=3.3671 constr=0.0002s busca=0.0000s iter=2
+run=19 seed=19 inicial=345.207800 final=341.4168 km melhora=3.7910 constr=0.0002s busca=0.0000s iter=2
+run=20 seed=20 inicial=349.202000 final=334.7020 km melhora=14.5000 constr=0.0002s busca=0.0000s iter=2
+run=21 seed=21 inicial=352.617900 final=352.6179 km melhora=0.0000 constr=0.0002s busca=0.0000s iter=1
+run=22 seed=22 inicial=354.683800 final=340.1838 km melhora=14.5000 constr=0.0002s busca=0.0000s iter=2
+run=23 seed=23 inicial=350.274800 final=341.4168 km melhora=8.8580 constr=0.0002s busca=0.0000s iter=2
+run=24 seed=24 inicial=354.683800 final=340.1838 km melhora=14.5000 constr=0.0001s busca=0.0000s iter=2
+run=25 seed=25 inicial=327.652300 final=321.3694 km melhora=6.2829 constr=0.0002s busca=0.0000s iter=2
+run=26 seed=26 inicial=367.751400 final=361.4125 km melhora=6.3389 constr=0.0002s busca=0.0000s iter=2
+run=27 seed=27 inicial=354.098300 final=339.5983 km melhora=14.5000 constr=0.0002s busca=0.0000s iter=2
+run=28 seed=28 inicial=369.911800 final=361.4125 km melhora=8.4993 constr=0.0002s busca=0.0000s iter=2
+run=29 seed=29 inicial=390.818700 final=389.2766 km melhora=1.5421 constr=0.0002s busca=0.0000s iter=2
+run=30 seed=30 inicial=371.235100 final=359.9870 km melhora=11.2481 constr=0.0002s busca=0.0000s iter=2
+distancia km: min=321.3694 media=351.2739 desvio_amostral=20.3911 max=402.1275 melhor_seed=25
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/Modelo_de_Instancia__K1__n2.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/Modelo_de_Instancia__K1__n2.csv"

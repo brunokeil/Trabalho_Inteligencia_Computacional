@@ -1,0 +1,136 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "binary_sha256": "a3c0404f07031bca4d380006d427de67e129197281db8cf376bb86a371f0dae7",
+  "runs": 30,
+  "max_iter": 150,
+  "stagnation": 50,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "configs": [
+    [
+      "vnd_a0",
+      {
+        "metodo": "vnd",
+        "alpha": 0
+      }
+    ],
+    [
+      "vnd_a03",
+      {
+        "metodo": "vnd",
+        "alpha": 0.3
+      }
+    ],
+    [
+      "vnd_a07",
+      {
+        "metodo": "vnd",
+        "alpha": 0.7
+      }
+    ],
+    [
+      "vnd_first",
+      {
+        "metodo": "vnd",
+        "alpha": 0.3,
+        "ls": "first"
+      }
+    ],
+    [
+      "n1",
+      {
+        "metodo": "vnd",
+        "alpha": 0.3,
+        "viz": "1"
+      }
+    ],
+    [
+      "n2",
+      {
+        "metodo": "vnd",
+        "alpha": 0.3,
+        "viz": "2"
+      }
+    ],
+    [
+      "n3",
+      {
+        "metodo": "vnd",
+        "alpha": 0.3,
+        "viz": "3"
+      }
+    ],
+    [
+      "tabu_a03",
+      {
+        "metodo": "tabu",
+        "alpha": 0.3
+      }
+    ],
+    [
+      "tabu_t3",
+      {
+        "metodo": "tabu",
+        "alpha": 0.3,
+        "tmin": 3,
+        "tmax": 3
+      }
+    ],
+    [
+      "tabu_t10",
+      {
+        "metodo": "tabu",
+        "alpha": 0.3,
+        "tmin": 10,
+        "tmax": 10
+      }
+    ],
+    [
+      "tabu_t10_20",
+      {
+        "metodo": "tabu",
+        "alpha": 0.3,
+        "tmin": 10,
+        "tmax": 20
+      }
+    ]
+  ],
+  "instances": {
+    "Modelo_de_Instancia.txt": "464afc22a902339175b77eef451c4067611e4e3f2116651b070dcf001f95971b",
+    "instancia2.txt": "9a868b7d5396f5d48ae7f6f29d389d9aaf8cc69d37d7d21639c58d8c776e43c7",
+    "instancia_A.txt": "195e4119c91588148f4d0f2baac0ced925f90d56106856354ae0fc9613b30b05",
+    "instancia_B.txt": "201bc70d1772dc0819c92eb983b4247fae59291745aba3ed85ca2c12544d7e64"
+  }
+}

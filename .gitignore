@@ -1,0 +1,12 @@
+/build/
+/alocacao
+.DS_Store
+__pycache__/
+.cache/
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+/entrega/historico.bundle

@@ -1,0 +1,15 @@
+DCC136 — Trabalho 1 — entrega local
+
+Fontes: ../src/ e ../Makefile
+Instruções: ../README.md
+Relatório: ../docs/relatorio.pdf e relatorio.tex
+Apresentação: ../docs/slides.md
+Exemplo manual: exemplo8.txt e ../docs/exemplo8.md
+Experimentos: ../resultados/resumo.csv, execucoes.csv, melhores/ e convergencia.pdf
+Resultados completos: JSON/CSV de 88 configurações, 30 sementes cada.
+Validação: make test; make test-sanitize; scripts/validar.py.
+Histórico: historico.bundle (git clone historico.bundle NOVA_PASTA).
+Pacote: Trabalho1-entrega.zip, gerado por scripts/empacotar.py.
+
+Publicação GitHub pendente: autenticação gh inválida e destino ainda não informado.
+O relatório não contém URL inventada. Atualizar docs/repositorio.tex após publicação.

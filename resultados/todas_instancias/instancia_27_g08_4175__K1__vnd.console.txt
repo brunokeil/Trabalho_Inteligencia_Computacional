@@ -1,0 +1,5 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/instancia_27_g08_4175.txt --tipos-por-escola 1 --metodo vnd --alpha 0.3 --runs 1 --seed 1 --max-iter 150 --sem-melhora 50 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/todas_instancias/instancia_27_g08_4175__K1__vnd.json
+instancia_27_g08_4175.txt K=1 INVIAVEL COMPROVADA atendimento maximo=3808/4175 nao_alocados_min=367 pre_check=2.8408s
+run=1 seed=1 inicial=723.096600 final=623.3631 km melhora=99.7335 constr=0.0245s busca=0.0168s iter=150
+distancia km: min=623.3631 media=623.3631 desvio_amostral=0.0000 max=623.3631 melhor_seed=1
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/todas_instancias/instancia_27_g08_4175__K1__vnd.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/todas_instancias/instancia_27_g08_4175__K1__vnd.csv"

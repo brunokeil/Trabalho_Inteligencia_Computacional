@@ -1,0 +1,34 @@
+COMMAND ["/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao", "--instancia", "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/entrega/Modelo_de_Instancia.txt", "--tipos-por-escola", "1", "--runs", "30", "--seed", "1", "--max-iter", "150", "--sem-melhora", "50", "--n3-periodo", "15", "--n3-amostras", "4", "--saida", "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/Modelo_de_Instancia__K1__n3.json", "--metodo", "vnd", "--alpha", "0.3", "--viz", "3"]
+Modelo_de_Instancia.txt K=1 INVIAVEL COMPROVADA atendimento maximo=91/109 nao_alocados_min=18 pre_check=0.453591s
+run=1 seed=1 inicial=341.279200 final=329.1240 km melhora=12.1552 constr=0.0003s busca=0.0002s iter=3
+run=2 seed=2 inicial=353.251500 final=323.0630 km melhora=30.1885 constr=0.0002s busca=0.0003s iter=4
+run=3 seed=3 inicial=369.045700 final=333.7720 km melhora=35.2737 constr=0.0002s busca=0.0002s iter=3
+run=4 seed=4 inicial=330.601700 final=330.6017 km melhora=0.0000 constr=0.0002s busca=0.0001s iter=1
+run=5 seed=5 inicial=359.987000 final=319.2720 km melhora=40.7150 constr=0.0002s busca=0.0003s iter=4
+run=6 seed=6 inicial=367.117900 final=349.2020 km melhora=17.9159 constr=0.0002s busca=0.0002s iter=3
+run=7 seed=7 inicial=363.960500 final=356.1957 km melhora=7.7648 constr=0.0002s busca=0.0001s iter=2
+run=8 seed=8 inicial=350.927100 final=330.6017 km melhora=20.3254 constr=0.0002s busca=0.0001s iter=2
+run=9 seed=9 inicial=408.208800 final=341.3107 km melhora=66.8981 constr=0.0002s busca=0.0002s iter=3
+run=10 seed=10 inicial=336.055900 final=336.0559 km melhora=0.0000 constr=0.0002s busca=0.0001s iter=1
+run=11 seed=11 inicial=390.895000 final=335.8694 km melhora=55.0256 constr=0.0002s busca=0.0002s iter=3
+run=12 seed=12 inicial=349.202900 final=349.2020 km melhora=0.0009 constr=0.0002s busca=0.0001s iter=2
+run=13 seed=13 inicial=345.881200 final=345.8812 km melhora=0.0000 constr=0.0002s busca=0.0001s iter=1
+run=14 seed=14 inicial=384.469300 final=354.0983 km melhora=30.3710 constr=0.0002s busca=0.0001s iter=2
+run=15 seed=15 inicial=353.249400 final=340.9849 km melhora=12.2645 constr=0.0002s busca=0.0001s iter=2
+run=16 seed=16 inicial=349.450300 final=327.0266 km melhora=22.4237 constr=0.0002s busca=0.0002s iter=3
+run=17 seed=17 inicial=350.846400 final=350.8464 km melhora=0.0000 constr=0.0002s busca=0.0001s iter=1
+run=18 seed=18 inicial=392.643700 final=333.7720 km melhora=58.8717 constr=0.0002s busca=0.0003s iter=5
+run=19 seed=19 inicial=345.207800 final=323.0630 km melhora=22.1448 constr=0.0002s busca=0.0002s iter=3
+run=20 seed=20 inicial=349.202000 final=349.2020 km melhora=0.0000 constr=0.0002s busca=0.0001s iter=1
+run=21 seed=21 inicial=352.617900 final=319.2720 km melhora=33.3459 constr=0.0002s busca=0.0002s iter=3
+run=22 seed=22 inicial=354.683800 final=335.8694 km melhora=18.8144 constr=0.0002s busca=0.0002s iter=3
+run=23 seed=23 inicial=350.274800 final=328.1300 km melhora=22.1448 constr=0.0002s busca=0.0002s iter=3
+run=24 seed=24 inicial=354.683800 final=333.7720 km melhora=20.9118 constr=0.0001s busca=0.0001s iter=2
+run=25 seed=25 inicial=327.652300 final=325.5549 km melhora=2.0974 constr=0.0002s busca=0.0001s iter=2
+run=26 seed=26 inicial=367.751400 final=333.7720 km melhora=33.9794 constr=0.0002s busca=0.0001s iter=2
+run=27 seed=27 inicial=354.098300 final=354.0983 km melhora=0.0000 constr=0.0002s busca=0.0001s iter=1
+run=28 seed=28 inicial=369.911800 final=369.9118 km melhora=0.0000 constr=0.0002s busca=0.0001s iter=1
+run=29 seed=29 inicial=390.818700 final=333.7720 km melhora=57.0467 constr=0.0002s busca=0.0003s iter=5
+run=30 seed=30 inicial=371.235100 final=330.5201 km melhora=40.7150 constr=0.0002s busca=0.0002s iter=4
+distancia km: min=319.2720 media=337.4606 desvio_amostral=12.2465 max=369.9118 melhor_seed=5
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/Modelo_de_Instancia__K1__n3.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/Modelo_de_Instancia__K1__n3.csv"

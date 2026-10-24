@@ -1,0 +1,34 @@
+COMMAND ["/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao", "--instancia", "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/entrega/instancia_A.txt", "--tipos-por-escola", "1", "--runs", "30", "--seed", "1", "--max-iter", "150", "--sem-melhora", "50", "--n3-periodo", "15", "--n3-amostras", "4", "--saida", "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/instancia_A__K1__tabu_t3.json", "--metodo", "tabu", "--alpha", "0.3", "--tmin", "3", "--tmax", "3"]
+instancia_A.txt K=1 VIAVEL atendimento maximo=4518/4518 nao_alocados_min=0 pre_check=0.963506s
+run=1 seed=1 inicial=29728.814300 final=28655.4365 km melhora=1073.3778 constr=0.0261s busca=0.1283s iter=150
+run=2 seed=2 inicial=29747.588500 final=28812.4764 km melhora=935.1121 constr=0.0262s busca=0.1317s iter=150
+run=3 seed=3 inicial=31891.959500 final=31370.3376 km melhora=521.6219 constr=0.0262s busca=0.1260s iter=150
+run=4 seed=4 inicial=29233.625100 final=28452.1344 km melhora=781.4907 constr=0.0260s busca=0.1243s iter=150
+run=5 seed=5 inicial=32412.314000 final=28925.5473 km melhora=3486.7667 constr=0.0253s busca=0.1408s iter=150
+run=6 seed=6 inicial=30978.233500 final=30500.5659 km melhora=477.6676 constr=0.0260s busca=0.1227s iter=150
+run=7 seed=7 inicial=30160.523600 final=29202.6837 km melhora=957.8399 constr=0.0246s busca=0.1261s iter=150
+run=8 seed=8 inicial=28489.089200 final=27944.8861 km melhora=544.2031 constr=0.0246s busca=0.1338s iter=150
+run=9 seed=9 inicial=29488.399700 final=28155.9362 km melhora=1332.4635 constr=0.0246s busca=0.1407s iter=150
+run=10 seed=10 inicial=31772.913000 final=30556.9500 km melhora=1215.9630 constr=0.0260s busca=0.1342s iter=150
+run=11 seed=11 inicial=30306.071100 final=28462.5822 km melhora=1843.4889 constr=0.0243s busca=0.1345s iter=150
+run=12 seed=12 inicial=32753.515000 final=31393.3805 km melhora=1360.1345 constr=0.0254s busca=0.1276s iter=150
+run=13 seed=13 inicial=29371.872300 final=28262.9855 km melhora=1108.8868 constr=0.0249s busca=0.1331s iter=150
+run=14 seed=14 inicial=30482.262000 final=29869.3739 km melhora=612.8881 constr=0.0244s busca=0.1329s iter=150
+run=15 seed=15 inicial=30128.067600 final=28728.2174 km melhora=1399.8502 constr=0.0245s busca=0.1325s iter=150
+run=16 seed=16 inicial=32332.710100 final=30484.4252 km melhora=1848.2849 constr=0.0283s busca=0.1241s iter=150
+run=17 seed=17 inicial=30869.676300 final=29645.5105 km melhora=1224.1658 constr=0.0255s busca=0.1325s iter=150
+run=18 seed=18 inicial=30151.945500 final=29896.3926 km melhora=255.5529 constr=0.0269s busca=0.1261s iter=150
+run=19 seed=19 inicial=30299.965900 final=29662.7176 km melhora=637.2483 constr=0.0254s busca=0.1337s iter=150
+run=20 seed=20 inicial=29333.028400 final=27776.8365 km melhora=1556.1919 constr=0.0252s busca=0.1373s iter=150
+run=21 seed=21 inicial=30463.123400 final=29020.1439 km melhora=1442.9795 constr=0.0248s busca=0.1259s iter=150
+run=22 seed=22 inicial=30479.129900 final=29452.1166 km melhora=1027.0133 constr=0.0248s busca=0.1335s iter=150
+run=23 seed=23 inicial=30950.275900 final=29319.9182 km melhora=1630.3577 constr=0.0251s busca=0.1254s iter=150
+run=24 seed=24 inicial=29822.567600 final=28802.5027 km melhora=1020.0649 constr=0.0246s busca=0.1348s iter=150
+run=25 seed=25 inicial=29249.109800 final=29042.4892 km melhora=206.6206 constr=0.0247s busca=0.1401s iter=150
+run=26 seed=26 inicial=34089.792600 final=32600.9185 km melhora=1488.8741 constr=0.0255s busca=0.1252s iter=150
+run=27 seed=27 inicial=29585.575100 final=28934.5722 km melhora=651.0029 constr=0.0248s busca=0.1243s iter=150
+run=28 seed=28 inicial=30322.081400 final=29753.5231 km melhora=568.5583 constr=0.0256s busca=0.1320s iter=150
+run=29 seed=29 inicial=30716.865000 final=29499.4996 km melhora=1217.3654 constr=0.0244s busca=0.1319s iter=150
+run=30 seed=30 inicial=29925.639000 final=29503.2912 km melhora=422.3478 constr=0.0245s busca=0.1398s iter=150
+distancia km: min=27776.8365 media=29422.9450 desvio_amostral=1089.0151 max=32600.9185 melhor_seed=20
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/instancia_A__K1__tabu_t3.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/instancia_A__K1__tabu_t3.csv"

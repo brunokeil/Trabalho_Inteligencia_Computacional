@@ -1,0 +1,5 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/instancia_19_g04_4213.txt --tipos-por-escola 2 --metodo vnd --alpha 0.3 --runs 1 --seed 1 --max-iter 150 --sem-melhora 50 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/todas_instancias/instancia_19_g04_4213__K2__vnd.json
+instancia_19_g04_4213.txt K=2 VIAVEL atendimento maximo=4213/4213 nao_alocados_min=0 pre_check=0.94007s
+run=1 seed=1 inicial=19347.114700 final=18848.0591 km melhora=499.0556 constr=0.0391s busca=0.0448s iter=150
+distancia km: min=18848.0591 media=18848.0591 desvio_amostral=0.0000 max=18848.0591 melhor_seed=1
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/todas_instancias/instancia_19_g04_4213__K2__vnd.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/todas_instancias/instancia_19_g04_4213__K2__vnd.csv"

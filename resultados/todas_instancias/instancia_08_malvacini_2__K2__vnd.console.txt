@@ -1,0 +1,5 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/instancia_08_malvacini_2.txt --tipos-por-escola 2 --metodo vnd --alpha 0.3 --runs 1 --seed 1 --max-iter 150 --sem-melhora 50 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/todas_instancias/instancia_08_malvacini_2__K2__vnd.json
+instancia_08_malvacini_2.txt K=2 VIAVEL atendimento maximo=6798/6798 nao_alocados_min=0 pre_check=0.789019s
+run=1 seed=1 inicial=71315.710000 final=70322.8000 km melhora=992.9100 constr=0.3594s busca=0.2005s iter=150
+distancia km: min=70322.8000 media=70322.8000 desvio_amostral=0.0000 max=70322.8000 melhor_seed=1
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/todas_instancias/instancia_08_malvacini_2__K2__vnd.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/todas_instancias/instancia_08_malvacini_2__K2__vnd.csv"

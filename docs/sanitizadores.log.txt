@@ -1,0 +1,22 @@
+c++ -std=c++17 -O1 -g -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -Isrc tests/core.cpp src/busca_local.cpp src/construtivo.cpp src/exato.cpp src/instancia.cpp src/solucao.cpp -o build/test_core_san
+./build/test_core_san
+Modelo_de_Instancia K=1 certificados/construcao OK
+Modelo_de_Instancia K=2 certificados/construcao OK
+instancia2 K=1 certificados/construcao OK
+instancia2 K=2 certificados/construcao OK
+instancia_A K=1 certificados/construcao OK
+instancia_A K=2 certificados/construcao OK
+instancia_B K=1 certificados/construcao OK
+instancia_B K=2 certificados/construcao OK
+deltas e validador OK
+DCC136_TEST_BIN="/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/build/alocacao_san" python3 -m unittest discover -s tests -p 'test_*.py' -v
+test_bad_cli (test_integration.Integration) ... ok
+test_bad_parser (test_integration.Integration) ... ok
+test_determinism_both_methods (test_integration.Integration) ... ok
+test_exact_decimal_export (test_integration.Integration) ... ok
+test_ids_whitespace_and_validator_rejection (test_integration.Integration) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.803s
+
+OK
