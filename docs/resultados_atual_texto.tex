@@ -1,0 +1,7 @@
+Das 28 instâncias, 24 admitem atendimento completo e 4 são estruturalmente inviáveis no modelo de um tipo por escola. Todas as 3360 soluções iniciais/finais respeitaram a capacidade e compatibilidade e atingiram o atendimento certificado. A tabu apresentou menor distância média em 27 instâncias; houve 1 empates e o VND obteve menor média nas 0 restantes. A contagem inclui distâncias parciais, sempre comparadas dentro da mesma instância e do mesmo atendimento. Não estabelece significância estatística.
+
+Em G1/1, a distância média final foi 30204,54 km no VND e 28134,55 km na tabu, com melhorias médias de 1,03\% e 7,72\%, respectivamente. Os tempos médios de busca foram 0,1897 s e 1,2840 s. O VND utilizou em média 15,00 escolas e a tabu 15,00, dentre 15 disponíveis. O número de escolas não é penalizado no objetivo.
+
+O fallback do certificado foi utilizado em 0 das 1680 construções. O limite de 150 iterações foi atingido em 1227 execuções. Consequentemente, os resultados medem qualidade sob orçamento finito. A pré-checagem ocorre uma vez por lote de 30 sementes e seu custo deve ser somado uma única vez ao custo do lote, não a cada execução.
+
+Ambiente da campanha: macOS-26.6.2-arm64-arm-64bit, Python 3.9.6, C++17 compilado com Apple Clang e otimização \texttt{-O2}, NumPy 1.24.2 e SciPy 1.11.3. Cada método foi executado com quatro processos; os tempos incluem competição por CPU e são indicativos. Os manifestos contêm hashes de binário e entradas, parâmetros e versão do Python. O hash do binário da campanha é \texttt{a4274b9a6a7ffae1} (prefixo).

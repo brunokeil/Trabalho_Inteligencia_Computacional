@@ -160,10 +160,18 @@ bool ajustarTipos(const Instancia& in, const Parametros& p, const std::vector<st
 Solucao alocarRegret(const Instancia& in, const Slots& slots, double alpha, std::mt19937& rng, bool trace,
                      const Solucao* anterior, int* reparos) {
     std::vector<int> assign(in.n, -1);
+    // A newly enabled type must be allowed to use its new school even when
+    // that school was empty. Keeping every assignment at unchanged schools
+    // made such N3 proposals neutral and therefore unreachable by VND.
+    unsigned novosTipos = 0;
+    if (anterior)
+        for (int j = 0; j < in.m; ++j)
+            novosTipos |= slots[j] & ~anterior->typeSlots[j];
     if (anterior)
         for (int i = 0; i < in.n; ++i) {
             int j = anterior->esc[i];
-            if (j >= 0 && anterior->typeSlots[j] == slots[j])
+            if (j >= 0 && anterior->typeSlots[j] == slots[j] &&
+                !(novosTipos & (1u << in.tipoCand[i])))
                 assign[i] = j;
         }
     auto s = montarSolucao(in, slots, assign);

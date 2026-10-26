@@ -1,0 +1,262 @@
+{
+  "status": "passed",
+  "browser": "Firefox",
+  "version": "152.0.6",
+  "checks": [
+    {
+      "viewport": [
+        1440,
+        1000
+      ],
+      "slides": 12,
+      "horizontal_overflow": false,
+      "sizes": [
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "height": 915,
+          "scrollHeight": 916,
+          "scrollWidth": 1440,
+          "width": 1440
+        }
+      ]
+    },
+    {
+      "viewport": [
+        1366,
+        768
+      ],
+      "slides": 12,
+      "horizontal_overflow": false,
+      "sizes": [
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        },
+        {
+          "height": 683,
+          "scrollHeight": 684,
+          "scrollWidth": 1366,
+          "width": 1366
+        }
+      ]
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "slides": 12,
+      "horizontal_overflow": false,
+      "sizes": [
+        {
+          "height": 759,
+          "scrollHeight": 760,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 760,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 820,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 853,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 824,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 949,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 881,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 904,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 875,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 851,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 925,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 872,
+          "scrollWidth": 500,
+          "width": 500
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    "navigation",
+    "speaker notes",
+    "example 56→42→56",
+    "partial results selector",
+    "SVG convergence"
+  ],
+  "javascript": "node --check passed",
+  "offline": true
+}

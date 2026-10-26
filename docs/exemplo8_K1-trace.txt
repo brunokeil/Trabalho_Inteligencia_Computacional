@@ -1,0 +1,19 @@
+exemplo8_K1.txt K=1 VIAVEL atendimento maximo=8/8 nao_alocados_min=0 pre_check=0.747538s
+slot E1 + M2 score=1.58929 cobertura=4
+slot E2 + M1 score=1.41071 cobertura=8
+regret C1 tipo=M1 -> E2 d=10 vagas=3
+regret C2 tipo=M1 -> E2 d=3 vagas=2
+regret C3 tipo=M1 -> E2 d=11 vagas=1
+regret C4 tipo=M1 -> E2 d=9 vagas=0
+regret C5 tipo=M2 -> E1 d=10 vagas=3
+regret C6 tipo=M2 -> E1 d=9 vagas=2
+regret C7 tipo=M2 -> E1 d=1 vagas=1
+regret C8 tipo=M2 -> E1 d=3 vagas=0
+iter=3 N3 delta=-14 dist=42 excesso=0 nao_alocados=0
+run=1 seed=1 inicial=56.000000 final=42.0000 km melhora=14.0000 constr=0.0000s busca=0.0000s iter=6
+distancia km: min=42.0000 media=42.0000 desvio_amostral=0.0000 max=42.0000 melhor_seed=1
+  E1 tipos=M2:4  carga=4/4 ocupacao=100.0000%
+  E2 tipos=M1:2  carga=2/4 ocupacao=50.0000%
+  E3 tipos=M1:2  carga=2/2 ocupacao=100.0000%
+Referencia exata SOMENTE para os tipos finais fixos: 42.0000 km
+Resultados: "resultados/exemplo8_K1.json" e "resultados/exemplo8_K1.csv"

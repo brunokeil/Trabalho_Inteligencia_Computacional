@@ -3,134 +3,148 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[brazil]{babel}
-\usepackage{amsmath,amssymb,graphicx,url,booktabs}
-\input{repositorio}
-\title{Construção gulosa randomizada e busca tabu para a localização de locais de prova}
+\usepackage{amsmath,amssymb,graphicx,url,booktabs,longtable,array}
+\title{Construção gulosa randomizada, VND e busca tabu para a localização de locais de prova}
 \author{Bruno Keil\inst{1}}
-\address{Departamento de Ciência da Computação -- Universidade Federal de Juiz de Fora\\
-DCC136 -- Inteligência Computacional -- 2026.3}
+\address{Departamento de Ciência da Computação -- Universidade Federal de Juiz de Fora\\DCC136 -- Inteligência Computacional -- 2026.3}
 \begin{document}
 \maketitle
 \begin{abstract}
-We study candidate assignment and exam-type selection at capacitated schools. A randomized greedy constructor with augmenting-path repair is followed by variable neighborhood descent or tabu search. A small integer model certifies maximum attendance, while independent validation recomputes every reported solution. Experiments compare both methods and neighborhood, randomness and tenure variants over four instances and two limits on exam types per school.
+We implement and evaluate a randomized greedy constructor, variable neighborhood descent and tabu search for exam location and candidate assignment. Each school offers at most one exam type. An aggregate integer model certifies maximum attendance, while heuristics minimize travel distance. Experiments use 28 distinct instances and 30 seeds per method. Independent validation checks every initial and final assignment. We document implementation fixes, a small worked example and structural infeasibility.
 \end{abstract}
 \begin{resumo}
-Estudamos a alocação de candidatos e a escolha dos tipos de prova oferecidos por escolas com capacidade limitada. Uma construção gulosa randomizada com reparação por caminhos aumentantes é seguida de descida em vizinhanças variáveis ou busca tabu. Um modelo inteiro pequeno certifica o atendimento máximo; a distância é otimizada heuristicamente. Os experimentos abrangem quatro instâncias, dois limites de tipos por escola e 30 sementes por configuração. Um validador independente recompõe cada solução inicial e final.
+Implementamos e avaliamos uma construção gulosa randomizada, descida em vizinhanças variáveis (VND) e busca tabu para selecionar locais de prova e alocar candidatos. Cada escola oferece no máximo um tipo de exame. Um modelo inteiro agregado certifica o atendimento máximo; as heurísticas minimizam a distância. Os experimentos usam 28 instâncias distintas e 30 sementes por método, com validação independente de todas as alocações iniciais e finais. Apresentamos as decisões de projeto, correções da implementação, um exemplo passo a passo e casos de inviabilidade estrutural.
 \end{resumo}
 
-\section{Problema e hipóteses}
-O planejamento de locais de prova combina decisões de localização e alocação. A referência acadêmica é a aplicação brasileira estudada por Oliveira (2021), sob orientação de Rafael Martinelli Pinto e coorientação de Bruno Milanez~\cite{oliveira2021}. Neste trabalho, as escolas não possuem tipos previamente determinados: a otimização escolhe quais tipos hospedar e onde alocar cada candidato.
+\section{Problema, escopo e conformidade com o enunciado}
+O problema consiste em selecionar locais de prova e associar cada candidato a um único local compatível com seu tipo de exame, respeitando capacidades e minimizando a soma das distâncias. O contexto é o planejamento de exames de ingresso em universidades, conforme a referência indicada no enunciado~\cite{oliveira2021}. Uma solução de boa qualidade reduz o deslocamento agregado sem sacrificar o atendimento.
 
-Sejam $C$ os candidatos, $L$ as escolas e $T$ os tipos de prova. Cada candidato $i$ tem tipo $t_i$ e distância $d_{ij}$ até cada escola $j$. A capacidade $Q_j$ é a soma das capacidades de suas salas. Uma escola pode hospedar até $K\in\{1,2\}$ tipos. Cada candidato deve ser alocado exatamente uma vez a uma escola compatível, sem ultrapassar a capacidade. O objetivo principal é minimizar $D=\sum_i d_{i,a_i}$, sem custos de abertura.
+O PDF fornecido determina \textbf{um único tipo por local}. Todos os resultados principais deste relatório usam $K=1$. O executável também aceita $K=2$, mas essa opção é uma extensão experimental, não o modelo exigido. O prazo escrito no PDF é 14/10/2026 às 12h; não presumimos uma alteração de prazo pelo Classroom. A apresentação HTML foi planejada para aproximadamente dez minutos.
 
-Adotamos capacidade agregada por escola. Não impomos um único tipo por sala; essa variante exigiria um modelo diferente. CEPs são strings; identificadores são preservados, mas índices seguem a ordem do arquivo. Latitude e longitude são lidas e validadas, sem uso no objetivo. As distâncias da matriz são armazenadas exatamente em milionésimos de km, aceitando até seis casas decimais. O limite $K\in\{1,2\}$ é um parâmetro obrigatório de execução (\texttt{--tipos-por-escola}).
+Sejam $C$ os candidatos, $L$ as escolas, $T$ os tipos, $t_i$ o tipo do candidato $i$, $d_{ij}$ a distância da matriz e $Q_j$ a capacidade total das salas da escola $j$. Usamos capacidade agregada por escola: as salas fornecem capacidade e não são decisões independentes. Latitude/longitude não substituem a matriz. CEPs e identificadores são preservados; a ordem de linhas define os índices da matriz.
 
-\section{Representação e verificação de viabilidade}
-A solução contém o conjunto $\mathrm{typeSlots}_j$, com cardinalidade no máximo $K$, e o vetor $a_i$ de escolas. O valor $-1$ representa candidato não alocado. Mantemos incrementalmente a carga por escola, a carga por tipo, distância, excesso e quantidade de não alocados/incompatíveis. Escola utilizada significa carga positiva; um tipo habilitado pode não receber candidatos.
+Com $a_i\in L$ e $S_j\subseteq T$, procuramos minimizar
+\begin{equation}
+ D(a)=\sum_{i\in C}d_{i,a_i},\quad
+ |S_j|\leq1,\quad t_i\in S_{a_i},\quad
+ \sum_i [a_i=j]\leq Q_j.
+\end{equation}
+A escola é utilizada se recebe pelo menos um candidato. Não há custos de abertura no objetivo, nem limite adicional para o número de escolas utilizadas.
 
-Capacidade total suficiente não garante viabilidade. Para certificar o máximo atendimento, usamos variáveis binárias $z_{jt}$ e inteiras $x_{jt}\geq0$, resolvendo:
+\section{Representação e certificação de atendimento}
+A solução contém um vetor $a$ de escolas, máscaras de bits $S_j$ para os tipos habilitados, cargas totais e por tipo, distância, excesso de capacidade e contagens de candidatos não alocados e incompatíveis. O valor $a_i=-1$ identifica explicitamente um candidato não atendido. Distâncias com até seis casas decimais são armazenadas como inteiros de milionésimos de km, evitando erros acumulados de ponto flutuante.
+
+A soma das capacidades ser maior que o número de candidatos não garante atendimento completo: pode não haver escolas suficientes para acomodar separadamente os tipos. Antes da heurística, resolvemos o seguinte modelo agregado, com $b_t$ candidatos de tipo $t$, $z_{jt}$ binária e $x_{jt}$ inteira não negativa:
 \begin{align}
-\max\quad &\sum_{j,t}x_{jt}\\
-\text{sujeito a}\quad &\sum_j x_{jt}\leq d_t &&\forall t,\\
-&\sum_t x_{jt}\leq Q_j &&\forall j,\\
-&x_{jt}\leq Q_jz_{jt},\quad \sum_tz_{jt}\leq K &&\forall j,t.
+\max\;&\sum_{j,t}x_{jt} \\
+\text{s.a. }&\sum_jx_{jt}\leq b_t &&\forall t,\\
+&\sum_tx_{jt}\leq Q_j &&\forall j,\\
+&x_{jt}\leq Q_jz_{jt},\quad \sum_tz_{jt}\leq1 &&\forall j,t.
 \end{align}
-Aqui $d_t$ é a demanda do tipo $t$. Como não há restrições individuais de elegibilidade além do tipo, essas contagens inteiras bastam para construir uma alocação. O ótimo $C^*$ determina o mínimo $n-C^*$ de não alocados. A pré-checagem usa SciPy/HiGHS~\cite{scipy}; timeout é inconclusivo, nunca uma prova de inviabilidade. A atribuição de tipos obtida serve também como recurso de segurança da construção; portanto, o método tem apoio explícito de um modelo inteiro, cujo tempo é medido separadamente.
+O ótimo $C^*$ certifica o atendimento máximo. Como não há restrições individuais além do tipo, uma solução inteira dessas contagens corresponde a uma alocação de candidatos. SciPy/HiGHS é uma dependência explícita dessa pré-checagem~\cite{scipy}. O solver não otimiza distâncias. Seu limite de 120 segundos, se atingido sem prova, produz erro inconclusivo, nunca uma declaração de inviabilidade.
 
-\begin{table}[ht]
-\centering\small
-\caption{Viabilidade comprovada no modelo agregado.}
-\begin{tabular}{lrrrrr}
-\hline Instância & Candidatos & Escolas & Capacidade & Não aloc. K=1 & K=2\\\hline
-Modelo & 109 & 5 & 121 & 18 & 0\\
-Instância 2 & 2550 & 10 & 3000 & 20 & 0\\
-A & 4518 & 15 & 4830 & 0 & 0\\
-B & 4442 & 15 & 5260 & 0 & 0\\\hline
-\end{tabular}
-\end{table}
+Para escolas com tipos fixos, calculamos o atendimento por fluxo máximo: fonte--tipos com capacidade $b_t$, tipos--escolas compatíveis e escolas--sorvedouro com capacidade $Q_j$. Se $C^*<|C|$, o problema original é inviável. Nesse caso, a saída é marcada como tal e fornece uma solução parcial com exatamente $|C|-C^*$ não alocados. Primeiro maximizamos o atendimento e só então comparamos distâncias. Distâncias parciais não são comparáveis às de soluções completas.
 
-Para tipos fixos, usamos fluxo máximo em uma rede com fonte, tipos, escolas e sorvedouro. Capacidades são $d_t$, $n$ nos arcos de compatibilidade e $Q_j$. A rede compartilha corretamente a capacidade entre dois tipos de uma escola.
+\section{Construção da solução inicial}
+\subsection{Escolha dos tipos e locais}
+Começamos sem tipos habilitados. Para cada adição admissível $(j,t)$, calculamos o aumento $g_{jt}$ no atendimento por fluxo. Definimos $q_{jt}=\min(Q_j,b_t)$ e $h_{jt}$ como a média das $q_{jt}$ menores distâncias dos candidatos de tipo $t$ à escola $j$, normalizada por $\max(1,d_{\max})$ nas unidades inteiras. O critério é maximizar
+\begin{equation}
+ \mathrm{score}(j,t)=g_{jt}/b_t+g_{jt}/Q_j-h_{jt}.
+\end{equation}
+Os termos valorizam cobertura da demanda, aproveitamento de capacidade e proximidade. Consideramos somente ganhos positivos e escolas com menos de $K$ tipos. A lista restrita de candidatos (RCL) admite scores a partir de $s_{\max}-\alpha(s_{\max}-s_{\min})$. Com $\alpha=0$, a escolha é gulosa, com desempate por ordem de escola/tipo; com $\alpha>0$, sorteamos uniformemente na RCL.
 
-\section{Construção gulosa randomizada}
-Na primeira fase, começamos sem tipos habilitados. Para cada adição admissível $(j,t)$, calculamos o aumento $g_{jt}$ no fluxo máximo. Seja $q=\min(Q_j,d_t)$ e $a_{jt}$ a média das $q$ menores distâncias dos candidatos do tipo $t$ à escola $j$, normalizada por $d_{\max}$. O critério é maximizar
-\[
-\mathrm{score}(j,t)=\frac{g_{jt}}{d_t}+\frac{g_{jt}}{Q_j}-a_{jt}.
-\]
-Assim combinamos cobertura relativa, aproveitamento de capacidade e proximidade. Consideramos apenas aumentos positivos e escolas com menos de $K$ tipos. Uma lista restrita usa o limiar de score $s_{\max}-\alpha(s_{\max}-s_{\min})$. Para $\alpha=0$, escolhemos o primeiro máximo na ordem escola/tipo do arquivo; para $\alpha>0$, sorteamos uniformemente.
+Repetimos até alcançar $C^*$ ou estagnar. Uma escolha atrativa pode ocupar uma escola necessária para outro tipo. Para reparar esse impasse, exploramos adições, substituições e permutas de tipos, maximizando primeiro o fluxo e, em empate, reduzindo a soma das proximidades $h_{jt}$. Usamos primeira melhoria, até 20000 avaliações e no máximo 30 perturbações em platôs por tentativa. São até quatro tentativas para $\alpha>0$ e uma para $\alpha=0$. Se ainda não alcançarmos $C^*$, usamos os tipos certificados pelo modelo inteiro. Esse recurso é registrado como fallback; portanto, não se trata de um construtivo puramente independente do solver.
 
-Repetimos até cobrir $C^*$ ou alcançar um impasse. Quando a fase gulosa estagna abaixo de $C^*$ (por não desfazer escolhas iniciais em $K=1$), aplica-se uma busca local de reparo sobre os tipos (adicionando, substituindo ou permutando tipos entre escolas para maximizar o fluxo de atendimento e, em empate, reduzir a soma de proximidades $a_{jt}$, com perturbação em platôs). São permitidas até quatro tentativas (uma em $\alpha=0$); persistindo o impasse, usam-se os tipos certificados como salvaguarda. O número de fallbacks é registrado.
+\subsection{Alocação por arrependimento e reparação}
+Com os tipos definidos, cada candidato considera as escolas compatíveis com vaga. Seu arrependimento é a diferença entre a segunda e a primeira menor distância. Uma única opção tem prioridade infinita. Selecionamos por RCL de maior arrependimento e alocamos na escola disponível mais próxima. Candidatos com prioridade infinita são sorteados apenas entre si. Em $\alpha=0$, empates seguem a ordem do arquivo.
 
-Na segunda fase, escolhemos o candidato de maior arrependimento: diferença entre as distâncias à segunda e à primeira escola habilitada com vaga. Uma única opção recebe prioridade infinita; empates determinísticos usam a ordem de arquivo. A mesma regra de lista restrita controla a randomização. O candidato é alocado à opção mais próxima; opções afetadas são atualizadas quando uma escola lota.
+Quando uma escola lota, recalculamos as opções afetadas. Candidatos sem vaga compatível são tratados por caminhos aumentantes, encontrados em largura: candidato--escola cheia--candidato deslocado--outra escola--vaga. Aplicamos o caminho do final para o início. Cada cadeia aumenta o atendimento em uma unidade. Sem caminho aumentante, o atendimento é máximo para esses tipos; a fase anterior garante que esse máximo é $C^*$. Assim, em instâncias viáveis a construção produz uma solução completa; nas estruturalmente inviáveis, produz o melhor atendimento certificado.
 
-Candidatos sem vaga são reparados por busca em largura de caminhos aumentantes. A cadeia desloca candidatos de escolas cheias até alcançar uma vaga, inclusive ejetando outro tipo quando $K=2$. Cada cadeia aumenta o atendimento em um. A ausência de caminho certifica atendimento máximo para esses tipos; a fase anterior assegura que esse máximo é $C^*$. A especificação completa e os desempates estão em \texttt{docs/algoritmos.md}.
+\section{Avaliação, vizinhanças e estratégias de busca}
+A avaliação usada na busca é
+\begin{equation}
+ f(s)=D(s)+\lambda E(s)+\mu\bigl(U(s)+I(s)\bigr),
+\end{equation}
+com $E$ igual ao excesso agregado, $U$ ao número de não alocados e $I$ ao de incompatíveis. Inicialmente $\lambda=\mu=|C|d_{\max}+1$ km; uma unidade de violação domina qualquer variação possível da distância. Compatibilidade e limite de tipos são invariantes das vizinhanças. A tabu pode explorar excesso temporário e destino $-1$; o arquivo de melhores soluções exige excesso e incompatibilidade nulos, prioriza menor $U$ e depois menor $D$.
 
-\section{Avaliação e tratamento de violações}
-A função é
-\[
-f(s)=D(s)+\lambda\sum_j\max(0,\mathrm{carga}_j-Q_j)
-+\mu\bigl(U(s)+I(s)\bigr),
-\]
-onde $U$ e $I$ contam candidatos não alocados e incompatíveis. Inicialmente $\lambda=\mu=B+1$ km, com $B=n d_{\max}$. Como $0\leq D\leq B$, uma unidade de violação domina qualquer diferença de distância. A busca mantém compatibilidade e limite de tipos como invariantes, mas a tabu permite excesso temporário e destino $-1$.
+Após cinco estados completos viáveis consecutivos, a tabu divide $\lambda$ por dois; após cinco inviáveis, dobra esse valor. O intervalo é de $\max(10^{-6}\text{ km},d_{\max}/10)$ a $16\lambda_0$; $\mu$ permanece fixo. Em casos estruturalmente inviáveis, $U>0$ impede uma sequência de viabilidade completa, o que é uma limitação dessa adaptação.
 
-Após cinco estados viáveis consecutivos, dividimos $\lambda$ por dois; após cinco inviáveis, dobramos seu valor. Limitamos $\lambda$ entre $\max(10^{-6}\text{ km},d_{\max}/10)$ e $16\lambda_0$; $\mu$ fica fixo. Um arquivo separado guarda apenas soluções sem excesso e sem incompatibilidade, primeiro minimizando não alocados e depois distância. Como a construção atinge $C^*$, a solução final é viável sempre que possível; nos casos impossíveis, possui o mínimo comprovado de não alocados. Não há prova de ótimo da distância.
+\textbf{N1: realocação.} Move um candidato para até $p$ escolas compatíveis mais próximas, excetuando a atual. Na tabu, também admite o destino $-1$. O delta de distância é $d_{ib}-d_{ia}$, com termos ausentes iguais a zero; distância e excesso são atualizados em tempo constante por movimento.
 
-\section{Vizinhanças, VND e busca tabu}
-\textbf{N1 -- realocação.} Mover um candidato às $p$ escolas compatíveis mais próximas, distintas da atual. A tabu também permite removê-lo temporariamente para $-1$. Distância e excesso são avaliados por delta em tempo constante.
+\textbf{N2: troca.} Permuta os destinos de dois candidatos do mesmo tipo, inclusive entre alocado e não alocado. O delta é $d_{ib}+d_{ha}-d_{ia}-d_{hb}$. A capacidade e o atendimento total não mudam. Selecionamos ganhos por par de escolas e tipo: o melhor candidato por arco no VND e os quatro melhores na tabu, permitindo alternativas a pares proibidos. Essa restrição limita a exploração da tabu.
 
-\textbf{N2 -- troca.} Trocar escolas de dois candidatos do mesmo tipo, inclusive entre alocado e não alocado. O delta é $d_{ib}+d_{ha}-d_{ia}-d_{hb}$. Para evitar todos os pares de candidatos, mantemos ganhos por par de escolas e tipo: o melhor por arco no VND e os quatro melhores na tabu, para oferecer alternativas aos movimentos proibidos.
+\textbf{N3: alteração de tipos.} Adiciona ou substitui um tipo, ou permuta tipos entre duas escolas. O fluxo elimina propostas incapazes de manter $C^*$. A reconstrução libera candidatos das escolas alteradas e também os candidatos dos tipos recém-habilitados em qualquer escola. Estes últimos precisam ser reconsiderados para aproveitar uma escola antes vazia. Os demais candidatos são preservados; caminhos aumentantes podem deslocá-los. As propostas são embaralhadas, com orçamento de reconstruções por chamada.
 
-\textbf{N3 -- alteração de tipos.} Adicionar/substituir tipo ou trocar tipos entre escolas. Filtramos propostas incapazes de manter $C^*$ por fluxo. Liberamos candidatos das escolas alteradas e os realocamos por regret e reparação; caminhos de reparo podem deslocar outros candidatos. A enumeração é amostrada e limitada por orçamento de reconstruções.
+\textbf{VND.} Visita N1, N2 e N3 nessa ordem; aceita apenas melhora estrita de $f$ e reinicia em N1 após um movimento. A implementação oferece primeira ou melhor melhoria no conjunto examinado; usamos melhor melhoria na campanha principal. As penalidades iniciais mantêm a viabilidade da descida a partir da construção.
 
-O VND visita N1, N2 e N3, reiniciando após melhoria. Compara primeira e melhor melhoria no conjunto efetivamente examinado. A busca tabu examina N1/N2 a cada iteração e N3 periodicamente ou por estagnação. Escolhe o menor delta admissível, inclusive positivo. Os atributos proibidos são candidato/escola deixada, par não ordenado de candidatos e escola/tipo removido. Tenure é fixo ou uniforme em $[t_{\min},t_{\max}]$. Aspiração aceita tabu somente se produzir a primeira solução viável ou melhorar a melhor viável conhecida.
+\textbf{Busca tabu.} Examina N1/N2 a cada iteração e N3 periodicamente, escolhendo o menor delta admissível, inclusive positivo. Os atributos tabu são candidato/escola deixada, par de candidatos e escola/tipo removido, com duração uniforme em $[5,12]$. A aspiração permite um movimento proibido se produzir a primeira solução completa viável ou melhorar a melhor completa viável conhecida. A tabu devolve a melhor solução arquivada, não necessariamente o último estado visitado.
 
-O encerramento ocorre por limite de iterações, estagnação, tempo opcional ou falta de movimento admissível. A semente torna decisões reproduzíveis no mesmo ambiente com orçamento de iterações; limites temporais podem mudar a trajetória. N3 amostrada e listas restritas impedem afirmar ótimo local sobre as vizinhanças completas.
+Ambas as buscas param por limite de iterações, estagnação, tempo opcional ou ausência de movimentos admissíveis. A N3 é amostrada, N1 usa lista restrita e N2 na tabu usa top-4. Portanto, o encerramento não prova ótimo local das vizinhanças completas nem ótimo global.
 
-\section{Exemplo verificável e caso de falha}
-A instância \texttt{exemplo8.txt} tem oito candidatos, dois tipos e escolas de capacidades 3, 3 e 2. A construção escolhe E1/M2, E2/M1 e E3/M1,M2. C6 fica sem vaga; a cadeia C1$\to$E2 e C6$\to$E3 resolve o impasse. A solução inicial soma 49 km. Trocar C5 de E1 com C6 de E3 produz
-\[
-\Delta=6+9-10-12=-7\text{ km},
-\]
-resultando em 42 km, redução de 14,29\%. O trace, a matriz e todas as decisões estão em \texttt{docs/exemplo8.md}. A enumeração completa confirma 42 km para esses tipos fixos, não para todas as escolhas possíveis de tipos.
+\section{Exemplo passo a passo e caso de falha}
+\label{sec:exemplo}
+A instância didática \path{entrega/exemplo8_K1.txt} possui oito candidatos, dois tipos e escolas com capacidades 4, 4 e 2. Ela foi criada para demonstrar o modelo exigido, com um tipo por escola. A matriz é:
+\begin{center}\begin{tabular}{ccrrr}
+\toprule Candidato & Tipo & E1 & E2 & E3\\\midrule
+C1&M1&8&10&6\\C2&M1&5&3&3\\C3&M1&14&11&1\\C4&M1&6&9&8\\
+C5&M2&10&2&6\\C6&M2&9&10&12\\C7&M2&1&12&7\\C8&M2&3&12&8\\\bottomrule
+\end{tabular}\end{center}
+Com $\alpha=0$, o construtivo habilita E1/M2 (score 1,589286, cobertura 4) e E2/M1 (score 1,410714, cobertura 8). Como já atende todos, E3 fica sem tipo. C1--C4 vão a E2, e C5--C8 a E1. O custo é $(10+3+11+9)+(10+9+1+3)=56$ km.
 
-O Modelo com $K=1$ possui seis tipos positivos e apenas cinco escolas: é impossível atender todos, embora a capacidade total seja suficiente. O máximo inteiro é 91/109. A instância 2 também é impossível em $K=1$, com máximo 2530/2550. A instância A é viável, mas usa 93,54\% da capacidade, dificultando alterações de tipos e reparações. Esses casos ilustram limites estruturais e heurísticos distintos.
+N1 não tem outro destino compatível; N2 não muda escolas entre candidatos de mesmo tipo. N3 habilita M1 em E3 e reconstrói os candidatos M1. Os arrependimentos são 10 para C3, 4 para C1, 1 para C4 e 0 para C2. C3 e C1 ocupam E3; C2 e C4 permanecem em E2. O custo passa a $(1+6)+(3+9)+(10+9+1+3)=42$ km: $\Delta=-14$ km, redução de 25\%. Cargas finais: E1=4/4, E2=2/4, E3=2/2. Nenhuma escola recebe dois tipos.
+
+Para facilitar a reprodução didática, usamos orçamento de 1000 reconstruções em N3, suficiente para todas as propostas desse exemplo. Esse orçamento difere das seis reconstruções da campanha. O trace literal está em \path{docs/exemplo8_K1-trace.txt}. O transporte exato com tipos finais fixos confirma 42 km para essa configuração, sem provar a melhor escolha global de tipos.
+
+Um caso de falha do problema original é a instância de 109 candidatos do grupo G2: há seis tipos com demanda positiva e somente cinco escolas. Não é possível atender todos com um tipo por escola, apesar das 121 vagas. A pré-checagem identifica o déficit em vez de atribuí-lo à heurística. Outro limite da abordagem é o orçamento: o construtivo do exemplo encerra com uma escola vazia útil, e uma N3 amostrada pode não examinar a adição necessária. A solução completa de 56 km é válida, mas pior que os 42 km encontrados com exploração suficiente.
+
+\section{Auditoria e correções}
+A revisão foi feita sobre os arquivos efetivamente presentes, preservando alterações prévias do usuário. O script de lote procurava apenas \texttt{instancia\_*.txt}, ignorando a maior parte dos nomes atuais. Corrigimos a descoberta, adicionamos manifesto com hash do binário e entradas para impedir retomada incompatível, estatísticas de dispersão e retorno de erro quando há falhas. O validador passou a localizar entradas após mover a entrega para outra pasta.
+
+Na N3, a reconstrução mantinha todos os candidatos das escolas inalteradas. Ao habilitar um tipo em uma escola vazia, nenhum candidato a utilizava e a proposta tinha custo neutro, sendo rejeitada pelo VND. Corrigimos a liberação dos tipos recém-habilitados e adicionamos regressão automatizada. Também corrigimos a proteção contra sobrescrita da entrada: a exportação gera JSON e CSV, e agora verifica ambos os destinos, inclusive equivalências de arquivos.
+
+Dos 31 downloads atuais, 28 representam instâncias distintas utilizáveis. Duas duplicatas exatas foram identificadas, e um arquivo que continha apenas um caminho externo foi excluído da campanha. Dois arquivos tinham os dois cabeçalhos na mesma linha: apenas separamos esses cabeçalhos em cópias, sem modificar valores. Os originais permanecem intactos. A auditoria registra hashes e decisões em \path{instances/auditoria_atual.csv}. Não recuperamos os antigos dados removidos do diretório, nem os contamos como instâncias atuais.
+
+Os testes verificam leitura, entradas inválidas, IDs/CEPs, decimais, deltas contra recomputação, fluxo, construção, repetibilidade, rejeição de resultados adulterados, proteção da entrada e a regressão de N3. O núcleo também foi executado com AddressSanitizer e UndefinedBehaviorSanitizer; os registros da revisão estão em \path{docs/testes_atual.log.txt} e \path{docs/sanitizadores_atual.log.txt}.
 
 \section{Experimentos e resultados}
-Executamos 11 configurações para cada uma das quatro instâncias e cada $K$, com 30 sementes (1 a 30): 2640 execuções. As ablações incluem $\alpha=0$, 0,3 e 0,7; primeira/melhor melhoria; N1/N2/N3 isoladas; VND/tabu; tenure 3, 10, $[5,12]$ e $[10,20]$. O orçamento é de 150 iterações, 50 sem melhoria, $p=5$, N3 a cada 15 iterações e quatro reconstruções por chamada. O orçamento comum de iterações não implica mesmo número de avaliações ou mesmo tempo; registramos todos esses indicadores.
+A campanha principal foi executada \textbf{após a correção da N3}, sobre 28 instâncias distintas, com VND e tabu e 30 sementes por método (1 a 30), totalizando 1680 execuções e 3360 soluções iniciais/finais verificadas independentemente. Todos usam $K=1$, $\alpha=0{,}3$, $p=5$, melhor melhoria no VND, até 150 iterações, 50 sem melhoria, N3 a cada 20 iterações na tabu, seis reconstruções por chamada e tenure $[5,12]$. O limite temporal é desativado. A igualdade de iterações não significa igualdade de avaliações ou de tempo.
 
-A implementação usa C++17, Apple Clang 21 com \texttt{-O2}, em macOS arm64. A pré-checagem usa SciPy 1.11.3 e NumPy 1.24.2. O manifesto registra versões, plataforma, sementes e hashes. Tempos são indicativos de uma máquina compartilhada, sem isolamento de CPU; separam construção, busca e pré-checagem. O tempo do ILP é compartilhado pelas 30 execuções de uma configuração.
+Cada execução registra custo inicial/final, melhoria absoluta/percentual, tempo de construção e busca, escolas utilizadas, cargas por tipo e ocupação. Calculamos média, mínimo, máximo e desvio padrão amostral das distâncias. A melhoria percentual é calculada por execução e depois promediada. A comparação entre métodos usa o mesmo conjunto de instâncias e sementes; não implica trajetórias idênticas após a construção. Casos inviáveis são descritos com atendimento parcial ótimo, sem compará-los a soluções completas.
 
-O validador independente em Python relê cada instância e recompõe distâncias com \texttt{Decimal}, capacidades, tipos e identificadores. Todas as soluções iniciais e finais são verificadas antes da inclusão nos resultados. Testes adicionais cobrem arquivos malformados, deltas versus recomputação, compartilhamento de capacidade, certificados e reprodução por semente.
-
-\input{tab_principal}
-\input{tab_ablacoes}
-\begin{figure}[ht]
-\centering
-\includegraphics[width=\textwidth]{../resultados/convergencia.pdf}
-\caption{Média da melhor distância por iteração em K=2. Trajetórias encerradas são mantidas constantes até o maior horizonte observado.}
-\label{fig:curva}
+\input{resultados_atual_texto}
+\input{resultados_atual_tabela}
+\begin{figure}[ht]\centering
+\includegraphics[width=\textwidth]{../resultados/final_convergencia.pdf}
+\caption{Melhor distância média por iteração para instâncias selecionadas, sempre em K=1. Curvas encerradas são mantidas no último valor até a iteração 150. Distância parcial quando indicada no título.}
 \end{figure}
 
-\input{discussao_resultados}
+O validador Python relê a instância e recompõe as distâncias com \texttt{Decimal}, sem reutilizar deltas do C++. Verifica IDs, capacidade, compatibilidade, atendimento certificado, ocupação e evolução da melhor solução. Os JSONs guardam cada atribuição e carga por escola/tipo. Os dados principais estão exclusivamente em \path{resultados/final_vnd/} e \path{resultados/final_tabu/}. Resultados antigos existentes na árvore de trabalho não fundamentam esta campanha e não entram no pacote final.
 
-As tabelas completas estão em \texttt{resultados/resumo.csv}, com mínimo, média, desvio padrão amostral e máximo; \texttt{execucoes.csv} registra cada execução. Os JSONs contêm as soluções, distribuição por escola/tipo, ocupações e curvas. Os casos inviáveis permanecem identificados: sua distância é parcial e não deve ser comparada diretamente a soluções completas. A análise é descritiva; não afirmamos significância estatística ou superioridade universal de uma configuração.
+\section{Conclusões e limitações}
+A combinação de escolha de tipos, arrependimento e caminhos aumentantes fornece soluções com o atendimento certificado. N1/N2 melhoram alocações com tipos fixos, enquanto N3 altera uma decisão estrutural que pode bloquear as primeiras vizinhanças. A auditoria do exemplo pequeno mostrou por que uma escola vazia precisa participar efetivamente da reconstrução, e não apenas receber um tipo na representação.
 
-\section{Conclusões e continuidade}
-O projeto passou a otimizar tipos e alocações, preservando os componentes úteis da implementação inicial: vetor de atribuições, regret, deltas, ganhos por pares e transporte por caminhos aumentantes. A certificação separa falha heurística de inviabilidade estrutural; a reparação assegura o atendimento certificado. A busca local explora tanto alocações quanto tipos, com controle explícito de custo computacional.
+A abordagem depende de um solver inteiro para certificar atendimento e como salvaguarda da construção. A busca de distância permanece heurística. Amostragem de N3, listas de candidatos e limites de iterações restringem a qualidade; tempos foram medidos em máquina compartilhada, com processos paralelos, sem isolamento de CPU. A análise é descritiva, sem testes de significância ou alegação de superioridade universal. Como continuidade, propomos ajustar a amostragem de N3, comparar orçamentos de tempo/avaliações, explorar mais trocas de tipos e melhorar a adaptação de penalidades nos casos de atendimento parcial.
 
-As principais limitações são a dependência do certificado inteiro, a vizinhança N3 amostrada, as listas restritas e o orçamento experimental. Como continuidade, propomos listas adaptativas, maior exploração dos tipos, avaliação de sensibilidade de $p$ e estudo da variante de capacidade por sala. Uma referência de transporte com tipos fixos não constitui limitante global do problema completo.
-
-\section{Reprodutibilidade e disponibilidade}
-O README detalha dependências e parâmetros. Os comandos principais são:
+\section{Reprodução e arquivos de entrega}
+São necessários compilador C++17, Make e Python com NumPy/SciPy; Matplotlib gera as figuras. A apresentação é um HTML local independente, sem servidor ou acesso à internet. O código-fonte, instâncias, manifestos, resultados, relatório LaTeX/PDF e apresentação estão no pacote gerado por \path{scripts/empacotar.py}. Os comandos principais são:
 \begin{verbatim}
 make
 make test
-python3 scripts/experimentos.py
-\end{verbatim} O histórico foi preservado em bundle Git devido à restrição de escrita em \texttt{.git} no ambiente de desenvolvimento. \repositorio
+python3 scripts/preparar_instancias.py
+python3 scripts/executar_todas.py \
+ --instancias-dir instances/preparadas -k 1 \
+ --metodo vnd --runs 30 --out resultados/final_vnd
+# Repetir com --metodo tabu e --out resultados/final_tabu
+python3 scripts/gerar_entrega.py
+make report
+\end{verbatim}
+Use outra pasta de saída quando o manifesto divergir. A mesma semente reproduz decisões no mesmo ambiente com limite de iterações; distribuições da biblioteca C++ e versões do solver podem alterar trajetórias entre plataformas. Não é necessário publicar um site ou repositório para utilizar o pacote local. A submissão ao Classroom e eventuais instruções adicionais daquele ambiente ficam a cargo do grupo.
 
+\appendix
+\section{Resultados completos e distribuição das soluções}
+\input{resultados_atual_completo}
 \begin{thebibliography}{9}
-\bibitem[Oliveira 2021]{oliveira2021}
-Oliveira, T. E. (2021). \textit{Solving a University Admission Exam Location Problem: an Application in Brazil}. Dissertação de Mestrado, Departamento de Engenharia Industrial, PUC-Rio. Orientador: Rafael Martinelli Pinto; coorientador: Bruno Milanez. \url{https://www.maxwell.vrac.puc-rio.br/52465/52465.PDF}.
-\bibitem[SciPy]{scipy}
-SciPy. \textit{scipy.optimize.milp: Mixed-integer linear programming}. Documentação da interface usada para a pré-checagem. \url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.milp.html}.
+\bibitem[Oliveira 2021]{oliveira2021} Oliveira, T. E. (2021). \textit{Solving a University Admission Exam Location Problem: an Application in Brazil}. Dissertação de Mestrado, PUC-Rio. Orientador: Rafael Martinelli Pinto; coorientador: Bruno Milanez. Referência indicada no enunciado. \url{https://www.maxwell.vrac.puc-rio.br/52465/52465.PDF}.
+\bibitem[SciPy]{scipy} SciPy. \textit{scipy.optimize.milp}. Interface utilizada para o modelo inteiro de atendimento. \url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.milp.html}.
 \end{thebibliography}
 \end{document}

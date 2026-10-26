@@ -1,0 +1,346 @@
+{
+  "counts": {
+    "pronto": 28,
+    "duplicado": 2,
+    "excluido": 1
+  },
+  "files": [
+    {
+      "arquivo": "Instancia1_G1.txt",
+      "sha256_original": "195e4119c91588148f4d0f2baac0ced925f90d56106856354ae0fc9613b30b05",
+      "ajuste": "nenhum",
+      "n": 4518,
+      "m": 15,
+      "capacidade": 4830,
+      "sha256_dados": "19ce91ca415559b028bb1899a3079066862ace8077ac222f54649b6ec73a374b",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia1_G10.txt",
+      "sha256_original": "8a5bf115728bf83af19a58b144864cdbee6b3d0ef8fa8f92aef9b4a53a392370",
+      "ajuste": "nenhum",
+      "n": 4744,
+      "m": 15,
+      "capacidade": 5224,
+      "sha256_dados": "4192ae130d49587af61c821805b328a72771aed93a39ef7bbb8ffa61ae5aa307",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia1_G11.txt",
+      "sha256_original": "8024c76458cd0a3e1366f1b536c8680fbac6da34689835c6aea22160189d1faf",
+      "ajuste": "nenhum",
+      "n": 3452,
+      "m": 10,
+      "capacidade": 3990,
+      "sha256_dados": "81a928b3f746ffd3a17cc15aa9cde4246f2e34dce8035d90895deed3843e4d9d",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia1_G12.txt",
+      "sha256_original": "81a1aa76cb1ddf56df58f0540ae2f70b1148f42c928d96baf59a95aa8d93add3",
+      "ajuste": "nenhum",
+      "n": 3860,
+      "m": 15,
+      "capacidade": 4485,
+      "sha256_dados": "bcfad5b4ca94a840db2a89a16eba8dd06f7591b196d9db59ca1d42997545ce87",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia1_G2.txt",
+      "sha256_original": "f75e74b6dffa8671dcc8eeaea676b1efa2f256bec1d57a54da91f65daf784a71",
+      "ajuste": "nenhum",
+      "n": 100,
+      "m": 5,
+      "capacidade": 105,
+      "sha256_dados": "036e5da7e2f03daab75ff9158981c0fa384878fd3e759e590d81e814177d8893",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia1_G3.txt",
+      "sha256_original": "459054bf8052652bf35a132a22119de270ad46fb5e77e9579d9f62745e849568",
+      "ajuste": "nenhum",
+      "n": 5917,
+      "m": 20,
+      "capacidade": 6324,
+      "sha256_dados": "357d212d307079cca2408ba410d7708ba5da15399c9ddb9fb9eaaf19b67996c5",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia1_G4.txt",
+      "sha256_original": "dc7a12df3aa7196eb7f1706d01cb59c70af7534dd8f1efe2e8ec9c7611f7ec2d",
+      "ajuste": "nenhum",
+      "n": 3995,
+      "m": 12,
+      "capacidade": 4700,
+      "sha256_dados": "c054fad7ce4974ea53b87675ea1e036e35115b0f441aab1e20d749b6ac512ef9",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia1_G5.txt",
+      "sha256_original": "0c523a0d128f3d46d350140f95bcefbc56a3faa2d5fd361c1bafe6e01c57553d",
+      "ajuste": "nenhum",
+      "n": 4213,
+      "m": 15,
+      "capacidade": 4664,
+      "sha256_dados": "d9dc646cb2c928ca9384053246b381c5d289faa2c248ce2ea7ac197c217314bf",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia1_G6.txt",
+      "sha256_original": "745a19344b198f984e44af5cb815855241f9e2ee7e30557e036c50e9d8a50ae6",
+      "ajuste": "separacao de cabecalhos",
+      "n": 5203,
+      "m": 15,
+      "capacidade": 5781,
+      "sha256_dados": "86c4c92e1414b61294715af3cd1dacff7b1b180e597712d053fbd9107b9142a3",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia1_G7(1).txt",
+      "sha256_original": "667f76757907cb6b9a69304a848408015e90df12d964d38af10e4f31db4a645b",
+      "ajuste": "nenhum",
+      "n": 3357,
+      "m": 11,
+      "capacidade": 3950,
+      "sha256_dados": "4fab6c1445fec07190fd3a735be22d07f9988a6c160b87a8dbe6c1047642d20f",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia1_G7.txt",
+      "sha256_original": "c3d837319983f781384a5d9bbff88b5d0ae5a31560ec4940ca14c9ca83762b81",
+      "ajuste": "nenhum",
+      "status": "excluido",
+      "motivo": "arquivo contem somente caminho externo, sem dados"
+    },
+    {
+      "arquivo": "Instancia1_G9.txt",
+      "sha256_original": "7ebe9a27006845a554907a391587b471ce7e023e38b0a4fee024a9c2cd09b878",
+      "ajuste": "nenhum",
+      "n": 3696,
+      "m": 14,
+      "capacidade": 4350,
+      "sha256_dados": "f781cd8a7918760944ab11780ecb7f043d7743629d363884aa58d1c9aa108a29",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G1.txt",
+      "sha256_original": "201bc70d1772dc0819c92eb983b4247fae59291745aba3ed85ca2c12544d7e64",
+      "ajuste": "nenhum",
+      "n": 4442,
+      "m": 15,
+      "capacidade": 5260,
+      "sha256_dados": "776a6c9d2d7e893ddf6d1f730c73cd58fd9eabe27d591afb02887549ea1e7982",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G10.txt",
+      "sha256_original": "ddcd49c99b70247c1c8c8e7e177cfdd941342d6a62cce0e214fbdc43ac97d1a8",
+      "ajuste": "nenhum",
+      "n": 5116,
+      "m": 15,
+      "capacidade": 5224,
+      "sha256_dados": "81c9ac926c32c0c9046522ae906a46c8fe7b20fb3bc0e3b5d98fc3129518c84b",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G11.txt",
+      "sha256_original": "9fe1b6c21643cefe48328398a6ceca28ca60a927b71aa0642dc9e553f794f2fd",
+      "ajuste": "nenhum",
+      "n": 4454,
+      "m": 15,
+      "capacidade": 5497,
+      "sha256_dados": "9b31d691e02bea6300b082412ef86bd4c5ab4a8f35cf9b91879e850acaa98b10",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G12.txt",
+      "sha256_original": "24ff3068cee2e33c2b54e8b9023c34608dabf9172384c0e7917d7170ed77d65e",
+      "ajuste": "nenhum",
+      "n": 3860,
+      "m": 15,
+      "capacidade": 4485,
+      "sha256_dados": "beeb0583fb34bfa446c91a405ef1c8abad5d5720faa4fe1e5de981b22e1eab86",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G2.txt",
+      "sha256_original": "deed48374bd65be8027ce022d49c8a10e0a85781a88cebcdcb69ae2b53ca681c",
+      "ajuste": "nenhum",
+      "n": 109,
+      "m": 5,
+      "capacidade": 121,
+      "sha256_dados": "468346f8cc32eab42ed6e622ac1c594b776ae599beaf3a612c70cf7b3adb935e",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G3.txt",
+      "sha256_original": "a174b55ab0b08d859d2a8b0e380d52d26395386d6e4769054587f96dfac9b5c8",
+      "ajuste": "nenhum",
+      "n": 3858,
+      "m": 10,
+      "capacidade": 4612,
+      "sha256_dados": "e1f1cd1dd4100007984c8df3fcefaf7e4dfba353161e1cad716ee81d0d42ad29",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G4.txt",
+      "sha256_original": "59062c20fee19e493c97fce3a2bb4c584a93d2dbc78326289c12abb781ff6e25",
+      "ajuste": "nenhum",
+      "n": 3970,
+      "m": 12,
+      "capacidade": 4670,
+      "sha256_dados": "2f13eb35b9089220dc4d691a46a735706829c37238480a6bef14def8976a4a64",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G5.txt",
+      "sha256_original": "00a51dfb827d7900f83c5b5df8ae267b2d7da211ecd93c6a9c09e98c597bb74a",
+      "ajuste": "nenhum",
+      "n": 4628,
+      "m": 15,
+      "capacidade": 5003,
+      "sha256_dados": "219cbec6f0a9420411fed2f79dd218ef057fd78ad240aec9a643a70cf4b850aa",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G6.txt",
+      "sha256_original": "d2172c82d21d13ba54f3f1f7c0d6e31e739106530bc5ed9feffbca81bbe74a61",
+      "ajuste": "separacao de cabecalhos",
+      "n": 4809,
+      "m": 15,
+      "capacidade": 5171,
+      "sha256_dados": "0995fcb0081e12aa6f8b4b88fedf28f83559ff10346d3e638ee7dc3398055018",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G7.txt",
+      "sha256_original": "3b81cbe777e08c6f632e5e2b3353125641e82f5951acae9e0feafaf94ac68eca",
+      "ajuste": "nenhum",
+      "n": 6798,
+      "m": 20,
+      "capacidade": 6940,
+      "sha256_dados": "d502c7eae355d604dceefad375ebdb0c4724b03cd2bee08a5b67ad21d4b87e02",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "Instancia2_G9.txt",
+      "sha256_original": "91e3e16b5c06f3718832f09abaa97c7ac61289da6b4581d601a9428a4f091bd1",
+      "ajuste": "nenhum",
+      "n": 4124,
+      "m": 14,
+      "capacidade": 4350,
+      "sha256_dados": "c038ce3e8fe1e53e764166bc7199edaaa3ea0b3d67c0e5ce9359f0dc9556abf1",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "instancia1_G8.txt",
+      "sha256_original": "fe01ef618da27e7c727405cb0e30e1ba6ea30982cb6e245975954235a44579e5",
+      "ajuste": "nenhum",
+      "n": 316,
+      "m": 12,
+      "capacidade": 372,
+      "sha256_dados": "07df719e05bd2935a916c39d9e3ef09e0240adbc3c084bd5c7b845fc3f5fdf42",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "instancia2_G8.txt",
+      "sha256_original": "d3dc3341fb529da1342ab606b1b757e4e256545f0ba87cb1a0ee2f3afdb6518a",
+      "ajuste": "nenhum",
+      "n": 316,
+      "m": 12,
+      "capacidade": 372,
+      "sha256_dados": "fce203e6e57e08e2a0dba5392e4d9580e4623450d4c3f7d23411518ea1635e36",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "instancia_1_G13.txt",
+      "sha256_original": "f448a3b39f9b834c622f71eaadbac9c5cdd820b3b504c2d6439b4a920322cc47",
+      "ajuste": "nenhum",
+      "n": 360,
+      "m": 14,
+      "capacidade": 415,
+      "sha256_dados": "917f02c3bbe6dd303e60c6117c94dabe5f20f16b973d7b84a004aa8041e53d8e",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "instancia_1_G14.txt",
+      "sha256_original": "b1831a8c8658589f9998e97fecc7123eee9e2cafe16f1b876572aa08f5c53cd5",
+      "ajuste": "nenhum",
+      "n": 370,
+      "m": 12,
+      "capacidade": 432,
+      "sha256_dados": "93531ae00c3934cd9793ebccf946b234c0c01143fb2ac69a25ebaaf4d166f594",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "instancia_2_G13.txt",
+      "sha256_original": "c4d9c017e81a2916fac5f56de804bb94df21e6858411de724b12bbcd4b3cdc86",
+      "ajuste": "nenhum",
+      "n": 382,
+      "m": 16,
+      "capacidade": 411,
+      "sha256_dados": "e4a62552efb5121841d5352d75e91e32fc7a8b5fc24816a7185cd2611b2d0abd",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "instancia_2_G14.txt",
+      "sha256_original": "3f6b7c22f00cf9e3593b9648e961a6f54eaf51653b93f93f4d09f4d1612a037d",
+      "ajuste": "nenhum",
+      "n": 362,
+      "m": 12,
+      "capacidade": 383,
+      "sha256_dados": "f0f5a7f58994cfdce4dc6602c5ca94ebcc8b5a64f4c12e98f7750a4f61faf179",
+      "status": "pronto",
+      "motivo": ""
+    },
+    {
+      "arquivo": "instancias1.txt",
+      "sha256_original": "7ebe9a27006845a554907a391587b471ce7e023e38b0a4fee024a9c2cd09b878",
+      "ajuste": "nenhum",
+      "n": 3696,
+      "m": 14,
+      "capacidade": 4350,
+      "sha256_dados": "f781cd8a7918760944ab11780ecb7f043d7743629d363884aa58d1c9aa108a29",
+      "status": "duplicado",
+      "motivo": "Instancia1_G9.txt"
+    },
+    {
+      "arquivo": "instancias2.txt",
+      "sha256_original": "91e3e16b5c06f3718832f09abaa97c7ac61289da6b4581d601a9428a4f091bd1",
+      "ajuste": "nenhum",
+      "n": 4124,
+      "m": 14,
+      "capacidade": 4350,
+      "sha256_dados": "c038ce3e8fe1e53e764166bc7199edaaa3ea0b3d67c0e5ce9359f0dc9556abf1",
+      "status": "duplicado",
+      "motivo": "Instancia2_G9.txt"
+    }
+  ]
+}

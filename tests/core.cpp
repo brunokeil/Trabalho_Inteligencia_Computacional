@@ -67,6 +67,12 @@ int main() {
     int repairs = 0;
     auto tinySolution = alocarRegret(tiny, tinySlots, 0, rng, false, nullptr, &repairs);
     assert(tinySolution.dist == 49 * ESCALA && repairs == 1);
+    // N3 must populate a previously empty school when enabling a useful type.
+    auto demo = Instancia::ler("entrega/exemplo8_K1.txt");
+    auto startDemo = montarSolucao(demo, Slots{2,1,0}, {1,1,1,1,0,0,0,0});
+    auto added = alocarRegret(demo, Slots{2,1,1}, 0, rng, false, &startDemo);
+    validar(demo, added, 1);
+    assert(added.naoAlocados == 0 && added.carga[2] > 0 && added.dist < startDemo.dist);
     auto broken = s;
     broken.dist++;
     bool rejected = false;

@@ -40,7 +40,7 @@ O arquivo final é separado do estado corrente: só recebe soluções sem excess
 
 - N1: realocar i às p escolas habilitadas mais próximas diferentes da atual. No tabu há também destino −1. Delta de distância é d_ib−d_ia; overflow muda apenas nas escolas origem/destino. Custo por avaliação O(1).
 - N2: trocar duas escolas de candidatos do mesmo tipo, incluindo troca entre alocado e não alocado. Cargas e contagens de violações finais não mudam. Delta é d_ib+d_ha−d_ia−d_hb. Para cada arco origem→destino e tipo, guardar maior ganho (VND) ou quatro melhores (tabu, para alternativas não proibidas). Enumerar pares desses candidatos. Isso reaproveita a ideia eficiente do projeto original; não enumera todos os pares de candidatos. No tabu, a lista limitada pode omitir uma troca admissível de menor ganho.
-- N3: adicionar/substituir tipo em uma escola ou trocar um tipo entre duas escolas. Gerar alternativas, embaralhar com o RNG e rejeitar via fluxo aquelas incapazes de manter C*. Avaliar até o orçamento de reconstruções. Liberar candidatos das escolas alteradas, preservar os demais e executar regret determinístico e reparação. A cadeia pode atingir escolas inicialmente preservadas. O contador N3 inclui tentativas de topologia, inclusive as rejeitadas pelo fluxo; não é diretamente equivalente ao contador de deltas N1/N2.
+- N3: adicionar/substituir tipo em uma escola ou trocar um tipo entre duas escolas. Gerar alternativas, embaralhar com o RNG e rejeitar via fluxo aquelas incapazes de manter C*. Avaliar até o orçamento de reconstruções. Liberar candidatos das escolas alteradas e dos tipos recém-habilitados em qualquer escola; preservar os demais e executar regret determinístico e reparação. A cadeia pode atingir escolas inicialmente preservadas. O contador N3 inclui tentativas de topologia, inclusive as rejeitadas pelo fluxo; não é diretamente equivalente ao contador de deltas N1/N2.
 
 VND visita a ordem em `--viz`, aplica uma melhoria e reinicia em N1. `--ls first` aceita a primeira melhoria na enumeração; `best` seleciona a melhor no conjunto examinado. Para N2, a enumeração já é comprimida pelos ganhos; para N3, é amostrada. O critério first/best não altera o tabu, que precisa escolher a melhor opção admissível mesmo sem melhorar o estado corrente.
 
@@ -55,3 +55,8 @@ Parar ao atingir máximo de iterações, limite de estagnação, tempo opcional 
 ## Limitações conhecidas
 
 Não é um algoritmo exato para distância e não fornece gap global. N3 é amostrada e p restringe N1; alpha=0 torna a construção determinística, mas a busca pode usar aleatoriedade. A garantia de capacidade depende do certificado exato e da reparação, por isso a construção completa é uma heurística com apoio de um pequeno modelo inteiro, explicitamente contabilizado. O tempo de pré-checagem aparece separado. O transporte opcional `--exato` só é exato para os slots finais fixados e requer solução completa.
+
+
+## Revisão da entrega atual
+
+A N3 libera também todos os candidatos dos tipos recém-habilitados, mesmo que estejam em escolas cujo conjunto de tipos não mudou. Isso permite ocupar uma escola antes vazia. O exemplo principal K=1 está em `docs/exemplo8_K1.md`; resultados atuais em `resultados/final_vnd` e `resultados/final_tabu`. Descrições/resultados anteriores de K=2 são uma extensão ao enunciado.

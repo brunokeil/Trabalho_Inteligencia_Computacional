@@ -200,9 +200,16 @@ int main(int argc, char** argv) {
             throw std::runtime_error("parametros fora do dominio; consulte --help");
         if (script.empty())
             script = (fs::absolute(argv[0]).parent_path() / "scripts/viabilidade.py").string();
-        if (!output.empty() &&
-            fs::absolute(input).lexically_normal() == fs::absolute(output).lexically_normal())
-            throw std::runtime_error("saida nao pode sobrescrever instancia");
+        if (!output.empty()) {
+            // Both output extensions are written, regardless of the requested one.
+            for (const char* ext : {".json", ".csv"}) {
+                fs::path target = output;
+                target.replace_extension(ext);
+                if (fs::weakly_canonical(input) == fs::weakly_canonical(target) ||
+                    (fs::exists(target) && fs::equivalent(input, target)))
+                    throw std::runtime_error("saida nao pode sobrescrever instancia");
+            }
+        }
         double start = now();
         auto in = Instancia::ler(input);
         p.ajustar(in);

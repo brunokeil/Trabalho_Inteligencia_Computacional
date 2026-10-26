@@ -23,7 +23,9 @@ def read_instance(path):
 def validate(path):
     data=json.loads(Path(path).read_text(),parse_float=Decimal)
     source=Path(data['instance'])
-    if not source.exists():source=ROOT/'entrega'/data['name']
+    if not source.exists():
+        candidates=[ROOT/'instances/preparadas'/data['name'], ROOT/'instances'/data['name'], ROOT/'entrega'/data['name']]
+        source=next((p for p in candidates if p.exists()), source)
     cs,ss,caps,ds=read_instance(source);n,m=len(cs),len(ss);names=list(dict.fromkeys(c[2] for c in cs));T=len(names);K=data['K'];assert K in (1,2)
     assert data['candidateIds']==[c[0] for c in cs] and data['schoolIds']==[s[0] for s in ss] and data['typeNames']==names and data['capacities']==caps
     quota=data['certificate_quotas'];assert len(quota)==m and all(len(row)==T for row in quota)

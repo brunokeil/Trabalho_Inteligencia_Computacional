@@ -22,7 +22,7 @@ Exemplos de uso:
   python3 scripts/executar_todas.py --resumo-only
 """
 
-import argparse, csv, fnmatch, glob, json, multiprocessing, os, subprocess, sys, time
+import argparse, csv, fnmatch, glob, hashlib, json, multiprocessing, os, statistics, subprocess, sys, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -138,6 +138,10 @@ def generate_summary(out_dir, instances_dir):
                 'dist_inicial_media': f"{mean_init:.4f}",
                 'dist_min': f"{min_f:.4f}",
                 'dist_media': f"{mean_f:.4f}",
+                'dist_desvio_amostral': f"{statistics.stdev(finals) if len(finals)>1 else 0:.4f}",
+                'dist_max': f"{max(finals):.4f}",
+                'locais_usados_media': f"{statistics.mean(sum(x>0 for x in r['final']['load']) for r in runs):.2f}",
+                'construcao_seg_media': f"{statistics.mean(constr_secs):.6f}",
                 'melhora_pct': f"{melhora_pct:.2f}%",
                 'precheck_seg': f"{d.get('precheck_seconds', 0.0):.4f}",
                 'busca_seg_media': f"{sum(search_secs)/len(search_secs):.4f}",
@@ -171,15 +175,15 @@ def generate_summary(out_dir, instances_dir):
     md_path.write_text('\n'.join(md_lines), encoding='utf-8')
     
     print(f"\nResumos consolidados salvos com sucesso:")
-    print(f"  -> {csv_path.relative_to(ROOT)}")
-    print(f"  -> {md_path.relative_to(ROOT)}")
+    print(f"  -> {csv_path}")
+    print(f"  -> {md_path}")
     return rows
 
 def main():
     ap = argparse.ArgumentParser(description="Executa todas as instâncias em lote com o resolvedor C++.")
     ap.add_argument('--instancias-dir', type=Path, default=ROOT / 'instances', help="Diretório contendo as instâncias (padrão: instances/)")
     ap.add_argument('--alocacao-bin', type=Path, default=ROOT / 'alocacao', help="Executável C++ (padrão: ./alocacao)")
-    ap.add_argument('-k', '--tipos-por-escola', default='1,2', help="Valores de K separados por vírgula (ex: '1', '2' ou '1,2'; padrão: '1,2')")
+    ap.add_argument('-k', '--tipos-por-escola', default='1', help="Valores de K separados por vírgula; K=1 é o enunciado, K=2 é uma extensão")
     ap.add_argument('--metodo', choices=['vnd', 'tabu'], default='vnd', help="Método de busca local: vnd ou tabu (padrão: vnd)")
     ap.add_argument('--alpha', type=float, default=0.3, help="Parâmetro alpha da construção gulosa randomizada (padrão: 0.3)")
     ap.add_argument('--runs', type=int, default=1, help="Número de execuções com sementes diferentes (padrão: 1)")
@@ -212,7 +216,7 @@ def main():
             sys.exit(f"Erro: não foi possível compilar {bin_path}")
 
     # Lista instâncias
-    all_files = sorted([p for p in inst_dir.glob("instancia_*.txt") if p.is_file()])
+    all_files = sorted([p for p in inst_dir.glob("*.txt") if p.is_file()])
     if args.filter != '*':
         all_files = [p for p in all_files if fnmatch.fnmatch(p.name, args.filter)]
 
@@ -223,6 +227,22 @@ def main():
         k_values = [int(x.strip()) for x in args.tipos_por_escola.split(',') if x.strip()]
     except ValueError:
         sys.exit(f"Valores inválidos para -k: {args.tipos_por_escola}")
+    if not k_values or any(k not in (1,2) for k in k_values):
+        sys.exit('K deve ser 1 ou 2')
+    if args.runs < 1 or args.workers < 1 or not 0 <= args.alpha <= 1:
+        sys.exit('runs/workers devem ser positivos; alpha deve estar em [0,1]')
+
+    # Never resume results from a different binary, input or configuration.
+    manifest = {'binary_sha256': hashlib.sha256(bin_path.read_bytes()).hexdigest(),
+                'instances': {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in all_files},
+                'K': k_values, 'method': args.metodo, 'alpha': args.alpha,
+                'runs': args.runs, 'seed': args.seed, 'max_iter': args.max_iter,
+                'stagnation': args.sem_melhora, 'time_limit': args.tempo,
+                'python': sys.version, 'platform': sys.platform}
+    manifest_path = out_dir / 'manifest.json'
+    if any(out_dir.glob('*__K*__*.json')) and (not manifest_path.exists() or json.loads(manifest_path.read_text()) != manifest):
+        sys.exit('Manifesto ausente ou diferente: escolha outra pasta --out para não misturar resultados.')
+    manifest_path.write_text(json.dumps(manifest, indent=2), encoding='utf-8')
 
     jobs = []
     for inst_p in all_files:
@@ -242,9 +262,8 @@ def main():
     print(f"Total de execuções planejadas: {total}")
     print(f"Método: {args.metodo} (alpha={args.alpha}, runs={args.runs}, max_iter={args.max_iter})")
     print(f"Paralelismo: {args.workers} worker(s)")
-    print(f"Diretório de saída: {out_dir.relative_to(ROOT)}")
+    print(f"Diretório de saída: {out_dir}")
     print("=" * 80)
-
     start_time = time.perf_counter()
     completed = 0
     errors = 0
@@ -284,6 +303,8 @@ def main():
     print("Gerando resumos consolidados...")
     generate_summary(out_dir, inst_dir)
     print("=" * 80)
+    if errors:
+        sys.exit(1)
 
 if __name__ == '__main__':
     main()

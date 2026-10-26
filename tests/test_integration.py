@@ -43,4 +43,12 @@ class Integration(unittest.TestCase):
     def test_bad_cli(self):
         for args in [(),('--tipos-por-escola','3'),('--tipos-por-escola','1','--alpha','nan'),('--tipos-por-escola','1','--alpha','1.1'),('--tipos-por-escola','1','--runs','0'),('--tipos-por-escola','1','--ls','wrong'),('--tipos-por-escola','1','--tmin','10','--tmax','2')]:
             r=self.run_case(BASE,args);self.assertEqual(r.returncode,1,r.stderr)
+    def test_output_extensions_cannot_overwrite_input(self):
+        inp=self.root/'data.csv';inp.write_text(BASE)
+        result=subprocess.run([os.environ.get('DCC136_TEST_BIN',str(ROOT/'alocacao')),
+            '--instancia',str(inp),'--tipos-por-escola','1',
+            '--saida',str(self.root/'data.json')],capture_output=True,text=True)
+        self.assertEqual(result.returncode,1)
+        self.assertIn('sobrescrever',result.stderr)
+        self.assertEqual(inp.read_text(),BASE)
 if __name__=='__main__':unittest.main()

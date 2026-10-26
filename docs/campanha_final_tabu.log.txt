@@ -1,0 +1,45 @@
+================================================================================
+DCC136 — Execução em Lote de Instâncias
+Instâncias selecionadas: 28
+Valores de K: [1]
+Total de execuções planejadas: 28
+Método: tabu (alpha=0.3, runs=30, max_iter=150)
+Paralelismo: 4 worker(s)
+Diretório de saída: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_tabu
+================================================================================
+[  1/ 28] OK: Instancia1_G12 (K=1) [23.50s]
+[  2/ 28] OK: Instancia1_G2 (K=1) [1.15s]
+[  3/ 28] OK: Instancia1_G11 (K=1) [25.00s]
+[  4/ 28] OK: Instancia1_G10 (K=1) [29.92s]
+[  5/ 28] OK: Instancia1_G1 (K=1) [42.40s]
+[  6/ 28] OK: Instancia1_G4 (K=1) [19.73s]
+[  7/ 28] OK: Instancia1_G5 (K=1) [22.61s]
+[  8/ 28] OK: Instancia1_G7(1) (K=1) [12.88s]
+[  9/ 28] OK: Instancia1_G3 (K=1) [39.16s]
+[ 10/ 28] OK: Instancia1_G6 (K=1) [24.90s]
+[ 11/ 28] OK: Instancia1_G9 (K=1) [15.67s]
+[ 12/ 28] OK: Instancia2_G12 (K=1) [15.64s]
+[ 13/ 28] OK: Instancia2_G2 (K=1) [0.95s]
+[ 14/ 28] OK: Instancia2_G1 (K=1) [27.43s]
+[ 15/ 28] OK: Instancia2_G11 (K=1) [18.48s]
+[ 16/ 28] OK: Instancia2_G10 (K=1) [23.67s]
+[ 17/ 28] OK: Instancia2_G4 (K=1) [10.25s]
+[ 18/ 28] OK: Instancia2_G6 (K=1) [12.86s]
+[ 19/ 28] OK: Instancia2_G3 (K=1) [17.37s]
+[ 20/ 28] OK: instancia1_G8 (K=1) [1.03s]
+[ 21/ 28] OK: instancia2_G8 (K=1) [1.03s]
+[ 22/ 28] OK: instancia_1_G13 (K=1) [1.27s]
+[ 23/ 28] OK: instancia_1_G14 (K=1) [1.26s]
+[ 24/ 28] OK: instancia_2_G13 (K=1) [1.50s]
+[ 25/ 28] OK: instancia_2_G14 (K=1) [1.09s]
+[ 26/ 28] OK: Instancia2_G9 (K=1) [11.72s]
+[ 27/ 28] OK: Instancia2_G7 (K=1) [32.55s]
+[ 28/ 28] OK: Instancia2_G5 (K=1) [72.08s]
+================================================================================
+Concluído em 159.7s. Sucessos: 28/28. Falhas: 0.
+Gerando resumos consolidados...
+
+Resumos consolidados salvos com sucesso:
+  -> /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_tabu/resumo.csv
+  -> /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_tabu/resumo.md
+================================================================================
