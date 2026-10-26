@@ -1,0 +1,49 @@
+================================================================================
+DCC136 — Execução em Lote de Instâncias
+Instâncias selecionadas: 28
+Valores de K: [1]
+Total de execuções planejadas: 28
+Método: vnd (alpha=0.3, runs=30, max_iter=150)
+Paralelismo: 4 worker(s)
+Diretório de saída: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd
+================================================================================
+[  1/ 28] OK: Instancia1_G11 (K=1) [4.80s]
+[  2/ 28] OK: Instancia1_G12 (K=1) [4.88s]
+[  3/ 28] OK: Instancia1_G2 (K=1) [0.97s]
+[  4/ 28] OK: Instancia1_G10 (K=1) [6.77s]
+[  5/ 28] OK: Instancia1_G1 (K=1) [8.03s]
+[  6/ 28] OK: Instancia1_G4 (K=1) [4.21s]
+[  7/ 28] OK: Instancia1_G5 (K=1) [4.50s]
+[  8/ 28] OK: Instancia1_G7(1) (K=1) [2.00s]
+[  9/ 28] OK: Instancia1_G6 (K=1) [5.14s]
+[ 10/ 28] OK: Instancia1_G3 (K=1) [8.33s]
+[ 11/ 28] OK: Instancia1_G9 (K=1) [3.33s]
+[ 12/ 28] OK: Instancia2_G1 (K=1) [4.39s]
+[ 13/ 28] OK: Instancia2_G2 (K=1) [0.54s]
+[ 14/ 28] OK: Instancia2_G11 (K=1) [3.59s]
+[ 15/ 28] OK: Instancia2_G12 (K=1) [3.69s]
+[ 16/ 28] OK: Instancia2_G10 (K=1) [6.50s]
+[ 17/ 28] OK: Instancia2_G4 (K=1) [2.68s]
+[ 18/ 28] OK: Instancia2_G3 (K=1) [6.07s]
+[ 19/ 28] OK: Instancia2_G6 (K=1) [5.94s]
+[ 20/ 28] OK: instancia1_G8 (K=1) [0.72s]
+[ 21/ 28] OK: instancia2_G8 (K=1) [1.05s]
+[ 22/ 28] OK: instancia_1_G13 (K=1) [0.97s]
+[ 23/ 28] OK: Instancia2_G9 (K=1) [5.98s]
+[ 24/ 28] OK: instancia_1_G14 (K=1) [1.69s]
+[ 25/ 28] OK: instancia_2_G13 (K=1) [1.39s]
+[ 26/ 28] OK: instancia_2_G14 (K=1) [0.74s]
+[ 27/ 28] OK: Instancia2_G7 (K=1) [16.70s]
+[ 28/ 28] FALHA (ERROR): Instancia2_G5 (K=1) -> 1/scripts/viabilidade.py", line 23, in solve
+    if res.status!=0:raise RuntimeError('checagem inconclusiva: '+res.message)
+RuntimeError: checagem inconclusiva: Time limit reached. (HiGHS Status 13: Time limit reached)
+Erro: pre-checagem inconclusiva; verifique Python/SciPy e scripts/viabilidade.py
+
+================================================================================
+Concluído em 139.9s. Sucessos: 27/28. Falhas: 1.
+Gerando resumos consolidados...
+
+Resumos consolidados salvos com sucesso:
+  -> /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/resumo.csv
+  -> /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/resumo.md
+================================================================================

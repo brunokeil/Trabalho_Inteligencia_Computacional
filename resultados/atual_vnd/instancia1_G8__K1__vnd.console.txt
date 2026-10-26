@@ -1,0 +1,34 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/preparadas/instancia1_G8.txt --tipos-por-escola 1 --metodo vnd --alpha 0.3 --runs 30 --seed 1 --max-iter 150 --sem-melhora 50 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/instancia1_G8__K1__vnd.json
+instancia1_G8.txt K=1 VIAVEL atendimento maximo=316/316 nao_alocados_min=0 pre_check=0.64824s
+run=1 seed=1 inicial=1493.048600 final=1270.5737 km melhora=222.4749 constr=0.0014s busca=0.0021s iter=112
+run=2 seed=2 inicial=1396.412900 final=1395.0895 km melhora=1.3234 constr=0.0014s busca=0.0003s iter=13
+run=3 seed=3 inicial=1336.740600 final=1335.5276 km melhora=1.2130 constr=0.0014s busca=0.0003s iter=13
+run=4 seed=4 inicial=1396.674200 final=1396.6140 km melhora=0.0602 constr=0.0014s busca=0.0002s iter=7
+run=5 seed=5 inicial=1326.817300 final=1325.5542 km melhora=1.2631 constr=0.0014s busca=0.0002s iter=7
+run=6 seed=6 inicial=1445.617800 final=1412.2019 km melhora=33.4159 constr=0.0014s busca=0.0006s iter=30
+run=7 seed=7 inicial=1410.942500 final=1317.2417 km melhora=93.7008 constr=0.0014s busca=0.0009s iter=40
+run=8 seed=8 inicial=1369.475000 final=1367.5801 km melhora=1.8949 constr=0.0014s busca=0.0002s iter=9
+run=9 seed=9 inicial=1309.087300 final=1307.7694 km melhora=1.3179 constr=0.0014s busca=0.0002s iter=11
+run=10 seed=10 inicial=1371.495700 final=1312.1454 km melhora=59.3503 constr=0.0013s busca=0.0013s iter=54
+run=11 seed=11 inicial=1358.739000 final=1286.7718 km melhora=71.9672 constr=0.0013s busca=0.0004s iter=18
+run=12 seed=12 inicial=1370.617700 final=1297.4559 km melhora=73.1618 constr=0.0014s busca=0.0005s iter=20
+run=13 seed=13 inicial=1428.458500 final=1319.5900 km melhora=108.8685 constr=0.0013s busca=0.0014s iter=67
+run=14 seed=14 inicial=1353.924400 final=1350.0374 km melhora=3.8870 constr=0.0015s busca=0.0003s iter=15
+run=15 seed=15 inicial=1501.335100 final=1394.4911 km melhora=106.8440 constr=0.0014s busca=0.0008s iter=34
+run=16 seed=16 inicial=1310.623900 final=1235.2980 km melhora=75.3259 constr=0.0014s busca=0.0007s iter=30
+run=17 seed=17 inicial=1310.100200 final=1309.5853 km melhora=0.5149 constr=0.0014s busca=0.0002s iter=7
+run=18 seed=18 inicial=1441.739400 final=1270.8052 km melhora=170.9342 constr=0.0014s busca=0.0016s iter=80
+run=19 seed=19 inicial=1530.500500 final=1401.9499 km melhora=128.5506 constr=0.0014s busca=0.0014s iter=73
+run=20 seed=20 inicial=1309.930800 final=1309.3174 km melhora=0.6134 constr=0.0014s busca=0.0002s iter=7
+run=21 seed=21 inicial=1349.422700 final=1347.9095 km melhora=1.5132 constr=0.0014s busca=0.0002s iter=7
+run=22 seed=22 inicial=1456.341800 final=1250.4897 km melhora=205.8521 constr=0.0014s busca=0.0017s iter=71
+run=23 seed=23 inicial=1306.905500 final=1306.9035 km melhora=0.0020 constr=0.0014s busca=0.0002s iter=5
+run=24 seed=24 inicial=1370.017300 final=1313.9136 km melhora=56.1037 constr=0.0014s busca=0.0007s iter=37
+run=25 seed=25 inicial=1321.996300 final=1287.6862 km melhora=34.3101 constr=0.0014s busca=0.0005s iter=19
+run=26 seed=26 inicial=1467.911100 final=1467.8394 km melhora=0.0717 constr=0.0014s busca=0.0002s iter=5
+run=27 seed=27 inicial=1367.530300 final=1367.4504 km melhora=0.0799 constr=0.0014s busca=0.0002s iter=5
+run=28 seed=28 inicial=1401.567000 final=1367.9346 km melhora=33.6324 constr=0.0014s busca=0.0004s iter=16
+run=29 seed=29 inicial=1466.545600 final=1272.4956 km melhora=194.0500 constr=0.0014s busca=0.0020s iter=98
+run=30 seed=30 inicial=1452.467000 final=1405.6574 km melhora=46.8096 constr=0.0014s busca=0.0007s iter=36
+distancia km: min=1235.2980 media=1333.4626 desvio_amostral=54.8444 max=1467.8394 melhor_seed=16
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/instancia1_G8__K1__vnd.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/instancia1_G8__K1__vnd.csv"

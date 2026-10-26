@@ -1,0 +1,34 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/preparadas/Instancia1_G3.txt --tipos-por-escola 1 --metodo vnd --alpha 0.3 --runs 30 --seed 1 --max-iter 150 --sem-melhora 50 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/Instancia1_G3__K1__vnd.json
+Instancia1_G3.txt K=1 VIAVEL atendimento maximo=5917/5917 nao_alocados_min=0 pre_check=1.04369s
+run=1 seed=1 inicial=1050.905632 final=1049.9054 km melhora=1.0003 constr=0.0666s busca=0.0741s iter=150
+run=2 seed=2 inicial=1053.490090 final=1050.6918 km melhora=2.7983 constr=0.0587s busca=0.0739s iter=150
+run=3 seed=3 inicial=1083.383529 final=1082.3573 km melhora=1.0262 constr=0.0719s busca=0.1872s iter=150
+run=4 seed=4 inicial=1100.731628 final=1098.3817 km melhora=2.3499 constr=0.1945s busca=0.2369s iter=150
+run=5 seed=5 inicial=1067.969073 final=1065.2576 km melhora=2.7115 constr=0.0742s busca=0.2903s iter=150
+run=6 seed=6 inicial=1082.627716 final=1081.7797 km melhora=0.8480 constr=0.1019s busca=0.0856s iter=150
+run=7 seed=7 inicial=1077.749046 final=1073.4356 km melhora=4.3135 constr=0.3412s busca=0.0907s iter=150
+run=8 seed=8 inicial=1100.773437 final=1100.1215 km melhora=0.6520 constr=0.1356s busca=0.3839s iter=150
+run=9 seed=9 inicial=1044.288141 final=1042.9378 km melhora=1.3503 constr=0.1576s busca=0.0840s iter=150
+run=10 seed=10 inicial=1058.234667 final=1055.0725 km melhora=3.1622 constr=0.0613s busca=0.2489s iter=150
+run=11 seed=11 inicial=1097.179450 final=1095.8965 km melhora=1.2829 constr=0.1467s busca=0.1185s iter=150
+run=12 seed=12 inicial=1112.271142 final=1110.5163 km melhora=1.7548 constr=0.0715s busca=0.3177s iter=150
+run=13 seed=13 inicial=1081.198499 final=1080.8820 km melhora=0.3165 constr=0.0673s busca=0.0802s iter=150
+run=14 seed=14 inicial=1064.944256 final=1064.3448 km melhora=0.5994 constr=0.0564s busca=0.0734s iter=150
+run=15 seed=15 inicial=1074.847990 final=1069.2274 km melhora=5.6206 constr=0.1273s busca=0.2714s iter=150
+run=16 seed=16 inicial=1084.327915 final=1083.9447 km melhora=0.3832 constr=0.0675s busca=0.0874s iter=150
+run=17 seed=17 inicial=1093.726251 final=1092.9707 km melhora=0.7555 constr=0.0544s busca=0.0754s iter=150
+run=18 seed=18 inicial=1068.690042 final=1067.5609 km melhora=1.1292 constr=0.0592s busca=0.0794s iter=150
+run=19 seed=19 inicial=1068.334832 final=1067.4343 km melhora=0.9005 constr=0.0565s busca=0.0700s iter=150
+run=20 seed=20 inicial=1049.271260 final=1046.3087 km melhora=2.9625 constr=0.0532s busca=0.0773s iter=150
+run=21 seed=21 inicial=1056.410800 final=1054.2519 km melhora=2.1589 constr=0.0636s busca=0.0831s iter=150
+run=22 seed=22 inicial=1059.725697 final=1058.3634 km melhora=1.3623 constr=0.0788s busca=0.2167s iter=150
+run=23 seed=23 inicial=1046.773454 final=1046.3252 km melhora=0.4482 constr=0.1297s busca=0.0715s iter=150
+run=24 seed=24 inicial=1049.235632 final=1046.1740 km melhora=3.0616 constr=0.0516s busca=0.0676s iter=150
+run=25 seed=25 inicial=1097.503686 final=1096.3900 km melhora=1.1137 constr=0.0716s busca=0.0911s iter=150
+run=26 seed=26 inicial=1089.608353 final=1087.7311 km melhora=1.8773 constr=0.2201s busca=0.2801s iter=150
+run=27 seed=27 inicial=1102.529075 final=1101.2351 km melhora=1.2940 constr=0.2390s busca=0.0995s iter=150
+run=28 seed=28 inicial=1083.810021 final=1082.7693 km melhora=1.0407 constr=0.0566s busca=0.0784s iter=150
+run=29 seed=29 inicial=1076.148961 final=1071.8196 km melhora=4.3294 constr=0.0600s busca=0.1001s iter=150
+run=30 seed=30 inicial=1082.527938 final=1078.3656 km melhora=4.1623 constr=0.0611s busca=0.0748s iter=150
+distancia km: min=1042.9378 media=1073.4151 desvio_amostral=19.3996 max=1110.5163 melhor_seed=9
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/Instancia1_G3__K1__vnd.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/Instancia1_G3__K1__vnd.csv"

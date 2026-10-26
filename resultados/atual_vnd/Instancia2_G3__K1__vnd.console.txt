@@ -1,0 +1,34 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/preparadas/Instancia2_G3.txt --tipos-por-escola 1 --metodo vnd --alpha 0.3 --runs 30 --seed 1 --max-iter 150 --sem-melhora 50 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/Instancia2_G3__K1__vnd.json
+Instancia2_G3.txt K=1 INVIAVEL COMPROVADA atendimento maximo=3615/3858 nao_alocados_min=243 pre_check=2.62732s
+run=1 seed=1 inicial=717.137613 final=616.8683 km melhora=100.2693 constr=0.0289s busca=0.0205s iter=150
+run=2 seed=2 inicial=665.494478 final=569.3835 km melhora=96.1110 constr=0.0292s busca=0.0238s iter=150
+run=3 seed=3 inicial=720.176661 final=619.6926 km melhora=100.4841 constr=0.0469s busca=0.0415s iter=150
+run=4 seed=4 inicial=702.298780 final=603.8495 km melhora=98.4493 constr=0.0488s busca=0.1032s iter=150
+run=5 seed=5 inicial=712.707601 final=614.3882 km melhora=98.3194 constr=0.0672s busca=0.0640s iter=150
+run=6 seed=6 inicial=667.943726 final=570.2442 km melhora=97.6995 constr=0.0446s busca=0.0355s iter=150
+run=7 seed=7 inicial=702.028332 final=605.3386 km melhora=96.6897 constr=0.0309s busca=0.0325s iter=150
+run=8 seed=8 inicial=706.482488 final=607.3225 km melhora=99.1600 constr=0.0352s busca=0.0237s iter=150
+run=9 seed=9 inicial=713.213843 final=610.8632 km melhora=102.3507 constr=0.0264s busca=0.0224s iter=150
+run=10 seed=10 inicial=664.401827 final=571.3395 km melhora=93.0623 constr=0.1204s busca=0.3115s iter=150
+run=11 seed=11 inicial=679.202579 final=579.8229 km melhora=99.3797 constr=0.0723s busca=0.0341s iter=150
+run=12 seed=12 inicial=711.350236 final=612.0007 km melhora=99.3496 constr=0.0658s busca=0.0228s iter=150
+run=13 seed=13 inicial=701.049329 final=604.5616 km melhora=96.4878 constr=0.0273s busca=0.0296s iter=150
+run=14 seed=14 inicial=671.439761 final=571.3707 km melhora=100.0691 constr=0.0238s busca=0.0263s iter=150
+run=15 seed=15 inicial=715.440725 final=616.1540 km melhora=99.2868 constr=0.0428s busca=0.0272s iter=150
+run=16 seed=16 inicial=697.205442 final=603.0378 km melhora=94.1677 constr=0.0278s busca=0.0204s iter=150
+run=17 seed=17 inicial=700.075156 final=603.9701 km melhora=96.1051 constr=0.0305s busca=0.0264s iter=150
+run=18 seed=18 inicial=703.651678 final=604.4741 km melhora=99.1775 constr=0.0372s busca=0.0539s iter=150
+run=19 seed=19 inicial=697.966733 final=601.5989 km melhora=96.3679 constr=0.3505s busca=0.0935s iter=150
+run=20 seed=20 inicial=705.609177 final=607.2311 km melhora=98.3781 constr=0.2556s busca=0.0707s iter=150
+run=21 seed=21 inicial=667.292604 final=567.7332 km melhora=99.5594 constr=0.1050s busca=0.0487s iter=150
+run=22 seed=22 inicial=708.942101 final=611.5926 km melhora=97.3495 constr=0.0607s busca=0.0452s iter=150
+run=23 seed=23 inicial=702.987886 final=604.4435 km melhora=98.5444 constr=0.0435s busca=0.0270s iter=150
+run=24 seed=24 inicial=694.476674 final=600.3831 km melhora=94.0935 constr=0.0371s busca=0.0314s iter=150
+run=25 seed=25 inicial=672.128143 final=573.3155 km melhora=98.8127 constr=0.0444s busca=0.0533s iter=150
+run=26 seed=26 inicial=711.436047 final=611.9416 km melhora=99.4944 constr=0.0636s busca=0.0274s iter=150
+run=27 seed=27 inicial=707.832357 final=610.4050 km melhora=97.4273 constr=0.0345s busca=0.0337s iter=150
+run=28 seed=28 inicial=669.413227 final=571.1219 km melhora=98.2913 constr=0.0449s busca=0.0309s iter=150
+run=29 seed=29 inicial=706.506702 final=609.5280 km melhora=96.9787 constr=0.0504s busca=0.0299s iter=150
+run=30 seed=30 inicial=699.481890 final=603.3264 km melhora=96.1555 constr=0.0539s busca=0.0360s iter=150
+distancia km: min=567.7332 media=598.5768 desvio_amostral=17.1447 max=619.6926 melhor_seed=21
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/Instancia2_G3__K1__vnd.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/Instancia2_G3__K1__vnd.csv"

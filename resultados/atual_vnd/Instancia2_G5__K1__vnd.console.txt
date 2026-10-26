@@ -1,0 +1,8 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/preparadas/Instancia2_G5.txt --tipos-por-escola 1 --metodo vnd --alpha 0.3 --runs 30 --seed 1 --max-iter 150 --sem-melhora 50 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/atual_vnd/Instancia2_G5__K1__vnd.json
+Traceback (most recent call last):
+  File "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/scripts/viabilidade.py", line 32, in <module>
+    x=solve(np.array(caps),np.array(dem),K)
+  File "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/scripts/viabilidade.py", line 23, in solve
+    if res.status!=0:raise RuntimeError('checagem inconclusiva: '+res.message)
+RuntimeError: checagem inconclusiva: Time limit reached. (HiGHS Status 13: Time limit reached)
+Erro: pre-checagem inconclusiva; verifique Python/SciPy e scripts/viabilidade.py
