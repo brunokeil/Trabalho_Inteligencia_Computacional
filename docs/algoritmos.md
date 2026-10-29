@@ -59,4 +59,4 @@ Não é um algoritmo exato para distância e não fornece gap global. N3 é amos
 
 ## Revisão da entrega atual
 
-A N3 libera também todos os candidatos dos tipos recém-habilitados, mesmo que estejam em escolas cujo conjunto de tipos não mudou. Isso permite ocupar uma escola antes vazia. O exemplo principal K=1 está em `docs/exemplo8_K1.md`; resultados atuais em `resultados/final_vnd` e `resultados/final_tabu`. Descrições/resultados anteriores de K=2 são uma extensão ao enunciado.
+A N3 libera também todos os candidatos dos tipos recém-habilitados, mesmo que estejam em escolas cujo conjunto de tipos não mudou. Isso permite ocupar uma escola antes vazia. O exemplo principal K=1 está em `docs/exemplo8_K1.md`; resultados atuais em `resultados/final_vnd` e `resultados/final_tabu`. K=1 e K=2 são casos exigidos, escolhidos na execução. As campanhas de K=2 estão em `resultados/final_k2_vnd` e `resultados/final_k2_tabu`.

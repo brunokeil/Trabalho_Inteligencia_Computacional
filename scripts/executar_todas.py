@@ -3,8 +3,8 @@
 Suporta paralelismo multi-processo, validação automática, geração de resumo CSV e Markdown.
 
 Exemplos de uso:
-  # Executa todas as instâncias com K=1 e K=2 (padrão):
-  python3 scripts/executar_todas.py
+  # Executa todas as instâncias com K=1 e K=2:
+  python3 scripts/executar_todas.py -k 1,2
 
   # Executa apenas K=1 com método VND em 4 processos paralelos:
   python3 scripts/executar_todas.py -k 1 --metodo vnd -j 4
@@ -123,7 +123,7 @@ def generate_summary(out_dir, instances_dir):
             min_f = min(finals)
             mean_f = sum(finals) / len(finals)
             mean_init = sum(initials) / len(initials)
-            melhora_pct = ((mean_init - mean_f) / mean_init * 100.0) if mean_init > 0 else 0.0
+            melhora_pct = statistics.mean(100 * (a-b) / a if a else 0 for a, b in zip(initials, finals))
             
             rows.append({
                 'instancia': d['name'],
@@ -136,6 +136,9 @@ def generate_summary(out_dir, instances_dir):
                 'capacidade_total': cap,
                 'runs': len(runs),
                 'dist_inicial_media': f"{mean_init:.4f}",
+                'dist_inicial_desvio_amostral': f"{statistics.stdev(initials) if len(initials)>1 else 0:.4f}",
+                'dist_inicial_min': f"{min(initials):.4f}",
+                'dist_inicial_max': f"{max(initials):.4f}",
                 'dist_min': f"{min_f:.4f}",
                 'dist_media': f"{mean_f:.4f}",
                 'dist_desvio_amostral': f"{statistics.stdev(finals) if len(finals)>1 else 0:.4f}",
@@ -145,7 +148,7 @@ def generate_summary(out_dir, instances_dir):
                 'melhora_pct': f"{melhora_pct:.2f}%",
                 'precheck_seg': f"{d.get('precheck_seconds', 0.0):.4f}",
                 'busca_seg_media': f"{sum(search_secs)/len(search_secs):.4f}",
-                'total_seg_medio': f"{(sum(constr_secs) + sum(search_secs))/len(runs):.4f}"
+                'total_seg_medio': f"{(d.get('read_seconds', 0.0) + d.get('precheck_seconds', 0.0) + sum(constr_secs) + sum(search_secs))/len(runs):.4f}"
             })
         except Exception as e:
             print(f"Aviso ao ler {p.name}: {e}")
@@ -154,7 +157,7 @@ def generate_summary(out_dir, instances_dir):
     csv_path = out_dir / 'resumo.csv'
     if rows:
         with open(csv_path, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+            writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()), lineterminator='\n')
             writer.writeheader()
             writer.writerows(rows)
             
@@ -164,12 +167,13 @@ def generate_summary(out_dir, instances_dir):
         '# Resumo da Execução de Todas as Instâncias',
         '',
         f'Total de configurações/instâncias executadas: {len(rows)}.',
+        'Tempos totais incluem leitura e pré-checagem amortizadas pelo número de sementes; pré-check é o custo integral do lote.',
         '',
-        '| Instância | K | Método | Estado | Não Aloc. | Inicial Média | Mínima (km) | Média (km) | Melhora | Pré-check (s) | Busca (s) |',
-        '|---|---:|---|---|---:|---:|---:|---:|---:|---:|---:|'
+        '| Instância | K | Método | Estado | Não Aloc. | Inicial (média ± dp) | Mínima (km) | Média final (km) | Melhora | Pré-check lote (s) | Busca (s) | Total médio (s) |',
+        '|---|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|'
     ]
     for r in rows:
-        md_lines.append(f"| `{r['instancia']}` | {r['K']} | {r['metodo']} | {r['status']} | {r['nao_alocados']} | {r['dist_inicial_media']} | {r['dist_min']} | {r['dist_media']} | {r['melhora_pct']} | {r['precheck_seg']} | {r['busca_seg_media']} |")
+        md_lines.append(f"| `{r['instancia']}` | {r['K']} | {r['metodo']} | {r['status']} | {r['nao_alocados']} | {r['dist_inicial_media']} ± {r['dist_inicial_desvio_amostral']} | {r['dist_min']} | {r['dist_media']} | {r['melhora_pct']} | {r['precheck_seg']} | {r['busca_seg_media']} | {r['total_seg_medio']} |")
     
     md_lines.append('')
     md_path.write_text('\n'.join(md_lines), encoding='utf-8')
@@ -183,7 +187,7 @@ def main():
     ap = argparse.ArgumentParser(description="Executa todas as instâncias em lote com o resolvedor C++.")
     ap.add_argument('--instancias-dir', type=Path, default=ROOT / 'instances', help="Diretório contendo as instâncias (padrão: instances/)")
     ap.add_argument('--alocacao-bin', type=Path, default=ROOT / 'alocacao', help="Executável C++ (padrão: ./alocacao)")
-    ap.add_argument('-k', '--tipos-por-escola', default='1', help="Valores de K separados por vírgula; K=1 é o enunciado, K=2 é uma extensão")
+    ap.add_argument('-k', '--tipos-por-escola', default='1', help="Limites de tipos por escola: 1, 2 ou 1,2; os tipos são escolhidos pelo algoritmo")
     ap.add_argument('--metodo', choices=['vnd', 'tabu'], default='vnd', help="Método de busca local: vnd ou tabu (padrão: vnd)")
     ap.add_argument('--alpha', type=float, default=0.3, help="Parâmetro alpha da construção gulosa randomizada (padrão: 0.3)")
     ap.add_argument('--runs', type=int, default=1, help="Número de execuções com sementes diferentes (padrão: 1)")

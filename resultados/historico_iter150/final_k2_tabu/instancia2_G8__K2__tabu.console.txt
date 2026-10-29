@@ -1,0 +1,34 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/preparadas/instancia2_G8.txt --tipos-por-escola 2 --metodo tabu --alpha 0.3 --runs 30 --seed 1 --max-iter 150 --sem-melhora 50 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_tabu/instancia2_G8__K2__tabu.json
+instancia2_G8.txt K=2 VIAVEL atendimento maximo=316/316 nao_alocados_min=0 pre_check=0.660579s
+run=1 seed=1 inicial=332.522100 final=246.2944 km melhora=86.2277 constr=0.0024s busca=0.0076s iter=150
+run=2 seed=2 inicial=688.095600 final=373.0167 km melhora=315.0789 constr=0.0022s busca=0.0079s iter=150
+run=3 seed=3 inicial=264.887600 final=167.6682 km melhora=97.2194 constr=0.0025s busca=0.0091s iter=150
+run=4 seed=4 inicial=303.750300 final=241.7970 km melhora=61.9533 constr=0.0021s busca=0.0083s iter=150
+run=5 seed=5 inicial=359.840400 final=269.5939 km melhora=90.2465 constr=0.0025s busca=0.0085s iter=150
+run=6 seed=6 inicial=299.652500 final=224.6152 km melhora=75.0373 constr=0.0025s busca=0.0089s iter=150
+run=7 seed=7 inicial=310.506300 final=195.6650 km melhora=114.8413 constr=0.0021s busca=0.0081s iter=150
+run=8 seed=8 inicial=678.609800 final=480.2679 km melhora=198.3419 constr=0.0021s busca=0.0077s iter=150
+run=9 seed=9 inicial=678.306300 final=255.6203 km melhora=422.6860 constr=0.0021s busca=0.0077s iter=150
+run=10 seed=10 inicial=667.433100 final=374.7338 km melhora=292.6993 constr=0.0021s busca=0.0081s iter=150
+run=11 seed=11 inicial=708.344900 final=283.1460 km melhora=425.1989 constr=0.0021s busca=0.0082s iter=150
+run=12 seed=12 inicial=492.881100 final=178.9283 km melhora=313.9528 constr=0.0021s busca=0.0081s iter=150
+run=13 seed=13 inicial=282.930600 final=124.7327 km melhora=158.1979 constr=0.0021s busca=0.0081s iter=150
+run=14 seed=14 inicial=639.113700 final=246.8553 km melhora=392.2584 constr=0.0024s busca=0.0089s iter=150
+run=15 seed=15 inicial=309.801200 final=242.6662 km melhora=67.1350 constr=0.0025s busca=0.0060s iter=99
+run=16 seed=16 inicial=460.866400 final=167.7216 km melhora=293.1448 constr=0.0024s busca=0.0091s iter=147
+run=17 seed=17 inicial=312.674900 final=199.5124 km melhora=113.1625 constr=0.0021s busca=0.0073s iter=150
+run=18 seed=18 inicial=480.848000 final=365.4567 km melhora=115.3913 constr=0.0021s busca=0.0077s iter=150
+run=19 seed=19 inicial=467.797600 final=227.7466 km melhora=240.0510 constr=0.0022s busca=0.0080s iter=150
+run=20 seed=20 inicial=482.992500 final=390.9546 km melhora=92.0379 constr=0.0023s busca=0.0077s iter=143
+run=21 seed=21 inicial=527.547100 final=330.5512 km melhora=196.9959 constr=0.0021s busca=0.0082s iter=150
+run=22 seed=22 inicial=589.569800 final=141.0764 km melhora=448.4934 constr=0.0025s busca=0.0086s iter=150
+run=23 seed=23 inicial=743.807500 final=345.9706 km melhora=397.8369 constr=0.0025s busca=0.0093s iter=150
+run=24 seed=24 inicial=476.615400 final=142.3225 km melhora=334.2929 constr=0.0021s busca=0.0080s iter=150
+run=25 seed=25 inicial=502.353300 final=133.2380 km melhora=369.1153 constr=0.0020s busca=0.0084s iter=150
+run=26 seed=26 inicial=305.949600 final=139.2652 km melhora=166.6844 constr=0.0021s busca=0.0080s iter=150
+run=27 seed=27 inicial=730.414000 final=363.7920 km melhora=366.6220 constr=0.0021s busca=0.0084s iter=150
+run=28 seed=28 inicial=290.031700 final=115.9707 km melhora=174.0610 constr=0.0021s busca=0.0084s iter=150
+run=29 seed=29 inicial=446.348500 final=260.2883 km melhora=186.0602 constr=0.0021s busca=0.0079s iter=150
+run=30 seed=30 inicial=536.819000 final=224.0975 km melhora=312.7215 constr=0.0159s busca=0.0153s iter=150
+distancia km: min=115.9707 media=248.4522 desvio_amostral=93.9874 max=480.2679 melhor_seed=28
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_tabu/instancia2_G8__K2__tabu.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_tabu/instancia2_G8__K2__tabu.csv"

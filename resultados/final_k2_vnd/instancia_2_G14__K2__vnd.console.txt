@@ -1,0 +1,34 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/preparadas/instancia_2_G14.txt --tipos-por-escola 2 --metodo vnd --alpha 0.3 --runs 30 --seed 1 --max-iter 1000000 --sem-melhora 1000000 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_vnd/instancia_2_G14__K2__vnd.json
+instancia_2_G14.txt K=2 VIAVEL atendimento maximo=362/362 nao_alocados_min=0 pre_check=0.563135s
+run=1 seed=1 inicial=2208.519000 final=1982.2813 km melhora=226.2377 constr=0.0034s busca=0.0105s iter=326
+run=2 seed=2 inicial=2236.908200 final=2012.7114 km melhora=224.1968 constr=0.0047s busca=0.0079s iter=299
+run=3 seed=3 inicial=2471.790000 final=2139.9697 km melhora=331.8203 constr=0.0029s busca=0.0088s iter=318
+run=4 seed=4 inicial=2488.566500 final=2197.1416 km melhora=291.4249 constr=0.0028s busca=0.0099s iter=219
+run=5 seed=5 inicial=2149.636600 final=1911.0000 km melhora=238.6366 constr=0.0031s busca=0.0147s iter=396
+run=6 seed=6 inicial=2586.751900 final=2207.4624 km melhora=379.2895 constr=0.0047s busca=0.0120s iter=327
+run=7 seed=7 inicial=2248.927900 final=2171.4840 km melhora=77.4439 constr=0.0033s busca=0.0069s iter=293
+run=8 seed=8 inicial=2058.623700 final=1988.1583 km melhora=70.4654 constr=0.0032s busca=0.0072s iter=288
+run=9 seed=9 inicial=2492.548400 final=2131.6939 km melhora=360.8545 constr=0.0038s busca=0.0103s iter=281
+run=10 seed=10 inicial=2570.046600 final=2197.3556 km melhora=372.6910 constr=0.0028s busca=0.0080s iter=238
+run=11 seed=11 inicial=2301.176800 final=2074.7384 km melhora=226.4384 constr=0.0037s busca=0.0047s iter=161
+run=12 seed=12 inicial=2367.798700 final=2078.8209 km melhora=288.9778 constr=0.0039s busca=0.0151s iter=347
+run=13 seed=13 inicial=2672.622400 final=2216.3054 km melhora=456.3170 constr=0.0029s busca=0.0083s iter=239
+run=14 seed=14 inicial=2148.428300 final=1894.3925 km melhora=254.0358 constr=0.0033s busca=0.0152s iter=287
+run=15 seed=15 inicial=2310.884300 final=2298.5176 km melhora=12.3667 constr=0.0028s busca=0.0026s iter=99
+run=16 seed=16 inicial=2239.972400 final=2012.7133 km melhora=227.2591 constr=0.0030s busca=0.0047s iter=155
+run=17 seed=17 inicial=2651.108600 final=1956.6274 km melhora=694.4812 constr=0.0049s busca=0.0215s iter=579
+run=18 seed=18 inicial=2532.012000 final=2441.5162 km melhora=90.4958 constr=0.0027s busca=0.0052s iter=176
+run=19 seed=19 inicial=2217.401600 final=2131.1450 km melhora=86.2566 constr=0.0027s busca=0.0035s iter=168
+run=20 seed=20 inicial=2484.876300 final=2396.0393 km melhora=88.8370 constr=0.0030s busca=0.0083s iter=319
+run=21 seed=21 inicial=2289.857100 final=2062.1284 km melhora=227.7287 constr=0.0030s busca=0.0059s iter=206
+run=22 seed=22 inicial=2040.275200 final=1959.0783 km melhora=81.1969 constr=0.0039s busca=0.0054s iter=216
+run=23 seed=23 inicial=2191.065300 final=2180.0209 km melhora=11.0444 constr=0.0039s busca=0.0043s iter=147
+run=24 seed=24 inicial=2294.550100 final=2162.7089 km melhora=131.8412 constr=0.0042s busca=0.0074s iter=263
+run=25 seed=25 inicial=2603.044600 final=2579.6229 km melhora=23.4217 constr=0.0036s busca=0.0052s iter=161
+run=26 seed=26 inicial=2024.388900 final=1998.1244 km melhora=26.2645 constr=0.0035s busca=0.0043s iter=167
+run=27 seed=27 inicial=2750.384000 final=2294.4976 km melhora=455.8864 constr=0.0033s busca=0.0045s iter=151
+run=28 seed=28 inicial=2261.897500 final=2239.2860 km melhora=22.6115 constr=0.0031s busca=0.0040s iter=162
+run=29 seed=29 inicial=2557.018600 final=2134.9993 km melhora=422.0193 constr=0.0029s busca=0.0034s iter=122
+run=30 seed=30 inicial=2010.326000 final=1964.5861 km melhora=45.7399 constr=0.0031s busca=0.0061s iter=254
+distancia km: min=1894.3925 media=2133.8376 desvio_amostral=161.0402 max=2579.6229 melhor_seed=14
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_vnd/instancia_2_G14__K2__vnd.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_vnd/instancia_2_G14__K2__vnd.csv"

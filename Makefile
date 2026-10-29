@@ -22,11 +22,12 @@ clean:
 
 run-all: $(BIN)
 	python3 scripts/preparar_instancias.py
-	python3 scripts/executar_todas.py --instancias-dir instances/preparadas -k 1 --runs 30 --out resultados/final_vnd
+	sh scripts/campanha_final.sh
 
 report:
 	cd docs && pdflatex -interaction=nonstopmode -halt-on-error relatorio.tex
 	cd docs && pdflatex -interaction=nonstopmode -halt-on-error relatorio.tex
+	python3 scripts/gerar_apresentacao.py
 .PHONY: report
 
 CORE := $(filter-out src/main.cpp,$(SRC))

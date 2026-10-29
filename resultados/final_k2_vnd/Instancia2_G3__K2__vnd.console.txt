@@ -1,0 +1,34 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/preparadas/Instancia2_G3.txt --tipos-por-escola 2 --metodo vnd --alpha 0.3 --runs 30 --seed 1 --max-iter 1000000 --sem-melhora 1000000 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_vnd/Instancia2_G3__K2__vnd.json
+Instancia2_G3.txt K=2 VIAVEL atendimento maximo=3858/3858 nao_alocados_min=0 pre_check=0.822898s
+run=1 seed=1 inicial=732.652355 final=682.9763 km melhora=49.6760 constr=0.0247s busca=0.1699s iter=365
+run=2 seed=2 inicial=756.544342 final=671.4481 km melhora=85.0962 constr=0.0253s busca=0.6156s iter=1533
+run=3 seed=3 inicial=746.043233 final=683.8084 km melhora=62.2348 constr=0.0305s busca=0.1216s iter=247
+run=4 seed=4 inicial=740.360363 final=710.2437 km melhora=30.1167 constr=0.0373s busca=0.2050s iter=758
+run=5 seed=5 inicial=741.387867 final=668.8209 km melhora=72.5670 constr=0.0509s busca=0.7018s iter=1594
+run=6 seed=6 inicial=698.413422 final=679.7962 km melhora=18.6172 constr=0.0396s busca=0.1760s iter=172
+run=7 seed=7 inicial=714.530077 final=686.9399 km melhora=27.5902 constr=0.0352s busca=0.1858s iter=387
+run=8 seed=8 inicial=747.155532 final=681.6670 km melhora=65.4886 constr=0.0381s busca=0.5172s iter=715
+run=9 seed=9 inicial=756.956948 final=696.2960 km melhora=60.6609 constr=0.0754s busca=0.4821s iter=1044
+run=10 seed=10 inicial=753.898968 final=672.0330 km melhora=81.8659 constr=0.0918s busca=0.5551s iter=750
+run=11 seed=11 inicial=752.115277 final=744.0186 km melhora=8.0967 constr=0.0246s busca=0.0924s iter=373
+run=12 seed=12 inicial=724.781843 final=670.6972 km melhora=54.0846 constr=0.0323s busca=0.2957s iter=611
+run=13 seed=13 inicial=759.877365 final=693.7193 km melhora=66.1581 constr=0.0459s busca=0.4340s iter=1113
+run=14 seed=14 inicial=757.344610 final=677.8701 km melhora=79.4745 constr=0.0395s busca=0.4102s iter=965
+run=15 seed=15 inicial=711.485172 final=705.6174 km melhora=5.8678 constr=0.0259s busca=0.1048s iter=509
+run=16 seed=16 inicial=726.206346 final=667.6752 km melhora=58.5312 constr=0.0424s busca=0.4663s iter=1129
+run=17 seed=17 inicial=754.261748 final=720.2684 km melhora=33.9933 constr=0.0313s busca=0.2047s iter=864
+run=18 seed=18 inicial=716.038091 final=684.5414 km melhora=31.4967 constr=0.0343s busca=0.1994s iter=417
+run=19 seed=19 inicial=753.817129 final=677.2963 km melhora=76.5209 constr=0.0572s busca=0.3185s iter=889
+run=20 seed=20 inicial=708.338642 final=655.0520 km melhora=53.2867 constr=0.0372s busca=0.4301s iter=698
+run=21 seed=21 inicial=691.291744 final=677.2816 km melhora=14.0101 constr=0.0299s busca=0.0793s iter=15
+run=22 seed=22 inicial=749.042628 final=712.3092 km melhora=36.7334 constr=0.0312s busca=0.2462s iter=907
+run=23 seed=23 inicial=757.954857 final=692.6603 km melhora=65.2946 constr=0.0326s busca=0.5815s iter=1599
+run=24 seed=24 inicial=724.426317 final=716.4417 km melhora=7.9847 constr=0.0391s busca=0.2000s iter=865
+run=25 seed=25 inicial=746.058178 final=660.7808 km melhora=85.2774 constr=0.0228s busca=0.4116s iter=603
+run=26 seed=26 inicial=739.403914 final=675.2190 km melhora=64.1849 constr=0.0302s busca=0.9814s iter=1328
+run=27 seed=27 inicial=731.242391 final=679.5909 km melhora=51.6515 constr=0.0240s busca=0.3742s iter=780
+run=28 seed=28 inicial=753.621411 final=687.3589 km melhora=66.2625 constr=0.0307s busca=0.2884s iter=941
+run=29 seed=29 inicial=747.934602 final=675.9394 km melhora=71.9952 constr=0.0307s busca=0.3387s iter=1045
+run=30 seed=30 inicial=756.101948 final=667.0595 km melhora=89.0425 constr=0.0377s busca=0.6069s iter=1537
+distancia km: min=655.0520 media=685.8476 desvio_amostral=19.5802 max=744.0186 melhor_seed=20
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_vnd/Instancia2_G3__K2__vnd.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_vnd/Instancia2_G3__K2__vnd.csv"

@@ -3,43 +3,88 @@ DCC136 — Execução em Lote de Instâncias
 Instâncias selecionadas: 28
 Valores de K: [1]
 Total de execuções planejadas: 28
-Método: vnd (alpha=0.3, runs=30, max_iter=150)
+Método: vnd (alpha=0.3, runs=30, max_iter=1000000)
 Paralelismo: 4 worker(s)
 Diretório de saída: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_vnd
 ================================================================================
-[  1/ 28] OK: Instancia1_G11 (K=1) [6.86s]
-[  2/ 28] OK: Instancia1_G2 (K=1) [0.72s]
-[  3/ 28] OK: Instancia1_G10 (K=1) [9.20s]
-[  4/ 28] OK: Instancia1_G12 (K=1) [9.34s]
-[  5/ 28] OK: Instancia1_G1 (K=1) [9.47s]
-[  6/ 28] OK: Instancia1_G5 (K=1) [7.94s]
-[  7/ 28] OK: Instancia1_G4 (K=1) [8.23s]
-[  8/ 28] OK: Instancia1_G6 (K=1) [9.63s]
-[  9/ 28] OK: Instancia1_G3 (K=1) [14.10s]
-[ 10/ 28] OK: Instancia1_G7(1) (K=1) [7.15s]
-[ 11/ 28] OK: Instancia1_G9 (K=1) [7.56s]
-[ 12/ 28] OK: Instancia2_G1 (K=1) [10.62s]
-[ 13/ 28] OK: Instancia2_G2 (K=1) [0.96s]
-[ 14/ 28] OK: Instancia2_G11 (K=1) [8.68s]
-[ 15/ 28] OK: Instancia2_G12 (K=1) [7.50s]
-[ 16/ 28] OK: Instancia2_G10 (K=1) [13.61s]
-[ 17/ 28] OK: Instancia2_G4 (K=1) [6.00s]
-[ 18/ 28] OK: Instancia2_G3 (K=1) [9.37s]
-[ 19/ 28] OK: Instancia2_G6 (K=1) [8.52s]
-[ 20/ 28] OK: instancia1_G8 (K=1) [1.22s]
-[ 21/ 28] OK: instancia2_G8 (K=1) [0.92s]
-[ 22/ 28] OK: instancia_1_G13 (K=1) [0.95s]
-[ 23/ 28] OK: Instancia2_G9 (K=1) [7.49s]
-[ 24/ 28] OK: instancia_1_G14 (K=1) [1.61s]
-[ 25/ 28] OK: instancia_2_G13 (K=1) [1.58s]
-[ 26/ 28] OK: instancia_2_G14 (K=1) [1.02s]
-[ 27/ 28] OK: Instancia2_G7 (K=1) [19.04s]
-[ 28/ 28] OK: Instancia2_G5 (K=1) [102.98s]
+[  1/ 28] OK: Instancia1_G12 (K=1) [6.10s]
+[  2/ 28] OK: Instancia1_G11 (K=1) [6.37s]
+[  3/ 28] OK: Instancia1_G2 (K=1) [0.56s]
+[  4/ 28] OK: Instancia1_G10 (K=1) [10.56s]
+[  5/ 28] OK: Instancia1_G4 (K=1) [4.61s]
+[  6/ 28] OK: Instancia1_G5 (K=1) [6.15s]
+[  7/ 28] OK: Instancia1_G7(1) (K=1) [3.49s]
+[  8/ 28] OK: Instancia1_G6 (K=1) [11.56s]
+[  9/ 28] OK: Instancia1_G3 (K=1) [18.61s]
+[ 10/ 28] OK: Instancia1_G9 (K=1) [7.70s]
+[ 11/ 28] OK: Instancia1_G1 (K=1) [35.38s]
+[ 12/ 28] OK: Instancia2_G10 (K=1) [11.14s]
+[ 13/ 28] OK: Instancia2_G2 (K=1) [0.57s]
+[ 14/ 28] OK: Instancia2_G12 (K=1) [7.67s]
+[ 15/ 28] OK: Instancia2_G4 (K=1) [4.55s]
+[ 16/ 28] OK: Instancia2_G3 (K=1) [11.21s]
+[ 17/ 28] OK: Instancia2_G1 (K=1) [26.80s]
+[ 18/ 28] OK: Instancia2_G11 (K=1) [22.97s]
+[ 19/ 28] OK: Instancia2_G6 (K=1) [8.06s]
+[ 20/ 28] OK: instancia1_G8 (K=1) [0.66s]
+[ 21/ 28] OK: instancia2_G8 (K=1) [0.69s]
+[ 22/ 28] OK: instancia_1_G13 (K=1) [0.81s]
+[ 23/ 28] OK: instancia_1_G14 (K=1) [0.93s]
+[ 24/ 28] OK: instancia_2_G13 (K=1) [0.90s]
+[ 25/ 28] OK: instancia_2_G14 (K=1) [0.79s]
+[ 26/ 28] OK: Instancia2_G9 (K=1) [16.56s]
+[ 27/ 28] OK: Instancia2_G5 (K=1) [87.84s]
+[ 28/ 28] OK: Instancia2_G7 (K=1) [94.57s]
 ================================================================================
-Concluído em 137.6s. Sucessos: 28/28. Falhas: 0.
+Concluído em 145.8s. Sucessos: 28/28. Falhas: 0.
 Gerando resumos consolidados...
 
 Resumos consolidados salvos com sucesso:
   -> /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_vnd/resumo.csv
   -> /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_vnd/resumo.md
+================================================================================
+================================================================================
+DCC136 — Execução em Lote de Instâncias
+Instâncias selecionadas: 28
+Valores de K: [2]
+Total de execuções planejadas: 28
+Método: vnd (alpha=0.3, runs=30, max_iter=1000000)
+Paralelismo: 4 worker(s)
+Diretório de saída: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_vnd
+================================================================================
+[  1/ 28] OK: Instancia1_G11 (K=2) [16.32s]
+[  2/ 28] OK: Instancia1_G2 (K=2) [0.47s]
+[  3/ 28] OK: Instancia1_G12 (K=2) [21.42s]
+[  4/ 28] OK: Instancia1_G10 (K=2) [35.28s]
+[  5/ 28] OK: Instancia1_G4 (K=2) [15.53s]
+[  6/ 28] OK: Instancia1_G1 (K=2) [52.78s]
+[  7/ 28] OK: Instancia1_G5 (K=2) [24.56s]
+[  8/ 28] OK: Instancia1_G7(1) (K=2) [11.95s]
+[  9/ 28] OK: Instancia1_G3 (K=2) [51.28s]
+[ 10/ 28] OK: Instancia1_G6 (K=2) [41.74s]
+[ 11/ 28] OK: Instancia1_G9 (K=2) [20.42s]
+[ 12/ 28] OK: Instancia2_G12 (K=2) [20.62s]
+[ 13/ 28] OK: Instancia2_G2 (K=2) [0.55s]
+[ 14/ 28] OK: Instancia2_G10 (K=2) [36.92s]
+[ 15/ 28] OK: Instancia2_G1 (K=2) [47.06s]
+[ 16/ 28] OK: Instancia2_G11 (K=2) [32.93s]
+[ 17/ 28] OK: Instancia2_G3 (K=2) [12.80s]
+[ 18/ 28] OK: Instancia2_G4 (K=2) [12.07s]
+[ 19/ 28] OK: Instancia2_G6 (K=2) [30.09s]
+[ 20/ 28] OK: Instancia2_G5 (K=2) [30.40s]
+[ 21/ 28] OK: instancia1_G8 (K=2) [0.98s]
+[ 22/ 28] OK: instancia2_G8 (K=2) [1.17s]
+[ 23/ 28] OK: Instancia2_G9 (K=2) [26.17s]
+[ 24/ 28] OK: instancia_1_G13 (K=2) [1.39s]
+[ 25/ 28] OK: instancia_1_G14 (K=2) [1.14s]
+[ 26/ 28] OK: instancia_2_G13 (K=2) [1.29s]
+[ 27/ 28] OK: instancia_2_G14 (K=2) [0.92s]
+[ 28/ 28] OK: Instancia2_G7 (K=2) [93.65s]
+================================================================================
+Concluído em 209.8s. Sucessos: 28/28. Falhas: 0.
+Gerando resumos consolidados...
+
+Resumos consolidados salvos com sucesso:
+  -> /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_vnd/resumo.csv
+  -> /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_vnd/resumo.md
 ================================================================================

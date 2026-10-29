@@ -7,18 +7,19 @@ Instruções e comandos: ../README.md
 Código C++17: ../src/ e ../Makefile
 Testes: ../tests/ ; executar make test e make test-sanitize
 Instâncias: ../instances/preparadas/ ; originais e auditoria em ../instances/
-Resultados principais: ../resultados/final_vnd/ e ../resultados/final_tabu/
+Resultados K=1: ../resultados/final_vnd/ e ../resultados/final_tabu/
+Resultados K=2: ../resultados/final_k2_vnd/ e ../resultados/final_k2_tabu/
 Resumo e validação: ../resultados/final_resumo.csv e final_validacao.json
 Exemplo K=1: exemplo8_K1.txt e ../docs/exemplo8_K1.md
 Pacote: Trabalho1-entrega.zip (gerado por scripts/empacotar.py)
 
-Todos os resultados principais usam K=1: um tipo por escola, como no enunciado.
-Campanha: 28 instâncias x 2 métodos x 30 sementes = 1680 execuções.
-Todas as 3360 soluções iniciais/finais foram verificadas independentemente.
+Os resultados principais cobrem K=1 e K=2: limite de tipos por escola informado na execução; os tipos são escolhidos pelo algoritmo.
+Prazo atualizado: 26/10/2026 às 10h.
+Repositório: https://github.com/brunokeil/Trabalho1
+Slides: ../docs/apresentacao.html e ../docs/apresentacao.pdf.
+Campanha: 28 instâncias x 2 valores de K x 2 métodos x 30 sementes = 3360 execuções.
+Todas as 6720 soluções iniciais/finais foram verificadas independentemente.
 O pacote pode ser extraído em qualquer pasta; compile com make.
 
 Abra apresentacao.html diretamente no navegador. Setas navegam, N exibe roteiro,
 F solicita tela cheia. Botão PDF imprime todos os slides; seletor explora resultados.
-
-O prazo no PDF é 14/10/2026 às 12h. Eventuais mudanças do Classroom não foram verificadas.
-A submissão dos arquivos ao Classroom é feita pelo grupo.

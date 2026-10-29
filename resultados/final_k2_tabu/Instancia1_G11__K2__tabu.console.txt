@@ -1,0 +1,34 @@
+COMMAND: /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/alocacao --instancia /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/instances/preparadas/Instancia1_G11.txt --tipos-por-escola 2 --metodo tabu --alpha 0.3 --runs 30 --seed 1 --max-iter 1000 --sem-melhora 200 --tempo 0 --saida /Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_tabu/Instancia1_G11__K2__tabu.json
+Instancia1_G11.txt K=2 VIAVEL atendimento maximo=3452/3452 nao_alocados_min=0 pre_check=0.898198s
+run=1 seed=1 inicial=38420.078300 final=25378.7058 km melhora=13041.3725 constr=0.0157s busca=1.4599s iter=1000
+run=2 seed=2 inicial=38709.849000 final=25526.2911 km melhora=13183.5579 constr=0.0153s busca=1.3513s iter=1000
+run=3 seed=3 inicial=35506.706600 final=25874.1857 km melhora=9632.5209 constr=0.0155s busca=1.4788s iter=1000
+run=4 seed=4 inicial=37474.295100 final=25102.8641 km melhora=12371.4310 constr=0.0156s busca=1.5196s iter=1000
+run=5 seed=5 inicial=38838.134700 final=25639.8874 km melhora=13198.2473 constr=0.0158s busca=1.4422s iter=1000
+run=6 seed=6 inicial=37813.215700 final=25185.8780 km melhora=12627.3377 constr=0.0155s busca=1.5177s iter=1000
+run=7 seed=7 inicial=38606.431600 final=24921.7815 km melhora=13684.6501 constr=0.0156s busca=1.5239s iter=1000
+run=8 seed=8 inicial=38708.594600 final=25980.3519 km melhora=12728.2427 constr=0.0157s busca=1.5676s iter=1000
+run=9 seed=9 inicial=38391.476100 final=24955.0451 km melhora=13436.4310 constr=0.0189s busca=1.5317s iter=1000
+run=10 seed=10 inicial=41010.388900 final=25477.7603 km melhora=15532.6286 constr=0.0156s busca=1.5658s iter=1000
+run=11 seed=11 inicial=37784.421700 final=25251.7585 km melhora=12532.6632 constr=0.0162s busca=1.4275s iter=1000
+run=12 seed=12 inicial=37423.674500 final=25467.0486 km melhora=11956.6259 constr=0.0161s busca=1.5915s iter=1000
+run=13 seed=13 inicial=37197.024700 final=24915.5304 km melhora=12281.4943 constr=0.0167s busca=1.5384s iter=1000
+run=14 seed=14 inicial=33790.919900 final=24813.1620 km melhora=8977.7579 constr=0.0161s busca=1.5864s iter=1000
+run=15 seed=15 inicial=34101.564400 final=25198.6850 km melhora=8902.8794 constr=0.0179s busca=1.7394s iter=1000
+run=16 seed=16 inicial=34489.078300 final=25654.2652 km melhora=8834.8131 constr=0.0163s busca=1.5151s iter=1000
+run=17 seed=17 inicial=40681.878500 final=25831.4996 km melhora=14850.3789 constr=0.0179s busca=1.4339s iter=1000
+run=18 seed=18 inicial=35457.549400 final=24801.4140 km melhora=10656.1354 constr=0.0164s busca=1.5030s iter=1000
+run=19 seed=19 inicial=40172.582600 final=25270.7772 km melhora=14901.8054 constr=0.0157s busca=1.5364s iter=1000
+run=20 seed=20 inicial=42386.595400 final=25241.9253 km melhora=17144.6701 constr=0.0157s busca=1.5915s iter=1000
+run=21 seed=21 inicial=37744.850900 final=25474.7584 km melhora=12270.0925 constr=0.0158s busca=1.5983s iter=1000
+run=22 seed=22 inicial=44419.170600 final=25545.4107 km melhora=18873.7599 constr=0.0181s busca=1.7950s iter=1000
+run=23 seed=23 inicial=41282.129400 final=25987.1891 km melhora=15294.9403 constr=0.0161s busca=1.5870s iter=1000
+run=24 seed=24 inicial=38414.704900 final=25646.7415 km melhora=12767.9634 constr=0.0160s busca=1.6499s iter=1000
+run=25 seed=25 inicial=38672.406700 final=25806.3471 km melhora=12866.0596 constr=0.0166s busca=2.0893s iter=1000
+run=26 seed=26 inicial=40781.289000 final=25637.4309 km melhora=15143.8581 constr=0.0163s busca=1.4602s iter=1000
+run=27 seed=27 inicial=35679.948300 final=25709.0309 km melhora=9970.9174 constr=0.0162s busca=1.7818s iter=1000
+run=28 seed=28 inicial=44999.997400 final=25568.7859 km melhora=19431.2115 constr=0.0241s busca=1.7733s iter=1000
+run=29 seed=29 inicial=36964.051600 final=25388.3283 km melhora=11575.7233 constr=0.0155s busca=1.5275s iter=1000
+run=30 seed=30 inicial=37447.618800 final=25635.1161 km melhora=11812.5027 constr=0.0253s busca=1.7682s iter=931
+distancia km: min=24801.4140 media=25429.5985 desvio_amostral=337.6600 max=25987.1891 melhor_seed=18
+Resultados: "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_tabu/Instancia1_G11__K2__tabu.json" e "/Users/brunokeil/Desktop/UFJF/InteligenciaComputacional/Trabalho1/resultados/final_k2_tabu/Instancia1_G11__K2__tabu.csv"

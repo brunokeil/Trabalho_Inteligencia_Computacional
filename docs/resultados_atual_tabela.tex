@@ -1,19 +1,24 @@
 \begin{table}[ht]
-\centering\scriptsize
-\caption{Seleção de resultados em K=1, 30 sementes por linha; distâncias em km. U é o número mínimo de não alocados. Tempo: apenas busca.}
-\begin{tabular}{llrrrrr}
-\toprule Instância & Método & U & Inicial & Final $\pm$ dp & Melhora (\%) & Busca (s)\\\midrule
-I1 G1 & VND & 0 & 30517,89 & 30204,54 $\pm$ 1217,13 & 1,03 & 0,1897 \\
-I1 G1 & TABU & 0 & 30517,89 & 28134,55 $\pm$ 615,71 & 7,72 & 1,2840 \\
-I2 G1 & VND & 0 & 18081,28 & 17846,53 $\pm$ 1398,47 & 1,30 & 0,2238 \\
-I2 G1 & TABU & 0 & 18081,28 & 15368,47 $\pm$ 482,14 & 14,60 & 0,8264 \\
-I1 G2 & VND & 16 & 764,05 & 754,98 $\pm$ 3,76 & 1,18 & 0,0003 \\
-I1 G2 & TABU & 16 & 764,05 & 753,44 $\pm$ 0,40 & 1,38 & 0,0016 \\
-I2 G2 & VND & 13 & 936,19 & 885,42 $\pm$ 0,00 & 5,25 & 0,0003 \\
-I2 G2 & TABU & 13 & 936,19 & 885,42 $\pm$ 0,00 & 5,25 & 0,0012 \\
-I1 G6 & VND & 0 & 19356,45 & 19061,12 $\pm$ 1352,03 & 1,54 & 0,1517 \\
-I1 G6 & TABU & 0 & 19356,45 & 16718,26 $\pm$ 276,26 & 13,32 & 0,7061 \\
-I2 G7 & VND & 0 & 71105,64 & 70697,64 $\pm$ 2007,08 & 0,57 & 0,3115 \\
-I2 G7 & TABU & 0 & 71105,64 & 66470,08 $\pm$ 1169,90 & 6,45 & 0,9304 \\
+\centering\small
+\setlength{\tabcolsep}{3pt}
+\caption{Comparação de K=1 e K=2, 30 sementes por linha; distâncias em km. Inicial e Final: média $\pm$ desvio padrão amostral. U é o déficit certificado. Tempos e extremos constam do Apêndice A.}
+\begin{tabular}{lrlrrrr}
+\toprule Instância & K & Método & U & Inicial (média) & Final (média) & Melhora (\%)\\\midrule
+I1 G1 & 1 & VND & 0 & 30517,89 $\pm$ 1221,73 & 28433,20 $\pm$ 793,03 & 6,73 \\
+I1 G1 & 1 & TABU & 0 & 30517,89 $\pm$ 1221,73 & 27683,28 $\pm$ 692,47 & 9,19 \\
+I1 G1 & 2 & VND & 0 & 29826,65 $\pm$ 974,77 & 27042,78 $\pm$ 923,86 & 9,27 \\
+I1 G1 & 2 & TABU & 0 & 29826,65 $\pm$ 974,77 & 24405,59 $\pm$ 272,54 & 18,09 \\
+I1 G2 & 1 & VND & 16 & 764,05 $\pm$ 7,15 & 754,98 $\pm$ 3,76 & 1,18 \\
+I1 G2 & 1 & TABU & 16 & 764,05 $\pm$ 7,15 & 753,32 $\pm$ 0,00 & 1,40 \\
+I1 G2 & 2 & VND & 0 & 903,66 $\pm$ 9,47 & 889,32 $\pm$ 6,78 & 1,58 \\
+I1 G2 & 2 & TABU & 0 & 903,66 $\pm$ 9,47 & 878,30 $\pm$ 3,21 & 2,80 \\
+I2 G2 & 1 & VND & 13 & 936,19 $\pm$ 40,57 & 885,42 $\pm$ 0,00 & 5,25 \\
+I2 G2 & 1 & TABU & 13 & 936,19 $\pm$ 40,57 & 885,42 $\pm$ 0,00 & 5,25 \\
+I2 G2 & 2 & VND & 0 & 986,39 $\pm$ 42,63 & 914,67 $\pm$ 8,82 & 7,10 \\
+I2 G2 & 2 & TABU & 0 & 986,39 $\pm$ 42,63 & 903,11 $\pm$ 0,84 & 8,28 \\
+I2 G8 & 1 & VND & 0 & 356,47 $\pm$ 108,49 & 241,71 $\pm$ 94,27 & 27,60 \\
+I2 G8 & 1 & TABU & 0 & 356,47 $\pm$ 108,49 & 117,23 $\pm$ 0,56 & 63,06 \\
+I2 G8 & 2 & VND & 0 & 479,04 $\pm$ 157,98 & 329,64 $\pm$ 112,58 & 26,50 \\
+I2 G8 & 2 & TABU & 0 & 479,04 $\pm$ 157,98 & 107,87 $\pm$ 1,84 & 74,82 \\
 \bottomrule\end{tabular}
 \end{table}

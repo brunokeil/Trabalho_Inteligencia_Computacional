@@ -1,4 +1,3 @@
-cd docs && pdflatex -interaction=nonstopmode -halt-on-error relatorio.tex
 This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
@@ -55,18 +54,27 @@ For additional information on amsmath, use the `?' option.
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
 ocal/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 [2]
-[3] (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd)
-[4]
-[5] (./resultados_atual_texto.tex) (./resultados_atual_tabela.tex
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active
+[4] (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd)
+Underfull \vbox (badness 3148) has occurred while \output is active
+[5]
+Underfull \vbox (badness 1348) has occurred while \output is active
+[6] (./resultados_atual_texto.tex
+[7]) (./resultados_atual_tabela.tex
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1phv.fd))
-[6]
-[7 <../resultados/final_convergencia.pdf>] (./resultados_atual_completo.tex
-[8] [9] [10])
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \vbox (badness 5954) has occurred while \output is active
+[8]
+[9 <../resultados/final_convergencia.pdf>] (./resultados_atual_completo.tex
+[10] [11] [12]
+[13] [14]
+Underfull \vbox (badness 10000) has occurred while \output is active
+[15])
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \T1/pcr/m/n/12 https : / / docs . scipy . org / doc / scipy / reference / gener
 ated /
 
-[11] (./relatorio.aux) )
+[16] (./relatorio.aux) )
 (see the transcript file for additional information)</usr/local/texlive/2025/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texm
@@ -81,9 +89,8 @@ rw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.
 pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on relatorio.pdf (11 pages, 216491 bytes).
+Output written on relatorio.pdf (16 pages, 240060 bytes).
 Transcript written on relatorio.log.
-cd docs && pdflatex -interaction=nonstopmode -halt-on-error relatorio.tex
 This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
@@ -140,18 +147,27 @@ For additional information on amsmath, use the `?' option.
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
 ocal/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 [2]
-[3] (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd)
-[4]
-[5] (./resultados_atual_texto.tex) (./resultados_atual_tabela.tex
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active
+[4] (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1pcr.fd)
+Underfull \vbox (badness 3148) has occurred while \output is active
+[5]
+Underfull \vbox (badness 1348) has occurred while \output is active
+[6] (./resultados_atual_texto.tex
+[7]) (./resultados_atual_tabela.tex
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1phv.fd))
-[6]
-[7 <../resultados/final_convergencia.pdf>] (./resultados_atual_completo.tex
-[8] [9] [10])
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \vbox (badness 5954) has occurred while \output is active
+[8]
+[9 <../resultados/final_convergencia.pdf>] (./resultados_atual_completo.tex
+[10] [11] [12]
+[13] [14]
+Underfull \vbox (badness 10000) has occurred while \output is active
+[15])
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 \T1/pcr/m/n/12 https : / / docs . scipy . org / doc / scipy / reference / gener
 ated /
 
-[11] (./relatorio.aux) )
+[16] (./relatorio.aux) )
 (see the transcript file for additional information)</usr/local/texlive/2025/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texm
@@ -166,5 +182,5 @@ rw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.
 pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on relatorio.pdf (11 pages, 216491 bytes).
+Output written on relatorio.pdf (16 pages, 240060 bytes).
 Transcript written on relatorio.log.

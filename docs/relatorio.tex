@@ -10,23 +10,23 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We implement and evaluate a randomized greedy constructor, variable neighborhood descent and tabu search for exam location and candidate assignment. Each school offers at most one exam type. An aggregate integer model certifies maximum attendance, while heuristics minimize travel distance. Experiments use 28 distinct instances and 30 seeds per method. Independent validation checks every initial and final assignment. We document implementation fixes, a small worked example and structural infeasibility.
+We implement and evaluate a randomized greedy constructor, variable neighborhood descent and tabu search for exam location and candidate assignment. Each school offers up to K exam types, with K=1 or K=2 selected at run time and type assignment chosen by the algorithm. An aggregate integer model certifies maximum attendance, while heuristics minimize travel distance. Experiments use 28 distinct instances, both K values and 30 seeds per method, totaling 3360 runs. Independent validation checks every initial and final assignment. We discuss design choices, initial and final variability, complete timing, a worked example and feasibility changes across K.
 \end{abstract}
 \begin{resumo}
-Implementamos e avaliamos uma construção gulosa randomizada, descida em vizinhanças variáveis (VND) e busca tabu para selecionar locais de prova e alocar candidatos. Cada escola oferece no máximo um tipo de exame. Um modelo inteiro agregado certifica o atendimento máximo; as heurísticas minimizam a distância. Os experimentos usam 28 instâncias distintas e 30 sementes por método, com validação independente de todas as alocações iniciais e finais. Apresentamos as decisões de projeto, correções da implementação, um exemplo passo a passo e casos de inviabilidade estrutural.
+Implementamos e avaliamos uma construção gulosa randomizada, descida em vizinhanças variáveis (VND) e busca tabu para selecionar locais de prova e alocar candidatos. Cada escola oferece até $K$ tipos de exame, com $K=1$ ou $K=2$ definido na execução e tipos escolhidos pelo algoritmo. Um modelo inteiro agregado certifica o atendimento máximo; as heurísticas minimizam a distância. Os experimentos usam 28 instâncias distintas, ambos os valores de $K$ e 30 sementes por método (3360 execuções), com validação independente de todas as alocações iniciais e finais. Apresentamos decisões de projeto, dispersão inicial/final, tempos completos, um exemplo passo a passo e o efeito de $K$ na viabilidade.
 \end{resumo}
 
-\section{Problema, escopo e conformidade com o enunciado}
+\section{Problema e objetivos}
 O problema consiste em selecionar locais de prova e associar cada candidato a um único local compatível com seu tipo de exame, respeitando capacidades e minimizando a soma das distâncias. O contexto é o planejamento de exames de ingresso em universidades, conforme a referência indicada no enunciado~\cite{oliveira2021}. Uma solução de boa qualidade reduz o deslocamento agregado sem sacrificar o atendimento.
 
-O PDF fornecido determina \textbf{um único tipo por local}. Todos os resultados principais deste relatório usam $K=1$. O executável também aceita $K=2$, mas essa opção é uma extensão experimental, não o modelo exigido. O prazo escrito no PDF é 14/10/2026 às 12h; não presumimos uma alteração de prazo pelo Classroom. A apresentação HTML foi planejada para aproximadamente dez minutos.
+Consideramos as correções posteriores da professora: o limite de tipos por escola é um parâmetro de execução ($K=1$ ou $K=2$), e a escolha dos tipos permanece a cargo do algoritmo. Ambos os casos integram os experimentos. O endereço do repositório consta da Seção~\ref{sec:repro}.
 
 Sejam $C$ os candidatos, $L$ as escolas, $T$ os tipos, $t_i$ o tipo do candidato $i$, $d_{ij}$ a distância da matriz e $Q_j$ a capacidade total das salas da escola $j$. Usamos capacidade agregada por escola: as salas fornecem capacidade e não são decisões independentes. Latitude/longitude não substituem a matriz. CEPs e identificadores são preservados; a ordem de linhas define os índices da matriz.
 
 Com $a_i\in L$ e $S_j\subseteq T$, procuramos minimizar
 \begin{equation}
  D(a)=\sum_{i\in C}d_{i,a_i},\quad
- |S_j|\leq1,\quad t_i\in S_{a_i},\quad
+ |S_j|\leq K,\quad t_i\in S_{a_i},\quad
  \sum_i [a_i=j]\leq Q_j.
 \end{equation}
 A escola é utilizada se recebe pelo menos um candidato. Não há custos de abertura no objetivo, nem limite adicional para o número de escolas utilizadas.
@@ -34,14 +34,14 @@ A escola é utilizada se recebe pelo menos um candidato. Não há custos de aber
 \section{Representação e certificação de atendimento}
 A solução contém um vetor $a$ de escolas, máscaras de bits $S_j$ para os tipos habilitados, cargas totais e por tipo, distância, excesso de capacidade e contagens de candidatos não alocados e incompatíveis. O valor $a_i=-1$ identifica explicitamente um candidato não atendido. Distâncias com até seis casas decimais são armazenadas como inteiros de milionésimos de km, evitando erros acumulados de ponto flutuante.
 
-A soma das capacidades ser maior que o número de candidatos não garante atendimento completo: pode não haver escolas suficientes para acomodar separadamente os tipos. Antes da heurística, resolvemos o seguinte modelo agregado, com $b_t$ candidatos de tipo $t$, $z_{jt}$ binária e $x_{jt}$ inteira não negativa:
+A soma das capacidades ser maior que o número de candidatos não garante atendimento completo: o limite de $K$ tipos pode impedir uma distribuição compatível. A condição $|T_+|\leq K|L|$, em que $T_+$ contém os tipos com demanda positiva, é necessária, mas não suficiente. Antes da heurística, resolvemos o seguinte modelo agregado, com $b_t$ candidatos de tipo $t$, $z_{jt}$ binária (tipo $t$ habilitado na escola $j$) e $x_{jt}\geq 0$ (candidatos de tipo $t$ atendidos em $j$):
 \begin{align}
 \max\;&\sum_{j,t}x_{jt} \\
 \text{s.a. }&\sum_jx_{jt}\leq b_t &&\forall t,\\
 &\sum_tx_{jt}\leq Q_j &&\forall j,\\
-&x_{jt}\leq Q_jz_{jt},\quad \sum_tz_{jt}\leq1 &&\forall j,t.
+&x_{jt}\leq Q_jz_{jt},\quad \sum_tz_{jt}\leq K &&\forall j,t.
 \end{align}
-O ótimo $C^*$ certifica o atendimento máximo. Como não há restrições individuais além do tipo, uma solução inteira dessas contagens corresponde a uma alocação de candidatos. SciPy/HiGHS é uma dependência explícita dessa pré-checagem~\cite{scipy}. O solver não otimiza distâncias. Seu limite de 120 segundos, se atingido sem prova, produz erro inconclusivo, nunca uma declaração de inviabilidade.
+Somente $z$ é declarada inteira no solver: fixado $z$, o problema em $x$ é de transporte, com matriz totalmente unimodular e dados inteiros, e portanto admite ótimo inteiro; a implementação arredonda $x$ e verifica capacidade, demanda, limite $K$ e valor objetivo antes de aceitar o certificado. O ótimo $C^*$ certifica o atendimento máximo. Como não há restrições individuais além do tipo, uma solução inteira dessas contagens corresponde a uma alocação de candidatos. SciPy/HiGHS é uma dependência explícita dessa pré-checagem~\cite{scipy}. O solver não otimiza distâncias. Seu limite de 120 segundos, se atingido sem prova, produz erro inconclusivo, nunca uma declaração de inviabilidade.
 
 Para escolas com tipos fixos, calculamos o atendimento por fluxo máximo: fonte--tipos com capacidade $b_t$, tipos--escolas compatíveis e escolas--sorvedouro com capacidade $Q_j$. Se $C^*<|C|$, o problema original é inviável. Nesse caso, a saída é marcada como tal e fornece uma solução parcial com exatamente $|C|-C^*$ não alocados. Primeiro maximizamos o atendimento e só então comparamos distâncias. Distâncias parciais não são comparáveis às de soluções completas.
 
@@ -75,15 +75,15 @@ Após cinco estados completos viáveis consecutivos, a tabu divide $\lambda$ por
 
 \textbf{N3: alteração de tipos.} Adiciona ou substitui um tipo, ou permuta tipos entre duas escolas. O fluxo elimina propostas incapazes de manter $C^*$. A reconstrução libera candidatos das escolas alteradas e também os candidatos dos tipos recém-habilitados em qualquer escola. Estes últimos precisam ser reconsiderados para aproveitar uma escola antes vazia. Os demais candidatos são preservados; caminhos aumentantes podem deslocá-los. As propostas são embaralhadas, com orçamento de reconstruções por chamada.
 
-\textbf{VND.} Visita N1, N2 e N3 nessa ordem; aceita apenas melhora estrita de $f$ e reinicia em N1 após um movimento. A implementação oferece primeira ou melhor melhoria no conjunto examinado; usamos melhor melhoria na campanha principal. As penalidades iniciais mantêm a viabilidade da descida a partir da construção.
+\textbf{VND.} Usamos a ordem fixa $N_1, N_2, N_3$, das vizinhanças mais baratas e locais para a mais cara e estrutural. Uma \emph{iteração} do VND é uma exploração completa da vizinhança corrente $N_k$ com melhor melhoria: todos os movimentos examinados de $N_k$ são avaliados e o de menor $\Delta f$ é guardado. Se $\Delta f<0$, o movimento é aplicado e a busca volta a $N_1$ ($k\leftarrow 1$); caso contrário, passa para $N_{k+1}$. Assim, cada iteração aplica no máximo um movimento, e iterações sem melhora apenas avançam $k$. A busca termina quando $N_3$ também não melhora, isto é, no ótimo local simultâneo das três vizinhanças examinadas. Não há limite de iterações efetivo: o teto de $10^6$ existe apenas como salvaguarda contra laços e nunca foi atingido. A implementação também oferece primeira melhoria; a campanha usa melhor melhoria. As penalidades iniciais mantêm a viabilidade da descida a partir da construção.
 
-\textbf{Busca tabu.} Examina N1/N2 a cada iteração e N3 periodicamente, escolhendo o menor delta admissível, inclusive positivo. Os atributos tabu são candidato/escola deixada, par de candidatos e escola/tipo removido, com duração uniforme em $[5,12]$. A aspiração permite um movimento proibido se produzir a primeira solução completa viável ou melhorar a melhor completa viável conhecida. A tabu devolve a melhor solução arquivada, não necessariamente o último estado visitado.
+\textbf{Busca tabu.} Examina N1/N2 a cada iteração e N3 a cada 20 iterações (e a cada 20 iterações sem melhora), escolhendo o menor delta admissível, inclusive positivo; cada iteração aplica exatamente um movimento. Os atributos tabu são candidato/escola deixada, par de candidatos e escola/tipo removido, com duração uniforme em $[5,12]$. A aspiração permite um movimento proibido se produzir a primeira solução completa viável ou melhorar a melhor completa viável conhecida. A tabu devolve a melhor solução arquivada, não necessariamente o último estado visitado. Ela para após 1000 iterações ou 200 iterações consecutivas sem melhorar a melhor solução.
 
-Ambas as buscas param por limite de iterações, estagnação, tempo opcional ou ausência de movimentos admissíveis. A N3 é amostrada, N1 usa lista restrita e N2 na tabu usa top-4. Portanto, o encerramento não prova ótimo local das vizinhanças completas nem ótimo global.
+Como N3 é amostrada, N1 usa lista restrita e N2 na tabu usa top-4, o ótimo local do VND refere-se às vizinhanças efetivamente examinadas; o encerramento não prova ótimo local das vizinhanças completas nem ótimo global.
 
 \section{Exemplo passo a passo e caso de falha}
 \label{sec:exemplo}
-A instância didática \path{entrega/exemplo8_K1.txt} possui oito candidatos, dois tipos e escolas com capacidades 4, 4 e 2. Ela foi criada para demonstrar o modelo exigido, com um tipo por escola. A matriz é:
+A instância didática \path{entrega/exemplo8_K1.txt} possui oito candidatos, dois tipos e escolas com capacidades 4, 4 e 2. Ela demonstra o caso $K=1$, com um tipo por escola; a formulação e o algoritmo também admitem $K=2$. A matriz é:
 \begin{center}\begin{tabular}{ccrrr}
 \toprule Candidato & Tipo & E1 & E2 & E3\\\midrule
 C1&M1&8&10&6\\C2&M1&5&3&3\\C3&M1&14&11&1\\C4&M1&6&9&8\\
@@ -95,50 +95,57 @@ N1 não tem outro destino compatível; N2 não muda escolas entre candidatos de 
 
 Para facilitar a reprodução didática, usamos orçamento de 1000 reconstruções em N3, suficiente para todas as propostas desse exemplo. Esse orçamento difere das seis reconstruções da campanha. O trace literal está em \path{docs/exemplo8_K1-trace.txt}. O transporte exato com tipos finais fixos confirma 42 km para essa configuração, sem provar a melhor escolha global de tipos.
 
-Um caso de falha do problema original é a instância de 109 candidatos do grupo G2: há seis tipos com demanda positiva e somente cinco escolas. Não é possível atender todos com um tipo por escola, apesar das 121 vagas. A pré-checagem identifica o déficit em vez de atribuí-lo à heurística. Outro limite da abordagem é o orçamento: o construtivo do exemplo encerra com uma escola vazia útil, e uma N3 amostrada pode não examinar a adição necessária. A solução completa de 56 km é válida, mas pior que os 42 km encontrados com exploração suficiente.
+A instância I2 G2 tem 109 candidatos, seis tipos com demanda positiva e cinco escolas, com 121 vagas. Em $K=1$, ela não admite atendimento completo: o limite de cinco tipos habilitados impede acomodar os seis tipos demandados. Em $K=2$, a contagem deixa de impedir o atendimento, e o modelo agregado certifica uma alocação completa. Essa mudança é efeito da restrição, não uma melhora da heurística. Um caso real de qualidade insuficiente mesmo no ótimo local ocorre em I2 G8 ($K=2$) e em I2 G9 ($K=1$): em I2 G8 ($K=2$), o VND para após cerca de 99 iterações médias com distância entre 125,37 e 653,10 km (média 329,64 km), enquanto a busca tabu atinge média de 107,87 km; em I2 G9 ($K=1$), o VND converge para soluções completas entre 13752,79 e 21098,42 km (média 15068,86 km, contra 14053,55 km da tabu), conforme detalhado na Seção 7. Isso evidencia ótimos locais de tipos e motiva mecanismos que aceitem pioras temporárias e explorem mais propostas em N3.
 
-\section{Auditoria e correções}
-A revisão foi feita sobre os arquivos efetivamente presentes, preservando alterações prévias do usuário. O script de lote procurava apenas \texttt{instancia\_*.txt}, ignorando a maior parte dos nomes atuais. Corrigimos a descoberta, adicionamos manifesto com hash do binário e entradas para impedir retomada incompatível, estatísticas de dispersão e retorno de erro quando há falhas. O validador passou a localizar entradas após mover a entrega para outra pasta.
+\section{Qualidade dos dados e decisões de projeto}
+Dos 31 arquivos de entrada, 28 representam instâncias distintas utilizáveis. Duas duplicatas exatas foram identificadas, e um arquivo contendo apenas um caminho externo foi excluído. Dois arquivos apresentavam os cabeçalhos na mesma linha; a preparação apenas os separou em cópias, sem alterar valores. A auditoria registra hashes e critérios de inclusão em \path{instances/auditoria_atual.csv}.
 
-Na N3, a reconstrução mantinha todos os candidatos das escolas inalteradas. Ao habilitar um tipo em uma escola vazia, nenhum candidato a utilizava e a proposta tinha custo neutro, sendo rejeitada pelo VND. Corrigimos a liberação dos tipos recém-habilitados e adicionamos regressão automatizada. Também corrigimos a proteção contra sobrescrita da entrada: a exportação gera JSON e CSV, e agora verifica ambos os destinos, inclusive equivalências de arquivos.
+A reconstrução em N3 precisa considerar o efeito global de uma mudança de tipos: preservar candidatos de todas as escolas inalteradas impedia ocupar uma escola recém-habilitada. Por isso, liberamos também os candidatos dos tipos novos, independentemente da escola atual. O exemplo da Seção 5 ilustra essa decisão, protegida por uma regressão automatizada. As verificações incluem recomputação independente de deltas e alocações, além de execução com AddressSanitizer e UndefinedBehaviorSanitizer.
 
-Dos 31 downloads atuais, 28 representam instâncias distintas utilizáveis. Duas duplicatas exatas foram identificadas, e um arquivo que continha apenas um caminho externo foi excluído da campanha. Dois arquivos tinham os dois cabeçalhos na mesma linha: apenas separamos esses cabeçalhos em cópias, sem modificar valores. Os originais permanecem intactos. A auditoria registra hashes e decisões em \path{instances/auditoria_atual.csv}. Não recuperamos os antigos dados removidos do diretório, nem os contamos como instâncias atuais.
+Escolhemos $\alpha=0{,}3$ para restringir o sorteio à faixa superior de 30\% dos scores e arrependimentos, preservando preferência gulosa e introduzindo diversidade entre sementes. A RCL é definida pelo intervalo de valores, não por 30\% dos elementos. Não houve ajuste sistemático desse parâmetro: as estatísticas iniciais e finais quantificam a variabilidade resultante.
 
-Os testes verificam leitura, entradas inválidas, IDs/CEPs, decimais, deltas contra recomputação, fluxo, construção, repetibilidade, rejeição de resultados adulterados, proteção da entrada e a regressão de N3. O núcleo também foi executado com AddressSanitizer e UndefinedBehaviorSanitizer; os registros da revisão estão em \path{docs/testes_atual.log.txt} e \path{docs/sanitizadores_atual.log.txt}.
+A lista de $p=5$ destinos em N1 concentra avaliações nas escolas compatíveis mais próximas e limita o custo de enumeração em instâncias grandes. Se houver menos de cinco alternativas, todas são consideradas. Essa economia pode perder movimentos úteis para liberar vagas; N2 e N3 ampliam a exploração por decisões diferentes.
+
+A duração tabu uniforme em $[5,12]$ evita retorno imediato por pelo menos cinco iterações e varia a duração da proibição para reduzir ciclos sincronizados. O intervalo é uma escolha operacional, sem alegação de calibração ótima. A aspiração permite superar a memória quando um movimento melhora a melhor solução completa viável.
+
+O VND não recebe orçamento: por definição, ele é uma descida que termina no ótimo local, e qualquer teto inferior ao comprimento natural da trajetória mede apenas uma descida interrompida. Uma campanha preliminar com teto de 150 iterações para ambos os métodos evidenciou esse problema: 527 das 840 execuções do VND em $K=1$ foram interrompidas antes do ótimo local, e em I2 G9 a distância média final do VND caía de cerca de 18800 km para cerca de 14600 km quando a descida era levada até o fim. Aquela comparação favorecia artificialmente a tabu, que, ao examinar N3 periodicamente, alcançava a vizinhança estrutural mais cedo. Os resultados preliminares estão preservados em \path{resultados/historico_iter150/} apenas para registro.
+
+Para a tabu, que por construção não para em ótimos locais, adotamos 1000 iterações ou 200 sem melhora. O teto fornece orçamento reprodutível, independente da oscilação do tempo em máquina compartilhada; 200 iterações correspondem a dez avaliações periódicas de N3 sem progresso e interrompem trajetórias estagnadas. Os métodos não recebem o mesmo número de avaliações nem o mesmo tempo; por isso, reportamos tempos junto às distâncias e não inferimos eficiência apenas pelas iterações.
+
+As seis reconstruções por chamada de N3 limitam o trabalho da vizinhança mais cara, que altera tipos e refaz parte das alocações. O embaralhamento varia as propostas examinadas, ao custo de poder omitir uma melhoria. O exemplo didático usa orçamento maior para tornar o passo reproduzível; a campanha mantém seis, explicitando esse compromisso entre exploração e custo. Na tabu, a avaliação de N3 a cada 20 iterações intercala mudanças estruturais com ajustes mais baratos de N1/N2.
 
 \section{Experimentos e resultados}
-A campanha principal foi executada \textbf{após a correção da N3}, sobre 28 instâncias distintas, com VND e tabu e 30 sementes por método (1 a 30), totalizando 1680 execuções e 3360 soluções iniciais/finais verificadas independentemente. Todos usam $K=1$, $\alpha=0{,}3$, $p=5$, melhor melhoria no VND, até 150 iterações, 50 sem melhoria, N3 a cada 20 iterações na tabu, seis reconstruções por chamada e tenure $[5,12]$. O limite temporal é desativado. A igualdade de iterações não significa igualdade de avaliações ou de tempo.
+A campanha principal foi executada \textbf{após a correção da N3}, sobre 28 instâncias distintas, com VND e tabu e 30 sementes por método (1 a 30), para cada $K\in\{1,2\}$, totalizando 3360 execuções e 6720 soluções iniciais/finais verificadas independentemente. São 1680 execuções em cada valor de $K$. As demais configurações são iguais: $\alpha=0{,}3$, $p=5$, seis reconstruções por chamada de N3 e tenure $[5,12]$. O VND usa melhor melhoria e executa até o ótimo local; a tabu usa até 1000 iterações, 200 sem melhoria e N3 a cada 20 iterações. O limite temporal é desativado. Cada iteração do VND é uma exploração de vizinhança, e cada iteração da tabu aplica um movimento; os números de iterações dos dois métodos, portanto, não são comparáveis entre si.
 
-Cada execução registra custo inicial/final, melhoria absoluta/percentual, tempo de construção e busca, escolas utilizadas, cargas por tipo e ocupação. Calculamos média, mínimo, máximo e desvio padrão amostral das distâncias. A melhoria percentual é calculada por execução e depois promediada. A comparação entre métodos usa o mesmo conjunto de instâncias e sementes; não implica trajetórias idênticas após a construção. Casos inviáveis são descritos com atendimento parcial ótimo, sem compará-los a soluções completas.
+Cada execução registra custo inicial/final, melhoria absoluta/percentual, tempo de leitura, pré-checagem, construção e busca, escolas utilizadas, cargas por tipo e ocupação. Calculamos média, mínimo, máximo e desvio padrão amostral das distâncias tanto iniciais quanto finais. As tabelas completas do Apêndice A incluem ambos os valores de $K$. Usamos a identificação uniforme I1 G$n$ ou I2 G$n$ para a primeira ou segunda instância do grupo $n$, independentemente da grafia do arquivo original. A melhoria percentual é calculada por execução e depois promediada. A comparação entre métodos usa o mesmo conjunto de instâncias e sementes; não implica trajetórias idênticas após a construção. Casos inviáveis são descritos com atendimento parcial ótimo, sem compará-los a soluções completas.
 
 \input{resultados_atual_texto}
 \input{resultados_atual_tabela}
 \begin{figure}[ht]\centering
 \includegraphics[width=\textwidth]{../resultados/final_convergencia.pdf}
-\caption{Melhor distância média por iteração para instâncias selecionadas, sempre em K=1. Curvas encerradas são mantidas no último valor até a iteração 150. Distância parcial quando indicada no título.}
+\caption{Melhor distância média por iteração para instâncias selecionadas, em K=1 e K=2. As curvas parciais e completas de I2 G2 têm atendimentos diferentes e não medem a mesma tarefa. Curvas encerradas são mantidas no último valor; o eixo horizontal se estende até a execução mais longa de cada método, e as iterações de VND e tabu têm significados distintos. Distância parcial quando indicada no título.}
 \end{figure}
 
-O validador Python relê a instância e recompõe as distâncias com \texttt{Decimal}, sem reutilizar deltas do C++. Verifica IDs, capacidade, compatibilidade, atendimento certificado, ocupação e evolução da melhor solução. Os JSONs guardam cada atribuição e carga por escola/tipo. Os dados principais estão exclusivamente em \path{resultados/final_vnd/} e \path{resultados/final_tabu/}. Resultados antigos existentes na árvore de trabalho não fundamentam esta campanha e não entram no pacote final.
+O validador Python relê a instância e recompõe as distâncias com \texttt{Decimal}, sem reutilizar deltas do C++. Verifica IDs, capacidade, compatibilidade, atendimento certificado, ocupação e evolução da melhor solução. Os JSONs guardam cada atribuição e carga por escola/tipo. Os dados de $K=1$ estão em \path{resultados/final_vnd/} e \path{resultados/final_tabu/}. Para $K=2$, ficam em \path{resultados/final_k2_vnd/} e \path{resultados/final_k2_tabu/}. Os manifestos identificam entradas e configurações.
 
 \section{Conclusões e limitações}
 A combinação de escolha de tipos, arrependimento e caminhos aumentantes fornece soluções com o atendimento certificado. N1/N2 melhoram alocações com tipos fixos, enquanto N3 altera uma decisão estrutural que pode bloquear as primeiras vizinhanças. A auditoria do exemplo pequeno mostrou por que uma escola vazia precisa participar efetivamente da reconstrução, e não apenas receber um tipo na representação.
 
-A abordagem depende de um solver inteiro para certificar atendimento e como salvaguarda da construção. A busca de distância permanece heurística. Amostragem de N3, listas de candidatos e limites de iterações restringem a qualidade; tempos foram medidos em máquina compartilhada, com processos paralelos, sem isolamento de CPU. A análise é descritiva, sem testes de significância ou alegação de superioridade universal. Como continuidade, propomos ajustar a amostragem de N3, comparar orçamentos de tempo/avaliações, explorar mais trocas de tipos e melhorar a adaptação de penalidades nos casos de atendimento parcial.
+A abordagem depende de um solver inteiro para certificar atendimento e como salvaguarda da construção; nenhum fallback foi necessário nas 3360 construções observadas, o que não elimina essa dependência para novas entradas. A passagem de $K=1$ para $K=2$ permite atendimento completo nas quatro instâncias antes inviáveis, evidenciando a necessidade de analisar cada configuração separadamente. A busca de distância permanece heurística. Amostragem de N3, listas de candidatos e limites de iterações restringem a qualidade; tempos foram medidos em máquina compartilhada, com processos paralelos, sem isolamento de CPU. A análise é descritiva, sem testes de significância ou alegação de superioridade universal. Como continuidade, propomos ajustar a amostragem de N3, comparar orçamentos de tempo/avaliações, explorar mais trocas de tipos e melhorar a adaptação de penalidades nos casos de atendimento parcial.
 
 \section{Reprodução e arquivos de entrega}
-São necessários compilador C++17, Make e Python com NumPy/SciPy; Matplotlib gera as figuras. A apresentação é um HTML local independente, sem servidor ou acesso à internet. O código-fonte, instâncias, manifestos, resultados, relatório LaTeX/PDF e apresentação estão no pacote gerado por \path{scripts/empacotar.py}. Os comandos principais são:
+\label{sec:repro}
+São necessários compilador C++17, Make e Python com NumPy/SciPy; Matplotlib gera as figuras. O repositório é \url{https://github.com/brunokeil/Trabalho1}. A apresentação tem versões HTML independente e PDF, com 12 slides e roteiro de dez minutos. O HTML contém os resultados e permite baixar o CSV e o relatório incorporados, mesmo quando movido para outra pasta; o link do GitHub requer internet. O código-fonte, instâncias, manifestos, resultados, relatório LaTeX/PDF e apresentação estão no pacote gerado por \path{scripts/empacotar.py}. Os comandos principais são:
 \begin{verbatim}
 make
 make test
 python3 scripts/preparar_instancias.py
-python3 scripts/executar_todas.py \
- --instancias-dir instances/preparadas -k 1 \
- --metodo vnd --runs 30 --out resultados/final_vnd
-# Repetir com --metodo tabu e --out resultados/final_tabu
+sh scripts/campanha_final.sh   # 4 campanhas
 python3 scripts/gerar_entrega.py
 make report
 \end{verbatim}
-Use outra pasta de saída quando o manifesto divergir. A mesma semente reproduz decisões no mesmo ambiente com limite de iterações; distribuições da biblioteca C++ e versões do solver podem alterar trajetórias entre plataformas. Não é necessário publicar um site ou repositório para utilizar o pacote local. A submissão ao Classroom e eventuais instruções adicionais daquele ambiente ficam a cargo do grupo.
+O script \path{scripts/campanha_final.sh} invoca \path{scripts/executar_todas.py} para VND (teto $10^6$) e tabu (teto 1000 e estagnação 200), com $K\in\{1,2\}$, 30 sementes e saídas \path{final_vnd}, \path{final_tabu}, \path{final_k2_vnd} e \path{final_k2_tabu} em \path{resultados/}.
+Use outra pasta de saída quando o manifesto divergir. A mesma semente reproduz decisões no mesmo ambiente com limite de iterações; distribuições da biblioteca C++ e versões do solver podem alterar trajetórias entre plataformas. O README descreve a regeneração das tabelas, a exportação dos slides em PDF e o empacotamento da entrega.
 
 \appendix
 \section{Resultados completos e distribuição das soluções}

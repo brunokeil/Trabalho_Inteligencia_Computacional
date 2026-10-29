@@ -1,0 +1,18 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
+  "binary_sha256": "a4274b9a6a7ffae1c1e0d670d19239914f3176c4036eb5cc653006b1aba5b5bf",
+  "campaigns": [
+    "final_vnd",
+    "final_tabu",
+    "final_k2_vnd",
+    "final_k2_tabu"
+  ],
+  "instances": 28,
+  "configurations": 112,
+  "runs": 3360,
+  "validated_solutions": 6720,
+  "scope": "K=1 e K=2, tipos escolhidos pelo algoritmo",
+  "input_audit": "instances/auditoria_atual.csv",
+  "repository": "https://github.com/brunokeil/Trabalho1"
+}

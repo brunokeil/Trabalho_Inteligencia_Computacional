@@ -1,4 +1,3 @@
-c++ -std=c++17 -O2 -Wall -Wextra -pedantic -Isrc tests/core.cpp src/busca_local.cpp src/construtivo.cpp src/exato.cpp src/instancia.cpp src/solucao.cpp -o build/test_core
 ./build/test_parser
 parser: quatro instancias, IDs, CEPs, decimais OK
 ./build/test_core
@@ -20,6 +19,6 @@ test_ids_whitespace_and_validator_rejection (test_integration.Integration) ... o
 test_output_extensions_cannot_overwrite_input (test_integration.Integration) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 4.891s
+Ran 6 tests in 2.644s
 
 OK

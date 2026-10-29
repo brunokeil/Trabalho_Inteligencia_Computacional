@@ -37,8 +37,8 @@
   "alpha": 0.3,
   "runs": 30,
   "seed": 1,
-  "max_iter": 150,
-  "stagnation": 50,
+  "max_iter": 1000,
+  "stagnation": 200,
   "time_limit": 0,
   "python": "3.9.6 (default, Aug 25 2026, 21:26:21) \n[Clang 21.0.0 (clang-2100.3.34.2)]",
   "platform": "darwin"

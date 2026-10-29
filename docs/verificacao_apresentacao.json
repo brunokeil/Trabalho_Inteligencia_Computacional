@@ -189,7 +189,7 @@
         },
         {
           "height": 759,
-          "scrollHeight": 820,
+          "scrollHeight": 844,
           "scrollWidth": 500,
           "width": 500
         },
@@ -201,7 +201,7 @@
         },
         {
           "height": 759,
-          "scrollHeight": 824,
+          "scrollHeight": 845,
           "scrollWidth": 500,
           "width": 500
         },
@@ -225,25 +225,25 @@
         },
         {
           "height": 759,
-          "scrollHeight": 875,
-          "scrollWidth": 500,
-          "width": 500
-        },
-        {
-          "height": 759,
           "scrollHeight": 851,
           "scrollWidth": 500,
           "width": 500
         },
         {
           "height": 759,
-          "scrollHeight": 925,
+          "scrollHeight": 1028,
           "scrollWidth": 500,
           "width": 500
         },
         {
           "height": 759,
-          "scrollHeight": 872,
+          "scrollHeight": 1047,
+          "scrollWidth": 500,
+          "width": 500
+        },
+        {
+          "height": 759,
+          "scrollHeight": 850,
           "scrollWidth": 500,
           "width": 500
         }
@@ -254,9 +254,12 @@
     "navigation",
     "speaker notes",
     "example 56→42→56",
-    "partial results selector",
-    "SVG convergence"
+    "K=1/K=2 results selector",
+    "SVG convergence for both K",
+    "embedded PDF/CSV match current files",
+    "HTML moved alone"
   ],
   "javascript": "node --check passed",
-  "offline": true
+  "offline": true,
+  "pdf_pages": 12
 }

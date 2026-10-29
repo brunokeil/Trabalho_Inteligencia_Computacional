@@ -1,5 +1,3 @@
-c++ -std=c++17 -O1 -g -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer -Isrc tests/core.cpp src/busca_local.cpp src/construtivo.cpp src/exato.cpp src/instancia.cpp src/solucao.cpp -o build/test_core_san
-c++ -std=c++17 -O1 -g -Wall -Wextra -fsanitize=address,undefined -fno-omit-frame-pointer src/busca_local.cpp src/construtivo.cpp src/exato.cpp src/instancia.cpp src/main.cpp src/solucao.cpp -o build/alocacao_san
 ./build/test_core_san
 Modelo_de_Instancia K=1 certificados/construcao OK
 Modelo_de_Instancia K=2 certificados/construcao OK
@@ -19,6 +17,6 @@ test_ids_whitespace_and_validator_rejection (test_integration.Integration) ... o
 test_output_extensions_cannot_overwrite_input (test_integration.Integration) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 5.718s
+Ran 6 tests in 2.924s
 
 OK
