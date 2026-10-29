@@ -15,7 +15,7 @@ Pacote: Trabalho1-entrega.zip (gerado por scripts/empacotar.py)
 
 Os resultados principais cobrem K=1 e K=2: limite de tipos por escola informado na execução; os tipos são escolhidos pelo algoritmo.
 Prazo atualizado: 26/10/2026 às 10h.
-Repositório: https://github.com/brunokeil/Trabalho1
+Repositório: https://github.com/brunokeil/Trabalho_Inteligencia_Computacional
 Slides: ../docs/apresentacao.html e ../docs/apresentacao.pdf.
 Campanha: 28 instâncias x 2 valores de K x 2 métodos x 30 sementes = 3360 execuções.
 Todas as 6720 soluções iniciais/finais foram verificadas independentemente.

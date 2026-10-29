@@ -89,7 +89,7 @@ def main():
                 assert all(page.get_text().strip() for page in pdf)
                 assert 'I2 G2' in pdf[9].get_text() and 'K=2' in pdf[9].get_text()
                 assert all(label in pdf[9].get_text() for label in ['Inicial (média)','Final (média)','Total (s)'])
-                assert 'github.com/brunokeil/Trabalho1' in pdf[11].get_text()
+                assert 'github.com/brunokeil/Trabalho_Inteligencia_Computacional' in pdf[11].get_text()
                 pdf_pages=len(pdf)
         version=driver.capabilities.get('browserVersion')
         payload={'status':'passed','browser':'Firefox','version':version,'checks':checks,

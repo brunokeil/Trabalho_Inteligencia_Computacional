@@ -14,5 +14,5 @@
   "validated_solutions": 6720,
   "scope": "K=1 e K=2, tipos escolhidos pelo algoritmo",
   "input_audit": "instances/auditoria_atual.csv",
-  "repository": "https://github.com/brunokeil/Trabalho1"
+  "repository": "https://github.com/brunokeil/Trabalho_Inteligencia_Computacional"
 }

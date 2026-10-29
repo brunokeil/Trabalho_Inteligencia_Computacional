@@ -1,6 +1,6 @@
 # DCC136 — Localização de locais de prova — 2026.3
 
-Implementação C++17 de construção gulosa randomizada, VND e Busca Tabu. O programa recebe **K=1 ou K=2 em tempo de execução** e escolhe os tipos de prova de cada escola, conforme as correções da professora. Ambos os casos são avaliados. Prazo atualizado: **26/10/2026 às 10h**. Repositório: [brunokeil/Trabalho1](https://github.com/brunokeil/Trabalho1).
+Implementação C++17 de construção gulosa randomizada, VND e Busca Tabu. O programa recebe **K=1 ou K=2 em tempo de execução** e escolhe os tipos de prova de cada escola, conforme as correções da professora. Ambos os casos são avaliados. Prazo atualizado: **26/10/2026 às 10h**. Repositório: [brunokeil/Trabalho_Inteligencia_Computacional](https://github.com/brunokeil/Trabalho_Inteligencia_Computacional).
 
 ## Arquivos para entregar
 

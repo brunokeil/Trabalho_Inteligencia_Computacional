@@ -67,6 +67,7 @@ Underfull \vbox (badness 5954) has occurred while \output is active
 [8]
 [9 <../resultados/final_convergencia.pdf>] (./resultados_atual_completo.tex
 [10] [11] [12]
+Underfull \vbox (badness 2671) has occurred while \output is active
 [13] [14]
 Underfull \vbox (badness 10000) has occurred while \output is active
 [15])
@@ -89,7 +90,7 @@ rw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.
 pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on relatorio.pdf (16 pages, 240060 bytes).
+Output written on relatorio.pdf (16 pages, 240371 bytes).
 Transcript written on relatorio.log.
 This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex)
  restricted \write18 enabled.
@@ -160,6 +161,7 @@ Underfull \vbox (badness 5954) has occurred while \output is active
 [8]
 [9 <../resultados/final_convergencia.pdf>] (./resultados_atual_completo.tex
 [10] [11] [12]
+Underfull \vbox (badness 2671) has occurred while \output is active
 [13] [14]
 Underfull \vbox (badness 10000) has occurred while \output is active
 [15])
@@ -182,5 +184,5 @@ rw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.
 pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on relatorio.pdf (16 pages, 240060 bytes).
+Output written on relatorio.pdf (16 pages, 240371 bytes).
 Transcript written on relatorio.log.

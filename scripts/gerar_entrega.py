@@ -8,7 +8,7 @@ OUT = ROOT / 'resultados'
 DOC = ROOT / 'docs'
 CAMPAIGNS = [(1, 'vnd', 'final_vnd'), (1, 'tabu', 'final_tabu'),
              (2, 'vnd', 'final_k2_vnd'), (2, 'tabu', 'final_k2_tabu')]
-REPOSITORY = 'https://github.com/brunokeil/Trabalho1'
+REPOSITORY = 'https://github.com/brunokeil/Trabalho_Inteligencia_Computacional'
 
 
 def tex(s):
